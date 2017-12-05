@@ -6,6 +6,8 @@ if [ "$#" -ne 1 ]; then
     exit -1
 fi
 
+jekyll build
+
 find _site -type f -exec chmod 666 {} \;
 find _site -type d -exec chmod 755 {} \;
 

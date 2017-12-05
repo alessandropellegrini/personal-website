@@ -11,6 +11,9 @@ permalink: /didattica/:year/:title.html
 sass:
   style: compressed
 
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
 # For publications
 plugins: ['jekyll/scholar', 'jekyll-last-modified-at']
 scholar:
