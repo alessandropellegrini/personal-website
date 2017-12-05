@@ -1,0 +1,26 @@
+name: HPDCS
+markdown: kramdown
+highlighter: pygments
+exclude: [README.md, pubs.bib]
+
+url: "https://www.dis.uniroma1.it/~pellegrini"
+
+# Blog posts map to courses
+permalink: /didattica/:year/:title.html
+
+sass:
+  style: compressed
+
+# For publications
+plugins: ['jekyll/scholar', 'jekyll-last-modified-at']
+scholar:
+  style: apa
+  source: ./
+  bibliography: pubs.bib
+  sort_by: year,month
+  order: descending
+  group_by: year
+  group_order: descending
+  repository: publications
+  bibliography_template: bibliography
+  bibliography_list_tag: ul
