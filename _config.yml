@@ -15,7 +15,7 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # For publications
-plugins: ['jekyll/scholar', 'jekyll-last-modified-at']
+plugins: ['jekyll/scholar']
 scholar:
   style: apa
   source: ./
