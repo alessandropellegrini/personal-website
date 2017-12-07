@@ -65,5 +65,5 @@ Conference Proceedings
 Other Material
 --------------
 
-{% bibliography -q @unpublished[author ~= Pellegrini] %}
+{% bibliography -q @techreport[author ~= Pellegrini] @unpublished[author ~= Pellegrini] %}
 
