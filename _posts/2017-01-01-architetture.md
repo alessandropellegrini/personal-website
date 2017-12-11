@@ -5,6 +5,10 @@ title: Architetture dei Calcolatori Elettronici
 **Anno Accademico 2017/2018**    
 **Docenti: Prof. Bruno Ciciani &ndash; Dr. Alessandro Pellegrini**
 
+{% capture local-url %}
+{{ site.url }}{{ page.id }}
+{% endcapture %}
+
 La pagina principale del corso è
 [raggiungibile qui](http://www.dis.uniroma1.it/~ciciani/index.php?option=com_content&view=article&id=42).
 
@@ -58,4 +62,6 @@ Esercizi
 
 * [Esercizi sulla programmazione assembly](https://www.dropbox.com/s/udwrmkgqjlc7zoy/4a.%20EsercziAssemblyPD32.pdf?dl=0)
 * [Tracce d'esame](https://www.dropbox.com/s/oobuvgu14yb1k8t/prove-di-esame.zip?dl=0)
+* [Esercitazione di riepilogo]({{local-url}}/riepilogo.pdf)
+
 
