@@ -62,6 +62,6 @@ Esercizi
 
 * [Esercizi sulla programmazione assembly](https://www.dropbox.com/s/udwrmkgqjlc7zoy/4a.%20EsercziAssemblyPD32.pdf?dl=0)
 * [Tracce d'esame](https://www.dropbox.com/s/oobuvgu14yb1k8t/prove-di-esame.zip?dl=0)
-* [Esercitazione di riepilogo]({{local-url}}/riepilogo.pdf)
+* [Esercitazione di riepilogo]({{local-url}}/riepilogo.pdf) - [Soluzione]({{local-url}}/2017-soluzione.pdf)
 
 
