@@ -11,4 +11,4 @@ jekyll build
 find _site -type f -exec chmod 666 {} \;
 find _site -type d -exec chmod 755 {} \;
 
-rsync -avz -e ssh --delete _site/ $1@www.dis.uniroma1.it:./public_html/
+rsync -avz -e ssh --delete _site/ $1@www.diag.uniroma1.it:./public_html/

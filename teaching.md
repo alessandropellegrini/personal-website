@@ -9,7 +9,7 @@ Office Hours
 
 Next office hours will be on:
 
-* December 19, at 10.00 am
+* January 12, at 10.00 am
 * January 16, at 10.00 am
 
 [//]: # (Students office consulting is on Wednesday, from 3.30 pm to 5.00 pm, at Via Ariosto 25, room B120.)

@@ -1,9 +1,9 @@
 name: HPDCS
 markdown: kramdown
 highlighter: pygments
-exclude: [README.md, pubs.bib]
+exclude: [README.md, pubs.bib, LICENSE]
 
-url: "https://www.dis.uniroma1.it/~pellegrini"
+url: "https://www.diag.uniroma1.it/~pellegrini"
 
 # Blog posts map to courses
 permalink: /didattica/:year/:title.html
