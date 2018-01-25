@@ -13,6 +13,13 @@ La pagina principale del corso è
 [raggiungibile qui](http://www.dis.uniroma1.it/~ciciani/index.php?option=com_content&view=article&id=42).
 
 
+Aggiornamenti
+-------------
+
+* Appello del 19/01/2018: [Risultati]({{ local-url }}/2018-01-19-risultati.pdf).
+* Esonero del 21/11/2017: [Risultati]({{ local-url }}/2017-11-27-esonero-risultati.pdf).
+
+
 Regole per l'esame
 ------------------
 
