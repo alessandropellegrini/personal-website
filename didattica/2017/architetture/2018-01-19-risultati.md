@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Risultati Appello 19/01/2018
 ---
+
+Risultati Appello 19/01/2018
+----------------------------
 
 | Cognome                                 | Teoria | Esonero | Progetto | Voto Finale          |
 |-----------------------------------------|:------:|:-------:|:--------:|:--------------------:|
