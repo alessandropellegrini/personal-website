@@ -1,7 +1,7 @@
 name: HPDCS
 markdown: kramdown
 highlighter: pygments
-exclude: [README.md, pubs.bib, LICENSE]
+exclude: [README.md, pubs.bib, LICENSE, upload.sh]
 
 url: "https://www.diag.uniroma1.it/~pellegrini"
 
