@@ -16,12 +16,12 @@
 
 {% if entry.note and entry.note == "Candidate for (but not winner of) the Best Paper Award" %}
 <br/>
-<img src="/images/podium.png" />
+<img src="{{ site.url }}/images/podium.png" />
 <span style="color:red">Candidate for (but not winner of) the Best Paper Award</span>
 {% endif %}
 
 {% if entry.note and entry.note == "Winner of the Best Paper Award" %}
 <br/>
-<img src="/images/medal.png" />
+<img src="{{ site.url }}/images/medal.png" />
 <span style="color:red">Winner of the Best Paper Award</span>
 {% endif %}
