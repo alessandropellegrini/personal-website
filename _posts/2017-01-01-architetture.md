@@ -16,6 +16,7 @@ La pagina principale del corso è
 Aggiornamenti
 -------------
 
+* Appello del 14/04/2018: [Risultati]({{ local-url }}/2018-04-14-risultati.html).
 * Appello del 14/02/2018: [Risultati]({{ local-url }}/2018-02-14-risultati.html).
 * Appello del 19/01/2018: [Risultati]({{ local-url }}/2018-01-19-risultati.html).
 * Esonero del 21/11/2017: [Risultati]({{ local-url }}/2017-11-27-esonero-risultati.pdf).
