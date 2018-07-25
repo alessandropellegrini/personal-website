@@ -5,7 +5,7 @@ layout: default
 Risultati Appello 14/02/2018
 ----------------------------
 
-| Cognome                                 | Teoria | Esonero | Progetto | Voto Finale |
+| Studente                                 | Teoria | Esonero | Progetto | Voto Finale |
 |-----------------------------------------|:------:|:-------:|:--------:|:-----------:|
 | Antonini Andrea Luca                    | 3      | 9       | 13       | 25          |
 | Brizi Leonardo                          | 5,5    | 9       | 14,5     | 29          |

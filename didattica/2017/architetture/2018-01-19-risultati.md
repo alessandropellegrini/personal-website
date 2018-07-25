@@ -5,7 +5,7 @@ layout: default
 Risultati Appello 19/01/2018
 ----------------------------
 
-| Cognome                                 | Teoria | Esonero | Progetto | Voto Finale          |
+| Studente                                 | Teoria | Esonero | Progetto | Voto Finale          |
 |-----------------------------------------|:------:|:-------:|:--------:|:--------------------:|
 | Lemmariu Lucian Alexandru (calcolatori) | 6,5    |         | INS      | INS                  |
 | Alolod Lucky Neil Cabral                | 12,5   | -       | 10       | 23                   |

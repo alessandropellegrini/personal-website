@@ -5,7 +5,7 @@ layout: default
 Risultati Appello 14/04/2018
 ----------------------------
 
-| Cognome                                 | Teoria | Esonero | Progetto | Voto Finale          |
+| Studente                                 | Teoria | Esonero | Progetto | Voto Finale          |
 |-----------------------------------------|:------:|:-------:|:--------:|:--------------------:|
 | Aurizi Andrea                           | 6      | 6       | 14       | 26                   |
 | Biffoni Matteo                          | -      | -       | 12       | INS                  |
