@@ -1,4 +1,4 @@
-name: HPDCS
+name: Alessandro Pellegrini
 markdown: kramdown
 highlighter: pygments
 exclude: [README.md, pubs.bib, LICENSE, upload.sh]
@@ -14,7 +14,7 @@ sass:
 # For publications
 plugins: ['jekyll/scholar']
 scholar:
-  style: apa
+  style: _layouts/custom.csl
   source: ./
   bibliography: pubs.bib
   sort_by: year,month
@@ -24,3 +24,5 @@ scholar:
   repository: publications
   bibliography_template: bibliography
   bibliography_list_tag: ul
+  use_raw_bibtex_entry: true
+  reference_tagname: 

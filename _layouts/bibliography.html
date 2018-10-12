@@ -1,4 +1,56 @@
+---
+---
+{% comment %}
+This initial part is used to display coloured blocks, citation count,
+and to embed everything in a <div> that javascript can then show and
+hide on demand.
+{% endcomment %}
+
+
+{% if entry.type == "book" %}
+<div class="book">
+<img src="{{ site.url }}/images/book-box.png"/> [b<span class="b-counter"></span>] 
+{% endif %}
+
+{% if entry.type == "incollection" %}
+<div class="incollection">
+<img src="{{ site.url }}/images/incollection-box.png"/> [p<span class="p-counter"></span>] 
+{% endif %}
+
+{% if entry.type == "article" %}
+<div class="article">
+<img src="{{ site.url }}/images/article-box.png"/> [j<span class="j-counter"></span>] 
+{% endif %}
+
+{% if entry.type == "inproceedings" %}
+<div class="inproceedings">
+<img src="{{ site.url }}/images/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+{% endif %}
+
+{% if entry.type != "book" and entry.type != "incollection" and entry.type != "article" and entry.type != "inproceedings" %}
+<div class="other">
+<img src="{{ site.url }}/images/informal-box.png"/> [i<span class="i-counter"></span>] 
+{% endif %}
+
+
+{% comment %}
+The actual reference. This uses a custom CSL specified in _config.yml.
+The CSL is basically IEEE style, without citation number in []
+{% endcomment %}
+
+
 {{ reference }}
+
+
+
+{% comment %}
+This is my custom stuff: articles that I insert might not be appeared yet,
+plus I add the links to the bibtex (javascript-shown) and to pdf, when
+available in the archive. I additionally show information related to
+best paper awards.
+{% endcomment %}
+
+
 
 {% if entry.note and entry.note == "To appear" %}
 (<em>To appear</em>)
@@ -25,3 +77,11 @@
 <img src="{{ site.url }}/images/medal.png" />
 <span style="color:red">Winner of the Best Paper Award</span>
 {% endif %}
+
+
+
+{% comment %}
+This closes the <div> used by javascript to hide entries on demand
+{% endcomment %}
+
+</div>
