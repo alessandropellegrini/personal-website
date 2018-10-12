@@ -341,3 +341,7 @@ h1 {
 
 @import "responsive";
 @import "syntax";
+
+
+/* This is used to kill bullets in the bibliography */
+ul.bibliography { list-style-type: none; padding: 0px; margin: 0px; }
