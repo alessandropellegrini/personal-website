@@ -1,64 +1,53 @@
 ---
 ---
-{% comment %}
+{%- comment -%}
 This initial part is used to display coloured blocks, citation count,
 and to embed everything in a <div> that javascript can then show and
 hide on demand.
-{% endcomment %}
-
-
-{% if entry.type == "book" %}
+{%- endcomment -%}
+{%- if entry.type == "book" -%}
 <div class="book">
 <img src="{{ site.url }}/images/book-box.png"/> [b<span class="b-counter"></span>] 
-{% endif %}
+{%- endif -%}
 
-{% if entry.type == "incollection" %}
+{%- if entry.type == "incollection" -%}
 <div class="incollection">
 <img src="{{ site.url }}/images/incollection-box.png"/> [p<span class="p-counter"></span>] 
-{% endif %}
+{%- endif -%}
 
-{% if entry.type == "article" %}
+{%- if entry.type == "article" -%}
 <div class="article">
 <img src="{{ site.url }}/images/article-box.png"/> [j<span class="j-counter"></span>] 
-{% endif %}
+{%- endif -%}
 
-{% if entry.type == "inproceedings" %}
+{%- if entry.type == "inproceedings" -%}
 <div class="inproceedings">
 <img src="{{ site.url }}/images/inproceedings-box.png"/> [c<span class="c-counter"></span>]
-{% endif %}
+{%- endif -%}
 
-{% if entry.type != "book" and entry.type != "incollection" and entry.type != "article" and entry.type != "inproceedings" %}
+{%- if entry.type != "book" and entry.type != "incollection" and entry.type != "article" and entry.type != "inproceedings" -%}
 <div class="other">
 <img src="{{ site.url }}/images/informal-box.png"/> [i<span class="i-counter"></span>] 
-{% endif %}
+{%- endif -%}
 
-
-{% comment %}
+{%- comment -%}
 The actual reference. This uses a custom CSL specified in _config.yml.
 The CSL is basically IEEE style, without citation number in []
-{% endcomment %}
-
-
+{%- endcomment %}
 {{ reference }}
 
-
-
-{% comment %}
+{%- comment -%}
 This is my custom stuff: articles that I insert might not be appeared yet,
 plus I add the links to the bibtex (javascript-shown) and to pdf, when
 available in the archive. I additionally show information related to
 best paper awards.
-{% endcomment %}
+{%- endcomment -%}
 
 
 
-{% if entry.note and entry.note == "To appear" %}
-(<em>To appear</em>)
-{% endif %}
+{%- if entry.note and entry.note == "To appear" %} (<em>To appear</em>) {%- endif -%}
 
-{% if links.pdf %}
-[<a href="{{ site.url }}/{{ links.pdf }}">PDF</a>]
-{% endif %}
+{%- if links.pdf %} [<a href="{{ site.url }}/{{ links.pdf }}">PDF</a>] {% endif -%}
 
 [<a href="javascript:bibtex('{{ entry.key }}')">Bibtex</a>]
 
@@ -66,22 +55,22 @@ best paper awards.
   <pre>{{ entry.bibtex }}</pre>
 </div>
 
-{% if entry.note and entry.note == "Candidate for (but not winner of) the Best Paper Award" %}
+{%- if entry.note and entry.note == "Candidate for (but not winner of) the Best Paper Award" %}
 <br/>
 <img src="{{ site.url }}/images/podium.png" />
 <span style="color:red">Candidate for (but not winner of) the Best Paper Award</span>
-{% endif %}
+{%- endif -%}
 
-{% if entry.note and entry.note == "Winner of the Best Paper Award" %}
+{%- if entry.note and entry.note == "Winner of the Best Paper Award" %}
 <br/>
 <img src="{{ site.url }}/images/medal.png" />
 <span style="color:red">Winner of the Best Paper Award</span>
-{% endif %}
+{%- endif -%}
 
 
 
-{% comment %}
+{%- comment -%}
 This closes the <div> used by javascript to hide entries on demand
-{% endcomment %}
+{%- endcomment -%}
 
 </div>
