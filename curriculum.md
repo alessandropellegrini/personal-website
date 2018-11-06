@@ -23,6 +23,7 @@ Awards and Honors
 Service
 -------
 
+* 2019: Reproducibility Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
 * 2018: General Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
 * 2017: Track Co-Chair, "<em>Environment and Sustainability Applications</em>", Winter Simulation Conference (WSC)
 * 2016: Program Co-Chair, IEEE International Symposium on Network Computing and Applications (NCA)
