@@ -8,10 +8,10 @@ General Information
 I'm a Postdoctoral Researcher at the *[Department of Computer Science and System Engineering](http://www.dis.uniroma1.it/)* at "Sapienza" - University of Rome.    
 I'm member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group.<br/>
 
-![ACM Member]({{ site.url }}/images/ACM_member.png)
-![IEEE Member]({{ site.url }}/images/IEEE_member.png)
 
-ACM Member since Nov 1, 2011; IEEE Member since Mar 1, 2012.
+| ![HiPEAC Member]({{ site.url }}/images/hipeac.png) | HiPEAC Member since October 2018 |
+| ![ACM Member]({{ site.url }}/images/ACM_member.png)    | ACM Member since November 2011   |
+| ![IEEE Member]({{ site.url }}/images/IEEE_member.png)  | IEEE Member since March 2012     |
 
 
 Contact Information
