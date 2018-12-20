@@ -16,17 +16,23 @@ Here you can find a
 Awards and Honors
 -----------------
 
-* Best Paper Award, DS-RT Conference, 2016
-* Best PhD Thesis of the year, 2015, Sapienza University of Rome
-* Best Paper Award, SIMUTOOLS Conference, 2012
+* HiPEAC Technology Transfer Award, 2018.
+* Best Paper Award, DS-RT Conference, 2016.
+* Best PhD Thesis of the year, Sapienza University of Rome, 2015.
+* Best Paper Award, SIMUTOOLS Conference, 2012.
+
+## Editorial Boards
+
+* 2018 - present: Transactions on Modeling and Computer Simualtions (TOMACS), ACM. Member of the Editorial Board, in the Reproducibility Board.
+* 2019: Guest Editor for the TOMACS special issue on PADS.
 
 Service
 -------
 
-* 2019: Reproducibility Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
-* 2018: General Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS)
-* 2017: Track Co-Chair, "<em>Environment and Sustainability Applications</em>", Winter Simulation Conference (WSC)
-* 2016: Program Co-Chair, IEEE International Symposium on Network Computing and Applications (NCA)
+* 2019: Reproducibility Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS).
+* 2018: General Co-Chair, ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS).
+* 2017: Track Co-Chair, "<em>Environment and Sustainability Applications</em>", Winter Simulation Conference (WSC).
+* 2016: Program Co-Chair, IEEE International Symposium on Network Computing and Applications (NCA).
 
 
 Program Committee Membership

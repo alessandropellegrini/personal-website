@@ -10,8 +10,8 @@ I'm member of the *[High Performance and Dependable Computing Systems](http://ww
 
 
 | ![HiPEAC Member]({{ site.url }}/images/hipeac.png) | HiPEAC Member since October 2018 |
-| ![ACM Member]({{ site.url }}/images/ACM_member.png)    | ACM Member since November 2011   |
 | ![IEEE Member]({{ site.url }}/images/IEEE_member.png)  | IEEE Member since March 2012     |
+| ![ACM Member]({{ site.url }}/images/ACM_member.png)    | ACM Member since November 2011   |
 
 
 Contact Information
