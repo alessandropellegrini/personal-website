@@ -16,7 +16,7 @@ La pagina principale del corso è
 Aggiornamenti
 -------------
 
-* Le news sul corso verranno pubblicate qui.
+* Esonero del 10/12/2018 (aula 106, edificio ex poste) - [Risultati]({{ local-url }}/2018-12-10-risultati-esonero.html).
 
 
 Regole per l'esame
