@@ -29,17 +29,17 @@ This page reports (as much as I can) about vacant theses assignments which can b
 Theses in the field of High Performance Simulation tackles topics related to the design and development of distributed and highly-parallel runtime environments to support the execution of generic simulation models according to a speculative processing paradigm. Some theses target the definition and implementation of simulation models relying on this paradigm.
 
 To get more information on this thesis topic, you can read the following papers:
-[1](theses/timewarp1.pdf)
-[2](theses/timewarp2.pdf)
-[3](theses/timewarp3.pdf)
-[4](theses/timewarp4.pdf)
-[5](theses/timewarp5.pdf)
-[6](theses/timewarp6.pdf).
+[1](timewarp1.pdf)
+[2](timewarp2.pdf)
+[3](timewarp3.pdf)
+[4](timewarp4.pdf)
+[5](timewarp5.pdf)
+[6](timewarp6.pdf).
 
 1. **Asymmetric Time Warp**    
    This thesis addresses the implementation of an asymmetric multithreaded runtime environment to support PDES. In the asymmetric approach, different threads carry out different activities, in order to maximise performance and minimise energy consumption. An analytical model shall determine, at runtime, every thread of the system what incarnation has, for a part of the lifetime of the application.
 1. **NUMA Aware Load-Sharing Policy**    
-   In this thesis, a decision-making module should be designed and implemented. The goal is to determine, at runtime, the best-suited placement for LPs, worker threads, and memory pages in a NUMA architecture. See this supporting material for an additional framing of the topic: [1](theses/numa.pdf).
+   In this thesis, a decision-making module should be designed and implemented. The goal is to determine, at runtime, the best-suited placement for LPs, worker threads, and memory pages in a NUMA architecture. See this supporting material for an additional framing of the topic: [1](numa.pdf).
 1. **Model-related fossil collection**    
    This thesis tackles the design and implementation of a transparent module to allow simulation models to perform fossil collection.
 1. **ABM for evacuation plans**    
@@ -47,17 +47,17 @@ To get more information on this thesis topic, you can read the following papers:
 1. **Compiler support to intercept arbitrary memory accesses**    
    The goal of this thesis is to realize innovative compiler-assisted software modules to increment the efficiency of incremental state saving.
 1. **Hardware-Based Incremental State Saving**    
-   The goal of this thesis is to rely on modern-CPU hardware facilities to implement incremental state saving. See this supporting material for an additional framing of the topic: [1](theses/pmu.pdf) [2](theses/IBS.pdf).
+   The goal of this thesis is to rely on modern-CPU hardware facilities to implement incremental state saving. See this supporting material for an additional framing of the topic: [1](pmu.pdf) [2](IBS.pdf).
 
 ### Energy Efficiency
 
 Theses in this field tackle with the problem of identifying a suitable trade-off between performance and energy consumption. The body of work in this area targets methodologies and techniques to allow for an automatic identification of the power/energy/performance level which maximizes the overall efficiency of the application.
 
 To get more information on this thesis topic, you can read the following papers:
-[1](theses/energy0.pdf)
-[2](theses/energy1.pdf)
-[3](theses/energy2.pdf)
-[4](theses/energy3.pdf).
+[1](energy0.pdf)
+[2](energy1.pdf)
+[3](energy2.pdf)
+[4](energy3.pdf).
 
 1. **Daemon to manage consumption**    
    Define an interface for low-overhead power management of the system. Define masks to set P-state of multiple cores with a single system call. The daemon should communicate with non-root process to allow them to self-tune power without required superuser privilege. In addition to P-state, should also allow enabling or disabling SMT and turbo boost.
@@ -68,15 +68,15 @@ To get more information on this thesis topic, you can read the following papers:
 4. **Advanced exploration-based powercap**    
    Devising exploration strategies which are resilient to local maxima/minima to build prediction model of massively parallel p-state configurations.
 5. **Synthetic Benchmark Generation from real-world applications**    
-   The goal of this thesis is to generate a synthetic program starting from a real application, which has a very short duration but is meaningful from a workload point of view with respect to the original application. This generation shall be done using hardware performance counters. See this supporting material for an additional framing of the topic: [1](theses/pmu.pdf) [2](theses/IBS.pdf).
+   The goal of this thesis is to generate a synthetic program starting from a real application, which has a very short duration but is meaningful from a workload point of view with respect to the original application. This generation shall be done using hardware performance counters. See this supporting material for an additional framing of the topic: [1](pmu.pdf) [2](IBS.pdf).
 
 ### Non-Blocking Algorithms
 
 Non-blocking algorithms are a family of concurrent algorithms which enforce correctness by relying on fine-grain synchronization hardware instructions, globally termed Read-Modify-Write instructions. Theses in this family address the implementation of data structures which support a massive number of concurrent operations by relying on this form of fine-grain synchronization.
 
 To get more information on this thesis topic, you can read the following papers:
-[1](theses/waitfree1.pdf)
-[2](theses/waitfree2.pdf)
+[1](waitfree1.pdf)
+[2](waitfree2.pdf)
 
 1. **Locality-aware non-blocking priority queue**    
    The goal of this thesis is to design and implement a non-blocking priority queue which exhibits increased performance thanks to the exploitation of memory locality.
