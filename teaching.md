@@ -9,10 +9,10 @@ Office Hours
 
 Students office consulting is at Via Ariosto 25, room B120, according to the following schedule. Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
 
-* Thursday February 7, from 10.30 to 12.00
-* Wednesday February 20, from 15.00 to 16.30
-* Thursday March 7, from 15.00 to 16.30
 * Thursday March 21, from 15.00 to 16.30
+* Thursday April 4, from 10.00 to 11.30
+* Thursday April 18, from 15.30 to 17.00
+* Thursday May 2, from 10.00 to 11.30
 
 <span style="color: red; font-weight: bold;">
 </span>
