@@ -38,13 +38,13 @@ Service
 Program Committee Membership
 ----------------------------
 
-* 2017 - current: [WSC](http://informs-sim.org/), Winter Simulation Conference
+* 2019 - current: [Euro-Par](http://www.europar.org/), in the Parallel Programming Models Track.
+* 2019 - current: [AHPC](http://hpcs2019.cisedu.info/2-conference/workshops/workshop09-ahpc), International Workshop on Autonomic High Performance Computing–co-located with the International Conference on High Performance Computing & Simulation ([HPCS](http://hpcs2019.cisedu.info/))
 * 2017 - current: [SIGSIM PADS](http://www.acm-sigsim-pads.org/), ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
-* 2015 - current: [NCA](http://www.ieee-nca.org/), IEEE International Symposium on Network Computing and Applications
-* 2015 - current: DPDNS, IEEE Workshop on Dependable Parallel, Distributed and Network-Centric Systems
 * 2013 - current: [SIMULTECH](http://www.simultech.org/), International Conference on Simulation and Modeling Methodologies, Technologies and Applications
-
-
+* 2017 - 2018: [WSC](http://informs-sim.org/), Winter Simulation Conference
+* 2015 - 2017: [NCA](http://www.ieee-nca.org/), IEEE International Symposium on Network Computing and Applications
+* 2015 - 2017:  [DPDNS](http://www.iti.uni-luebeck.de/DPDNS16/), IEEE Workshop on Dependable Parallel, Distributed and Network-Centric Systems–co-located with the IEEE International Parallel & Distributed Processing Symposium ([IPDPS](http://www.ipdps.org/))
 
 Education
 ---------
@@ -52,7 +52,7 @@ Education
 |                                |             |
 |-------------------------------:|-------------|
 |                     **Dates:** | 2010 &rarr; 2013 |
-|       **Qualification Award:** | *PhD in Computer Engineering* &mdash; Mark: Outstanding |
+|       **Qualification Award:** | *PhD in Computer Engineering* &mdash; Mark: Outstanding (Laude, top 5%) |
 |                    **Thesis:** | [Techniques for Transparent Parallelization of Discrete Event Simulation Models]({{ site.url }}/pub/pellegrini-phd.pdf)|
 | **Name/Type of Organization:** | *Sapienza, University of Rome* |
 
