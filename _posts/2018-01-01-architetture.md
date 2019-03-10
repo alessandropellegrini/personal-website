@@ -16,6 +16,7 @@ La pagina principale del corso è
 Aggiornamenti
 -------------
 
+* Appello del 22/02/2019 - [Risultati]({{ local-url }}/2019-02-22-risultati.html).
 * Appello del 09/01/2019 - [Risultati]({{ local-url }}/2019-01-09-risultati.html).
 * Esonero del 10/12/2018 (aula 106, edificio ex poste) - [Risultati]({{ local-url }}/2018-12-10-risultati-esonero.html).
 
