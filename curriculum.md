@@ -38,11 +38,13 @@ Service
 Program Committee Membership
 ----------------------------
 
-* 2019 - current: [Euro-Par](http://www.europar.org/), in the Parallel Programming Models Track.
-* 2019 - current: [AHPC](http://hpcs2019.cisedu.info/2-conference/workshops/workshop09-ahpc), International Workshop on Autonomic High Performance Computing–co-located with the International Conference on High Performance Computing & Simulation ([HPCS](http://hpcs2019.cisedu.info/))
-* 2017 - current: [SIGSIM PADS](http://www.acm-sigsim-pads.org/), ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
-* 2013 - current: [SIMULTECH](http://www.simultech.org/), International Conference on Simulation and Modeling Methodologies, Technologies and Applications
-* 2017 - 2018: [WSC](http://informs-sim.org/), Winter Simulation Conference
+* 2020 - present: [ICPE](https://icpe2019.spec.org/),  in the Reproducibility Techincal Committee.
+* 2019 - present: [Euro-Par](http://www.europar.org/), in the Parallel Programming Models Track.
+* 2019 - present: [AHPC](http://hpcs2019.cisedu.info/2-conference/workshops/workshop09-ahpc), International Workshop on Autonomic High Performance Computing–co-located with the International Conference on High Performance Computing & Simulation ([HPCS](http://hpcs2019.cisedu.info/))
+* 2017 - present: [SIGSIM PADS](http://www.acm-sigsim-pads.org/), ACM SIGSIM Conference on Principles of Advanced Discrete Simulation
+* 2017 - present: [WSC](http://informs-sim.org/), Winter Simulation Conference
+* 2015 - present: [DS-RT](http://ds-rt.com/), IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications.
+* 2013 - present: [SIMULTECH](http://www.simultech.org/), International Conference on Simulation and Modeling Methodologies, Technologies and Applications
 * 2015 - 2017: [NCA](http://www.ieee-nca.org/), IEEE International Symposium on Network Computing and Applications
 * 2015 - 2017:  [DPDNS](http://www.iti.uni-luebeck.de/DPDNS16/), IEEE Workshop on Dependable Parallel, Distributed and Network-Centric Systems–co-located with the IEEE International Parallel & Distributed Processing Symposium ([IPDPS](http://www.ipdps.org/))
 
