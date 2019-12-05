@@ -142,17 +142,42 @@
 
 %%%%% Journal Articles %%%%%
 
+@article{Pell19b,
+	author = "Principe, Matteo and Tocci, Tommaso and Di Sanzo, Pierangelo and Quaglia, Francesco and Pellegrini, Alessandro",
+	title = "A Distributed Shared-Memory Middleware for Speculative Parallel Discrete Event Simulation",
+	journal = "ACM Transactions on Modeling and Computer Simulation",
+	series = {TOMACS},
+	year = "2019",
+	month = 12,
+	publisher = {ACM},
+	note = {To appear}
+}
+
+
+@article{DiS19,
+	author = "Di Sanzo, Pierangelo and Pellegrini, Alessandro and Sannicandro, Marco and Ciciani, Bruno and Quaglia, Francesco",
+	title = "Adaptive Model-based Scheduling in Software Transactional Memory",
+	journal = "IEEE Transactions on Computers",
+	series = {TC},
+	year = "2019",
+	month = 12,
+	issn = "0018-9340",
+	publisher = {IEEE},
+	doi = {10.1109/TC.2019.2954139}
+}
+
 @article{Pell19,
 	author = "Pellegrini, Alessandro and Quaglia, Francesco",
 	title = "Cross-State Events: a New Approach to Parallel Discrete Event Simulation and its Speculative Runtime Support",
 	journal = "Journal of Parallel and Distributed Computing",
 	series = {JPDC},
-	volume = "",
-	pages = "",
+	volume = "132",
+	pages = "48--68",
 	year = "2019",
+	month = 10,
 	issn = "0743-7315",
+	doi = {10.1016/j.jpdc.2019.05.003},
 	publisher = {Elsevier},
-	note = {To appear}
 }
 
 @article{Ian18c,
@@ -162,7 +187,8 @@
 	series = {TPDS},
 	volume = "30",
 	pages = "286--299",
-	year = "2018",
+	year = "2019",
+	month = 2,
 	issn = "1045-9219",
 	publisher = {IEEE},
 	doi = {10.1109/TPDS.2018.2865932}
@@ -906,6 +932,18 @@
 %%%%% Conference Proceedings %%%%%
 
 
+@INPROCEEDINGS{Car19,
+	author = {Carnà, Stefano and Ferracci, Serena and De Santis, Emanuele and Pellegrini, Alessandro and Quaglia, Francesco},
+	title = {Hardware-assisted Incremental Checkpointing in Speculative Parallel Discrete Event Simulation},
+	booktitle = {Proceedings of the 2019 Winter Simulation Conference},
+	series = {WSC},
+	year = {2019},
+	month = dec,
+	publisher = {ACM},
+	location = {Washington, DC, USA},
+	note = {To appear}
+}
+
 @INPROCEEDINGS{Pic19,
 	author = {Piccione, Andrea and Principe, Matteo and Pellegrini, Alessandro and Quaglia, Francesco},
 	title = {An Agent-Based Simulation API for Speculative PDES Runtime Environments},
@@ -913,9 +951,10 @@
 	series = {PADS},
 	year = {2019},
 	month = jun,
+	pages = {83--94},
 	publisher = {ACM},
 	location = {Chicago, IL, USA},
-	note = {To appear}
+	doi = {10.1145/3316480.3322890}
 }
 
 @INPROCEEDINGS{Mar19,
@@ -925,9 +964,10 @@
 	series = {CCGrid},
 	year = {2019},
 	month = may,
+	pages = {11--20},
 	publisher = {IEEE Computer Society},
 	location = {Larnaca, Cyprus},
-	note = {To appear}
+	doi = {10.1109/CCGRID.2019.00011}
 }
 
 @INPROCEEDINGS{Eco18,
@@ -935,10 +975,12 @@
 	title = {Model-based Proactive Read-validation in Transaction Processing Systems},
 	booktitle = {Proceedings of the 24th International Conference on Parallel and Distributed Systems},
 	series = {ICPADS},
+	pages = {481--488},
 	year = {2018},
 	month = dec,
 	publisher = {IEEE Computer Society},
 	location = {Singapore},
+	doi = {10.1109/PADSW.2018.8644605}
 }
 
 @INPROCEEDINGS{Ian18b,
@@ -948,8 +990,10 @@
 	series = {WSC},
 	year = {2018},
 	month = dec,
+	pages = {1969--1980},
 	publisher = {IEEE Computer Society},
 	location = {Gothenburg, Sweden},
+	doi = {10.1109/WSC.2018.8632301}
 }
 
 @INPROCEEDINGS{Mar18,
@@ -971,9 +1015,11 @@
 	booktitle = {Proceedings of the 2018 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
 	series = {PADS},
 	year = {2018},
+	pages = {73--84},
 	month = may,
 	publisher = {ACM},
 	location = {Rome, Italy},
+	doi = {10.1145/3200921.3200931}
 }
 
 @INPROCEEDINGS{Con18b,
@@ -981,23 +1027,26 @@
 	title = {A Power Cap Oriented Time Warp Architecture},
 	booktitle = {Proceedings of the 2018 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
 	series = {PADS},
+	pages = {97--100},
 	year = {2018},
 	month = may,
 	publisher = {ACM},
 	location = {Rome, Italy},
+	doi = {10.1145/3200921.3200930}
 }
 
 
 @INPROCEEDINGS{Pri18,
-	author = {Principe, Matteo and Tocci, Tommaso and Pellegrini,
-		Alessandro and Quaglia, Francesco},
+	author = {Principe, Matteo and Tocci, Tommaso and Pellegrini, Alessandro and Quaglia, Francesco},
 	title = {Porting Event \& Cross-State Synchronization to the Cloud},
 	booktitle = {Proceedings of the 2018 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
 	series = {PADS},
 	year = {2018},
+	pages = {177--188},
 	month = may,
 	publisher = {ACM},
 	location = {Rome, Italy},
+	doi = {10.1145/3200921.3200929},
 	note = {Candidate for (but not winner of) the Best Paper Award},
 }
 
@@ -1020,6 +1069,7 @@
 	pages = {114--119},
 	publisher = {IEEE Computer Society},
 	location = {Cambridge, MA, USA},
+	doi = {10.1109/NCA.2017.8171349}
 }
 
 @INPROCEEDINGS{Avr17,
@@ -1032,6 +1082,7 @@
 	pages = {114--119},
 	publisher = {IEEE Computer Society},
 	location = {Cambridge, MA, USA},
+	doi = {10.1109/NCA.2017.8171352}
 }
 
 @INPROCEEDINGS{Toc17,
@@ -1039,10 +1090,12 @@
 	title = {ORCHESTRA: An Asynchronous Wait-Free Distributed GVT Algorithm},
 	booktitle = {Proceedings of the 21st IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
 	series = {DS-RT},
+	pages = {51--58},
 	year = {2017},
 	month = oct,
 	publisher = {IEEE Computer Society},
 	location = {Rome, Italy},
+	doi = {10.1109/DISTRA.2017.8167666}
 }
 
 @INPROCEEDINGS{Ian17c,
@@ -1050,11 +1103,13 @@
 	title = {Towards a Fully Non-blocking Share-everything PDES Platform},
 	booktitle = {Proceedings of the 21st IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
 	series = {DS-RT},
+	pages = {25--32},
 	year = {2017},
 	month = oct,
 	publisher = {IEEE Computer Society},
 	location = {Rome, Italy},
-	name = {ds-rt17c}
+	name = {ds-rt17c},
+	doi = {10.1109/DISTRA.2017.8167663}
 }
 
 @INPROCEEDINGS{Ian17b,
@@ -1062,12 +1117,14 @@
 	title = {A Non-blocking Global Virtual Time Algorithm with Logarithmic Number of Memory Operations},
 	booktitle = {Proceedings of the 21st IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
 	series = {DS-RT},
+	pages = {17--24},
 	year = {2017},
 	month = oct,
 	publisher = {IEEE Computer Society},
 	location = {Rome, Italy},
 	note = {Candidate for (but not winner of) the Best Paper Award},
-	name = {ds-rt17b}
+	name = {ds-rt17b},
+	doi = {10.1109/DISTRA.2017.8167662}
 }
 
 @INPROCEEDINGS{Ian17,
@@ -1075,10 +1132,12 @@
 	title = {A Wait-free Multi-word Atomic (1,N) Register for Large-scale Data Sharing on Multi-core Machines},
 	booktitle = {Proceedings of the 2017 IEEE Cluster Conference},
 	series = {CLUSTER},
+	pages = {188--192},
 	year = {2017},
 	month = sep,
 	publisher = {IEEE Computer Society},
 	location = {Honolulu, HI, USA},
+	doi = {10.1109/CLUSTER.2017.84}
 }
 
 @INPROCEEDINGS{Cin17,
@@ -1098,10 +1157,12 @@
 	title = {A Conflict-Resilient Lock-Free Calendar Queue for Scalable Share-Everything PDES Platforms},
 	booktitle = {Proceedings of the 2017 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
 	series = {PADS},
+	pages = {41--52},
 	year = {2017},
 	month = may,
 	publisher = {ACM},
 	location = {Singapore},
+	doi = {10.1145/3064911.3064927}
 }
 
 @INPROCEEDINGS{Sil17,
@@ -1267,7 +1328,7 @@
 
 @INPROCEEDINGS{San15,
 	author = {Santini, Emanuele and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
-	title = {HTM Based Speculative Parallel Discrete Event Simulation of Very Fine Grain Models},
+	title = {Hardware-Transactional-Memory Based Speculative Parallel Discrete Event Simulation of Very Fine Grain Models},
 	booktitle = {Proceedings of the 22nd International Conference on High Performance Computing},
 	series = {HiPC},
 	year = {2015},
@@ -1623,6 +1684,18 @@
 
 
 %%%%% Talks %%%%%
+
+
+@UNPUBLISHED{Mar19b,
+  author    = {Marotta Romolo and Tiriticco Davide and Di~Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
+  title     = {Mutable Locks: Combining the Best of Spin and Sleep Locks},
+  journal   = {CoRR},
+  volume    = {abs/1906.00490},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1707.07478},
+  archivePrefix = {arXiv},
+  eprint    = {1707.07478},
+}
 
 @techreport{Pri17,
 	author = {Principe, Matteo and Pellegrini, Alessandro and Quaglia, Francesco and Ciciani, Bruno},

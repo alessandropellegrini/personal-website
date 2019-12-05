@@ -16,6 +16,8 @@ La pagina principale del corso è
 Aggiornamenti
 -------------
 
+* Appello del 10/2019 - [Risultati]({{ local-url }}/2019-10-xx-risultati.html).
+* Appello del 19/09/2019 - [Risultati]({{ local-url }}/2019-09-19-risultati.html).
 * Appello del 03/07/2019 - [Risultati]({{ local-url }}/2019-07-03-risultati.html).
 * Appello del 06/06/2019 - [Risultati]({{ local-url }}/2019-06-06-risultati.html).
 * Appello del 20/03/2019 - [Risultati]({{ local-url }}/2019-03-20-risultati.html).

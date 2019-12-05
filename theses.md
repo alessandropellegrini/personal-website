@@ -36,8 +36,6 @@ To get more information on this thesis topic, you can read the following papers:
 [5](timewarp5.pdf)
 [6](timewarp6.pdf).
 
-1. **Asymmetric Time Warp**    
-   This thesis addresses the implementation of an asymmetric multithreaded runtime environment to support PDES. In the asymmetric approach, different threads carry out different activities, in order to maximise performance and minimise energy consumption. An analytical model shall determine, at runtime, every thread of the system what incarnation has, for a part of the lifetime of the application.
 1. **NUMA Aware Load-Sharing Policy**    
    In this thesis, a decision-making module should be designed and implemented. The goal is to determine, at runtime, the best-suited placement for LPs, worker threads, and memory pages in a NUMA architecture. See this supporting material for an additional framing of the topic: [1](numa.pdf).
 1. **Model-related fossil collection**    
@@ -46,8 +44,6 @@ To get more information on this thesis topic, you can read the following papers:
    The goal of this thesis is the implementation of an ABM model to study the emergent behavior of people during the evacuation of a building.
 1. **Compiler support to intercept arbitrary memory accesses**    
    The goal of this thesis is to realize innovative compiler-assisted software modules to increment the efficiency of incremental state saving.
-1. **Hardware-Based Incremental State Saving**    
-   The goal of this thesis is to rely on modern-CPU hardware facilities to implement incremental state saving. See this supporting material for an additional framing of the topic: [1](pmu.pdf) [2](IBS.pdf).
 
 ### Energy Efficiency
 
@@ -100,7 +96,5 @@ Heterogeneous architectures are computer architecture in which there are several
 
 1. **`Unveil()`**    
    Design and implementation of a BSD `unveil()`-like system to support mandatory filesystem access.
-1. **~~Meltdown/Spectre Disclosure using Hardware Support~~ `[assigned]`**     
-   Implementation of a hardware-based detection system for Meltdown/Spectre attacks.
 1. **Security against Malicious Loadable Kernel Modules**    
    Design and implementation of a set of patches to protect the Linux kernel from malicious modules.
