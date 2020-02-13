@@ -1,73 +1,61 @@
----
----
 <!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Alessandro Pellegrini - {{ page.title }}</title>
-      <meta name="viewport" content="width=device-width">
-      <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Alessandro Pellegrini - {{ page.title }}</title>
 
-      <!-- Google Fonts -->
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-      {% if page.title == "Research & Publications" %}
-      <link rel="stylesheet" href="{{ site.url }}/css/jquery-ui.css">
-      <script src="{{ site.url }}/scripts/jquery-1.12.4.js"></script>
-      <script src="{{ site.url }}/scripts/jquery-ui.js"></script>
-      <script src="{{ site.url }}/scripts/publications.js"></script>
-      <script></script>
-      {% endif %}
-  </head>
-  <body>
-    <div class="site">
-      <div class="sidebar" id="sidebar">
-        <div class="header">
-		<h1 class="title"><a href="{{ site.url }}"><img id="logo" src="{{ site.url }}/images/logo.jpg"></a></h1>
-          <span class="tagline">Alessandro Pellegrini</span>
-        </div>
-        <div class="posts">
-          <ul class="posts-list">
-            {% for p in site.pages %}{% if p.title %}<li><a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></li>
-            {% endif %}{% endfor %}
-          </ul>
-        </div>
-        <div class="footer">
-          <span id="footer-links">
-            <a href="https://github.com/alessandropellegrini" class="footer-link" target="_blank">GitHub</a>
-          </span>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500&display=swap" rel="stylesheet">
+  <link href="{{ site.url }}/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ site.url }}/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  {% if page.title == "Research & Publications" %}
+  <link rel="stylesheet" href="{{ site.url }}/css/jquery-ui.css">
+  {% endif %}
+</head>
+<body>
+	
+  <nav class="blue-grey lighten-2 pull-front" role="navigation">
+    <div class="nav-extended container">
+      <a href="{{ site.url }}"><span class="brand-logo">Alessandro Pellegrini, PhD</span></a>
+      <ul id="nav-mobile" class="sidenav">
+        {% for p in site.pages %}{% if p.title %}<li><a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="row flex">
+      <div class="col l3 xl2 blue-grey lighten-4 hide-on-med-and-down">
+	<div class="container center-align">
+	   <h1 class="title"><a href="{{ site.url }}"><img class="responsive-img circle" src="{{ site.url }}/images/logo.jpg" /></a></h1>
+           {% for p in site.pages %}{% if p.title %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
+           {% endif %}{% endfor %}
         </div>
       </div>
-      <div class="content" id="home">
-        <div id="sidebar-button">
-		<img src="{{ site.url }}/images/sidebar-button.png">
-        </div>
-        <div id="post-info">
-	  <!-- Header Iniziale -->
-	  <div id="header">
-		<div id="sapienza"><img src="{{ site.url }}/images/sapienza.png" alt="Sapienza Università di Roma" /></div>
-		<div id="myinfo">
-			<h1>Alessandro Pellegrini, PhD</h1>
-			<h2>Research Fellow</h2>
-			<h3>Dipartimento di Ingegneria Informatica, Automatica e Gestionale</h3>
-			<h3>Sapienza, Universit&agrave; di Roma</h3>
-		</div>
-	  </div>
-	  <!-- Fine Header Iniziale -->
-        </div>
-        <div class="post">
+      <div class="col s12 l9 xl10 grey lighten-4">
+	<div class="container flow-text">
             <h1>{{ page.title }}</h1>
-          {{ content }}
-        </div>
-        <div class="colophon">
-          <p>
-	  <span>Copyright &copy; 2010&ndash;{{ 'now' | date: "%Y" }} &bull; All rights reserved</span><br/>
-	  <span>Last Update: {{ 'now' | date_to_string }}</span>
-          </p>
+            {{ content }}
         </div>
       </div>
     </div>
-	<script src="{{ site.url }}/scripts/responsive.js" type="text/javascript"></script>
+  <footer class="page-footer blue-grey lighten-3 center-align">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright &copy; 2010&ndash;{{ 'now' | date: "%Y" }} &bull; All rights reserved</span><br/>
+	<span>Last Update: {{ 'now' | date_to_string }}</span>
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ site.url }}/js/materialize.js"></script>
+  <script src="{{ site.url }}/js/init.js"></script>
+  {% if page.title == "Research & Publications" %}
+  <script src="{{ site.url }}/js/jquery-ui.js"></script>
+  <script src="{{ site.url }}/js/publications.js"></script>
+  {% endif %}
   </body>
 </html>
