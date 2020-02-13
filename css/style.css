@@ -1,0 +1,53 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin-bottom: 0px;
+}
+
+.pull-front {
+  z-index: 1;
+  position: relative;
+}
+
+ul:not(.browser-default) {
+  padding-left: 30px;
+}
+
+ul:not(.browser-default) li {
+  list-style-type: disc;
+}
+
+.sidenav > ul {
+  padding-left: 0px !important;
+}
+
+label {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.page-footer .footer-copyright {
+  color: #424242;
+}
+
+.sidenav-overlay {
+  z-index: 0;
+}
+
+.book, .incollection, .article, .inproceedings, .other {
+  margin-bottom: 30px;
+}
+
+nav .brand-logo {
+    font-size: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+  nav .brand-logo {
+    font-size: 2.1rem;
+  }
+}

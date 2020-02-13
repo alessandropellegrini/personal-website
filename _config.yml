@@ -8,9 +8,6 @@ url: "https://www.diag.uniroma1.it/~pellegrini"
 # Blog posts map to courses
 permalink: /didattica/:year/:title.html
 
-sass:
-  style: compressed
-
 # For publications
 plugins: ['jekyll/scholar']
 scholar:
@@ -23,5 +20,6 @@ scholar:
   group_order: descending
   repository: publications
   bibliography_template: bibliography
-  bibliography_list_tag: ul
+  bibliography_list_tag: div
+  bibliography_item_tag: span
   reference_tagname: 

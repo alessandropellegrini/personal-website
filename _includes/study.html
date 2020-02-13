@@ -1,0 +1,26 @@
+<div class="card-panel">
+  <div class="row valign-wrapper">
+    <div class="col s3 right-align"><strong>Dates</strong>:</div>
+    <div class="col s9">{{ include.dates }}</div>
+  </div>
+  <div class="row valign-wrapper">
+    <div class="col s3 right-align"><strong>Qualification Awarded</strong>:</div>
+    <div class="col s9">{{ include.qualification }}</div>
+  </div>
+{%- if include.thesis -%}
+  <div class="row valign-wrapper">
+    <div class="col s3 right-align"><strong>Thesis</strong>:</div>
+    <div class="col s9"><a href="{{ site.url }}/{{ include.thesis_link }}">{{ include.thesis }}</a></div>
+  </div>
+{%- endif -%}
+{%- if include.subjects -%}
+  <div class="row valign-wrapper">
+    <div class="col s3 right-align"><strong>Principal Subjects</strong>:</div>
+    <div class="col s9">{{ include.subjects }}</div>
+  </div>
+{%- endif -%}
+  <div class="row valign-wrapper">
+    <div class="col s3 right-align"><strong>Name/Type of Organization</strong>:</div>
+    <div class="col s9"><em>{{ include.organization }}</em></div>
+  </div>
+</div>

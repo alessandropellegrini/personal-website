@@ -14,10 +14,6 @@ Students office consulting is at:
 
 according to the following schedule:
 
-* [T] Monday January 27 2020,  15.00 - 16.30
-* [S] Tuesday January 28 2020,  11.00 - 12.30
-* [T] Tuesday February 4 2020, 11.00 - 12.30
-* [S] Tuesday February 11 2020, 11.00 - 12.30
 * [T] Monday February 17 2020, 11.00 - 12.30
 * [S] Thursday February 27 2020, 11.00 - 12.30
 
