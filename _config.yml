@@ -24,5 +24,4 @@ scholar:
   repository: publications
   bibliography_template: bibliography
   bibliography_list_tag: ul
-  use_raw_bibtex_entry: true
   reference_tagname: 

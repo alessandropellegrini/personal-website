@@ -7,10 +7,21 @@ permalink: /teaching/
 Office Hours
 ------------
 
-Students office consulting is at Via Ariosto 25, room B120, according to the following schedule. Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
+Students office consulting is at:
 
-* Tuesday October 15, from 11.30 to 13.00
-* Tuesday October 29, from 11.30 to 13.00
+* Sapienza [S]: at Via Ariosto 25, room B120
+* Tor Vergata [T]: at Viale del Politecnico, room A1-05
+
+according to the following schedule:
+
+* [T] Monday January 27 2020,  15.00 - 16.30
+* [S] Tuesday January 28 2020,  11.00 - 12.30
+* [T] Tuesday February 4 2020, 11.00 - 12.30
+* [S] Tuesday February 11 2020, 11.00 - 12.30
+* [T] Monday February 17 2020, 11.00 - 12.30
+* [S] Thursday February 27 2020, 11.00 - 12.30
+
+Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
 
 <span style="color: red; font-weight: bold;">
 </span>

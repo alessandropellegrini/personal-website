@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Risultati Challenge1: Hexadoku
+## Risultati Challenge 1: Hexadoku
 
 ### Il problema
 
