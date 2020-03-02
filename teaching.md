@@ -14,7 +14,6 @@ Students office consulting is at:
 
 according to the following schedule:
 
-* [T] Monday February 17 2020, 11.00 - 12.30
 * [S] Thursday February 27 2020, 11.00 - 12.30
 
 Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
