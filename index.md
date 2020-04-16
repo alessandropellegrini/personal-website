@@ -5,8 +5,7 @@ layout: default
 General Information
 ===================
 
-I'm a Postdoctoral Researcher at the Department of Computer Science and System Engineering at "Sapienza" - University of Rome.
-I'm member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group.<br/>
+I'm a Postdoctoral Researcher at the Institute of Systems Analysis and Informatics (IASI) at the National Research Council (CNR), in the Software and Knowledge-Based Systems research group.<br/>I'm also member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group.<br/>
 
 
 <div class="valign-wrapper">
