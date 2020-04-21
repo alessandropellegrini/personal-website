@@ -1,4 +1,5 @@
 % Encoding: UTF-8
+
 %%%%% Books %%%%%
 
 @Book{Cin17c,
@@ -1868,6 +1869,28 @@ In this work we propose generally-applicable design principles for a new memory 
 
 %%%%% Talks %%%%%
 
+@TechReport{Pell20b,
+  author   = {Pellegrini, Alessandro and Quaglia, Francesco},
+  title    = {On the Relevance of Wait-free Coordination Algorithms in Shared-Memory HPC: The Global Virtual Time Case},
+  year     = {2020},
+  month    = apr,
+  note     = {Workshop di Informatica Quantitativa (InfQ) 2014},
+  abstract = {High-performance computing on shared-memory/multi-core architectures could suffer from non-negligible performance bottlenecks due to coordination algorithms, which are nevertheless necessary to ensure the overall correctness and/or to support the execution of housekeeping operations, e.g. to recover computing resources (e.g., memory). Although more complex in design/development, a paradigm switch from classical coordination algorithms to 
+wait-free ones could significantly boost the performance of HPC applications.
+
+In this paper we explore the relevance of this paradigm shift in shared-memory architectures, by focusing on the context of Parallel Discrete Event Simulation, where the Global Virtual Time (GVT) represents a fundamental coordination algorithm. It allows to compute the lower bound on the value  of the logical time passed through by all the entities participating in a parallel/distributed computation.  Hence it can be used to discriminate what events belong to the past history of the computation---thus being considered as committed---and allowing for memory recovery (e.g. of obsolete  logs that were taken in order to support state recoverability) and non-revokable operations (e.g. I/O). 
+
+We compare the reference (blocking) algorithm for shared memory, the one proposed by by Fujimoto and Hybinette \cite{Fuj97}, with an innovative wait-free implementation, emphasizing on what design choices must be made to enforce this paradigm shift, and what are the performance implications of removing critical sections in coordination algorithms.},
+  journal  = {CoRR},
+  archiveprefix = {arXiv},
+  eprint        = {2004.10033},
+  journal       = {CoRR},
+  url           = {http://arxiv.org/abs/2004.10033},
+  volume        = {abs/2004.10033},
+  location = {Torino, Italy},
+  series   = {InfQ 2014},
+}
+
 @TechReport{Pell20,
   author   = {Pellegrini, Alessandro},
   title    = {Reproducibility Report for the Paper: Modeling of Request Cloning in Cloud Server Systems using Processor Sharing},
@@ -1911,23 +1934,6 @@ the high quality of the artifact, also the Artifacts Evaluated—Reusable badge 
   journal       = {CoRR},
   url           = {http://arxiv.org/abs/1707.07478},
   volume        = {abs/1707.07478},
-}
-
-@TechReport{Pell20b,
-  author   = {Pellegrini, Alessandro and Quaglia, Francesco},
-  title    = {On the Relevance of Wait-free Coordination Algorithms in Shared-Memory HPC: The Global Virtual Time Case},
-  year     = {2020},
-  month    = apr,
-  note     = {Workshop di Informatica Quantitativa (InfQ) 2014},
-  abstract = {High-performance computing on shared-memory/multi-core architectures could suffer from non-negligible performance bottlenecks due to coordination algorithms, which are nevertheless necessary to ensure the overall correctness and/or to support the execution of housekeeping operations, e.g. to recover computing resources (e.g., memory). Although more complex in design/development, a paradigm switch from classical coordination algorithms to 
-wait-free ones could significantly boost the performance of HPC applications.
-
-In this paper we explore the relevance of this paradigm shift in shared-memory architectures, by focusing on the context of Parallel Discrete Event Simulation, where the Global Virtual Time (GVT) represents a fundamental coordination algorithm. It allows to compute the lower bound on the value  of the logical time passed through by all the entities participating in a parallel/distributed computation.  Hence it can be used to discriminate what events belong to the past history of the computation---thus being considered as committed---and allowing for memory recovery (e.g. of obsolete  logs that were taken in order to support state recoverability) and non-revokable operations (e.g. I/O). 
-
-We compare the reference (blocking) algorithm for shared memory, the one proposed by by Fujimoto and Hybinette \cite{Fuj97}, with an innovative wait-free implementation, emphasizing on what design choices must be made to enforce this paradigm shift, and what are the performance implications of removing critical sections in coordination algorithms.},
-  journal  = {CoRR},
-  location = {Torino, Italy},
-  series   = {InfQ 2014},
 }
 
 @Unpublished{Rug14b,
@@ -2524,5 +2530,3 @@ As we will show, some of the building blocks underlying the previous fault toler
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
-
-@Comment{jabref-meta: fileDirectoryLatex-pellegrini-X1:/home/pellegrini/MEGA/Archivio Pubblicazioni;}
