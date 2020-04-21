@@ -73,6 +73,10 @@ best paper awards.
 <span style="color:red">Winner of the Best Paper Award</span>
 {%- endif -%}
 
+{%- if entry.type == "phdthesis" or entry.type == "bathesis" or entry.type == "mathesis" -%}
+<br/>{{ entry.comment }}
+{%- endif -%}
+
 {%- comment -%}
 This closes the <div> used by javascript to hide entries on demand
 {%- endcomment -%}
