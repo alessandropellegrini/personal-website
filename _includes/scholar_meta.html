@@ -33,7 +33,7 @@ This is the onyl reason why I am actually generating these pages...
 	{% endif -%}
 	{% if page.entry.issn %}<meta name="citation_issn" content="{{ page.entry.issn }}">{% endif %}
 	{%- if page.entry.pages -%}
-		{%- assign pps = page.entry.pages | split: '--' %}
+		{%- assign pps = page.entry.pages | split: '–' %}
 		<meta name="citation_firstpage" content="{{ pps[0] }}">
 		<meta name="citation_lastpage" content="{{ pps[1] }}">
 	{% endif -%}
