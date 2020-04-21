@@ -14,7 +14,7 @@ This is the onyl reason why I am actually generating these pages...
 	{% endfor -%}
 	<meta name="citation_date" content="{{ page.entry.year }}">
 	<meta name="dc.date" content="{{ page.entry.year }}">
-	{% if page.links.pdf %}<meta name="citation_pdf_url" content="{{ site.url }}{{ page.links.pdf }}.pdf">{% endif %}
+	{% if page.links.pdf %}<meta name="citation_pdf_url" content="{{ site.url }}{{ page.links.pdf }}">{% endif %}
 	{%- if page.entry.type == "article" -%}
 		<meta name="citation_journal_title" content="{{ page.entry.journal }}">
 		<meta name="dc.source" content="{{ page.entry.journal }}">

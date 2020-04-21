@@ -16,7 +16,7 @@ collections:
 plugins: 
   - jekyll-scholar
   - jekyll-sitemap
-  - jekyll-contentblocks
+  - jekyll-regex-replace
 scholar:
   style: _layouts/custom.csl
   source: ./
@@ -27,9 +27,9 @@ scholar:
   group_order: descending
   details_dir: publications
   details_layout: bibpage.html
-  details_link: Abstract
+  details_link: DetailsToRemove
   repository: publications
   bibliography_template: bibliography
   bibliography_list_tag: div
-  bibliography_item_tag: span
+  bibliography_item_tag: div
   reference_tagname: 

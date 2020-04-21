@@ -27,7 +27,7 @@ title: page.entry.title
 {{ venue }}<br/>
 {%- if page.links.pdf %}
 <img alt="pdf" src="{{ site.url }}/images/pdf.png"/>
-<a href="{{ page.links.pdf }}">Download PDF</a>
+<a href="{{ site.url }}{{ page.links.pdf }}">Download PDF</a>
 {% endif -%}
 </p>
 

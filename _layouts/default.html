@@ -21,7 +21,7 @@
     <div class="nav-extended container">
       <a href="{{ site.url }}"><span class="brand-logo">Alessandro&nbsp;Pellegrini<small><em>,&nbsp;PhD</em></small></span></a>
       <ul id="nav-mobile" class="sidenav">
-        {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
+        {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a><br/>
         {% endfor %}
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -31,14 +31,14 @@
       <div class="col l3 xl2 blue-grey lighten-4 hide-on-med-and-down">
 	<div class="container center-align">
 	   <h1 class="title"><a href="{{ site.url }}"><img class="responsive-img circle" src="{{ site.url }}/images/logo.jpg" /></a></h1>
-           {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
+           {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a><br/>
            {% endfor %}
         </div>
       </div>
       <div class="col s12 l9 xl10 grey lighten-4">
 	<div class="container flow-text">
             <h1>{{ page.title }}</h1>
-            {{ content }}
+            {{ content | regex_replace: '\<a class\="details" href\="\/publications\/.*\.html"\>DetailsToRemove\<\/a\>', '' }}
         </div>
       </div>
     </div>
