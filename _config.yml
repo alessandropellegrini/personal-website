@@ -8,9 +8,15 @@ url: "https://www.diag.uniroma1.it/~pellegrini"
 # Blog posts map to courses
 permalink: /didattica/:year/:title.html
 
+# Static pages (to reduce generation time for abstracts of papers)
+collections:
+  main_pages:
+    output: true
+
 plugins: 
-  - jekyll/scholar
+  - jekyll-scholar
   - jekyll-sitemap
+  - jekyll-contentblocks
 scholar:
   style: _layouts/custom.csl
   source: ./
@@ -19,6 +25,9 @@ scholar:
   order: descending
   group_by: year
   group_order: descending
+  details_dir: publications
+  details_layout: bibpage.html
+  details_link: Abstract
   repository: publications
   bibliography_template: bibliography
   bibliography_list_tag: div

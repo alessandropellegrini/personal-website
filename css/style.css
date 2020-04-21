@@ -2,6 +2,10 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+.details {
+  display: none;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +43,7 @@ label {
   z-index: 0;
 }
 
-.book, .incollection, .article, .inproceedings, .other {
+.book, .incollection, .article, .inproceedings, .thesis, .other {
   margin-bottom: 30px;
 }
 

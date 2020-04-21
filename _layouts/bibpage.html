@@ -1,0 +1,42 @@
+---
+layout: default
+title: page.entry.title
+---
+
+{%- if page.entry.type == "incollection" -%}
+	{% capture venue %}<em>Published in:</em> {{page.entry.booktitle}}&mdash;{{page.entry.publisher}},{{page.entry.year}}{% endcapture %}
+{%- endif -%}
+{%- if page.entry.type == "article" -%}
+	{% capture venue %}<em>Published in:</em> {{page.entry.journal}}, {{page.entry.year}}{% endcapture %}
+{%- endif -%}
+{%- if page.entry.type == "inproceedings" -%}
+	{% capture venue %}<em>Published in:</em> {{page.entry.booktitle}}{% endcapture %}
+{%- endif -%}
+{%- if page.entry.type == "book" -%}
+	{% capture venue %}<em>Publisher:</em> {{author.first}} {{author.last}}{% endcapture %}
+{%- endif -%}
+
+
+{%- assign authors = "" | split: ',' %}
+{% for author in page.entry.author_array -%}
+	{% capture auth %}{{author.first}} {{author.last}}{% endcapture %}
+	{% assign authors = authors | push: auth %}
+{%- endfor -%}
+
+<p><h3>{{ authors | array_to_sentence_string }}</h3><br/>
+{{ venue }}<br/>
+{%- if page.links.pdf %}
+<img alt="pdf" src="{{ site.url }}/images/pdf.png"/>
+<a href="{{ page.links.pdf }}">Download PDF</a>
+{% endif -%}
+</p>
+
+<p><em>Abstract:</em><br/>
+{{ page.entry.abstract | newline_to_br }}
+</p>
+
+<p><em>BibTeX Entry:</em><br/>
+<div class="card-panel">
+{{ page.entry.bibtex | newline_to_br }}
+</div>
+</p>

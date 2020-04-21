@@ -98,3 +98,12 @@ Heterogeneous architectures are computer architecture in which there are several
    Design and implementation of a BSD `unveil()`-like system to support mandatory filesystem access.
 1. **Security against Malicious Loadable Kernel Modules**    
    Design and implementation of a set of patches to protect the Linux kernel from malicious modules.
+
+
+
+## Theses Archive
+
+Below, you can find a list of Bachelor's (a selection), Master's, and PhD thesis which I have been involved in supervising, or which belong to my research group. They could serve as an indication of the kind of work which is carried out by my research group.
+
+{% bibliography -q @mastersthesis @phdthesis %}
+

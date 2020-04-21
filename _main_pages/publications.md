@@ -2,7 +2,6 @@
 layout: default
 title: Research & Publications
 permalink: /publications/
-inproceedings: 0
 ---
 
 
