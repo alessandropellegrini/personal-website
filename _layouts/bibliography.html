@@ -5,27 +5,29 @@ This initial part is used to display coloured blocks, citation count,
 and to embed everything in a <div> that javascript can then show and
 hide on demand.
 {%- endcomment -%}
+
 {%- if entry.type == "book" -%}
 <div class="book">
 <img src="{{ site.url }}/images/book-box.png"/> [b<span class="b-counter"></span>] 
-{%- endif -%}
-
-{%- if entry.type == "incollection" -%}
+{%- elsif entry.type == "incollection" -%}
 <div class="incollection">
 <img src="{{ site.url }}/images/incollection-box.png"/> [p<span class="p-counter"></span>] 
-{%- endif -%}
-
-{%- if entry.type == "article" -%}
+{%- elsif entry.type == "article" -%}
 <div class="article">
 <img src="{{ site.url }}/images/article-box.png"/> [j<span class="j-counter"></span>] 
-{%- endif -%}
-
-{%- if entry.type == "inproceedings" -%}
+{%- elsif entry.type == "inproceedings" -%}
 <div class="inproceedings">
 <img src="{{ site.url }}/images/inproceedings-box.png"/> [c<span class="c-counter"></span>]
-{%- endif -%}
-
-{%- if entry.type != "book" and entry.type != "incollection" and entry.type != "article" and entry.type != "inproceedings" -%}
+{%- elsif entry.type == "phdthesis" -%}
+<div class="thesis">
+<strong>[PhD Thesis]</strong>
+{%- elsif entry.type == "bathesis" -%}
+<div class="thesis">
+<strong>[BSc Thesis]</strong>
+{%- elsif entry.type == "mathesis" -%}
+<div class="thesis">
+<strong>[MSc Thesis]</strong>
+{%- else -%}
 <div class="other">
 <img src="{{ site.url }}/images/informal-box.png"/> [i<span class="i-counter"></span>] 
 {%- endif -%}
@@ -51,6 +53,10 @@ best paper awards.
 
 [<a href="javascript:bibtex('{{ entry.key }}')">Bibtex</a>]
 
+{%- if entry.abstract %}
+[{% cite_details key %}]
+{%- endif -%}
+
 <div class="dialog" id="{{ entry.key }}" title="BibTeX" style="display:none" >
   <pre>{{ entry.bibtex }}</pre>
 </div>
@@ -67,7 +73,9 @@ best paper awards.
 <span style="color:red">Winner of the Best Paper Award</span>
 {%- endif -%}
 
-
+{%- if entry.type == "phdthesis" or entry.type == "bathesis" or entry.type == "mathesis" -%}
+<br/>{{ entry.comment }}
+{%- endif -%}
 
 {%- comment -%}
 This closes the <div> used by javascript to hide entries on demand

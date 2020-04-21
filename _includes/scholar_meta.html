@@ -1,0 +1,51 @@
+{%- comment -%}
+Google Scholar citation tags.
+This is the onyl reason why I am actually generating these pages...
+{%- endcomment %}
+
+
+{%- if page.entry -%}
+	<meta name="citation_title" content="{{ page.entry.title }}">
+	<meta name="dc.title" content="{{ page.entry.title }}">
+	<meta name="dc.type" content="Text">
+	{% for author in page.entry.author_array -%}
+	<meta name="citation_author" content="{{ author.first }} {{ author.last }}">
+	<meta name="dc.creator" content="{{ author.first }} {{ author.last }}">
+	{% endfor -%}
+	<meta name="citation_date" content="{{ page.entry.year }}">
+	<meta name="dc.date" content="{{ page.entry.year }}">
+	{% if page.links.pdf %}<meta name="citation_pdf_url" content="{{ site.url }}{{ page.links.pdf }}.pdf">{% endif %}
+	{%- if page.entry.type == "article" -%}
+		<meta name="citation_journal_title" content="{{ page.entry.journal }}">
+		<meta name="dc.source" content="{{ page.entry.journal }}">
+		{% if page.entry.volume %}<meta name="citation_volume" content="{{ page.entry.volume }}">{% endif %}
+		{% if page.entry.number %}<meta name="citation_issue" content="{{ page.entry.number }}">{% endif %}
+	{%- endif -%}
+	{%- if page.entry.type == "inproceedings" -%}
+		<meta name="citation_conference_title" content="{{ page.entry.booktitle }}">
+	{%- endif %}
+	{%- if page.entry.publisher %}
+	<meta name="citation_publisher" content="{{ page.entry.publisher }}">
+	<meta name="dc.publisher" content="{{ page.entry.publisher }}">
+	{%- endif %}
+	{% if page.entry.doi -%}
+	<meta name="citation_doi" content="{{ page.entry.doi }}">
+	{% endif -%}
+	{% if page.entry.issn %}<meta name="citation_issn" content="{{ page.entry.issn }}">{% endif %}
+	{%- if page.entry.pages -%}
+		{%- assign pps = page.entry.pages | split: '–' %}
+		<meta name="citation_firstpage" content="{{ pps[0] }}">
+		<meta name="citation_lastpage" content="{{ pps[1] }}">
+	{% endif -%}
+	{%- if page.entry.type == "phdthesis" or page.entry.type == "bathesis" or page.entry.type == "mathesis" -%}
+	<meta name="citation_dissertation_institution" content="{{ page.entry.school }}">
+	<meta name="citation_author_institution" content="{{ page.entry.school }}">
+	{% endif %}
+	{%- if page.entry.type == "bathesis" -%}<meta name="citation_dissertation_name" content="BSc">{%- endif %}
+	{%- if page.entry.type == "mathesis" -%}<meta name="citation_dissertation_name" content="MSc">{%- endif %}
+	{%- if page.entry.type == "phdthesis" -%}<meta name="citation_dissertation_name" content="PhD">{%- endif %}
+	{%- if page.entry.abstract %}
+	<meta name="citation_abstract_html_url" content="{{ site.url }}{{ page.url }}">
+	<meta name="dcterms.abstract" content="{{ page.entry.abstract }}">
+	{% endif %}
+{%- endif -%}

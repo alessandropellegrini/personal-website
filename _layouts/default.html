@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500&display=swap" rel="stylesheet">
   <link href="{{ site.url }}/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{{ site.url }}/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  {% if page.title == "Research & Publications" %}
+  {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
   <link rel="stylesheet" href="{{ site.url }}/css/jquery-ui.css">
-  {% endif %}
+  {%- endif %}
+  {% include scholar_meta.html %}
 </head>
 <body>
 	
@@ -20,8 +21,8 @@
     <div class="nav-extended container">
       <a href="{{ site.url }}"><span class="brand-logo">Alessandro&nbsp;Pellegrini<small><em>,&nbsp;PhD</em></small></span></a>
       <ul id="nav-mobile" class="sidenav">
-        {% for p in site.pages %}{% if p.title %}<li><a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></li>
-        {% endif %}{% endfor %}
+        {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
+        {% endfor %}
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -30,8 +31,8 @@
       <div class="col l3 xl2 blue-grey lighten-4 hide-on-med-and-down">
 	<div class="container center-align">
 	   <h1 class="title"><a href="{{ site.url }}"><img class="responsive-img circle" src="{{ site.url }}/images/logo.jpg" /></a></h1>
-           {% for p in site.pages %}{% if p.title %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
-           {% endif %}{% endfor %}
+           {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></br>
+           {% endfor %}
         </div>
       </div>
       <div class="col s12 l9 xl10 grey lighten-4">
@@ -53,7 +54,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{{ site.url }}/js/materialize.js"></script>
   <script src="{{ site.url }}/js/init.js"></script>
-  {% if page.title == "Research & Publications" %}
+  {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
   <script src="{{ site.url }}/js/jquery-ui.js"></script>
   <script src="{{ site.url }}/js/publications.js"></script>
   {% endif %}
