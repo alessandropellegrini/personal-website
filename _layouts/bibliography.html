@@ -51,13 +51,13 @@ best paper awards.
 
 {%- if links.pdf %} [<a href="{{ site.url }}/{{ links.pdf }}">PDF</a>] {%- endif %}
 
-[<a href="javascript:bibtex('{{ entry.key }}')">Bibtex</a>]
+[<a href="javascript:bibtex('{{ entry.key }}bib')">Bibtex</a>]
 
 {%- if entry.abstract %}
-[{% cite_details key %}]
+[<a href="{{ site.url }}{% details_link key %}">Abstract</a>]
 {%- endif -%}
 
-<div class="dialog" id="{{ entry.key }}" title="BibTeX" style="display:none" >
+<div class="dialog" id="{{ entry.key }}bib" title="BibTeX" style="display:none" >
   <pre>{{ entry.bibtex }}</pre>
 </div>
 
