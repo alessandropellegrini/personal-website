@@ -5,9 +5,7 @@ title: Architetture dei Calcolatori Elettronici
 **Anno Accademico 2018/2019**    
 **Docenti: Prof. Bruno Ciciani &ndash; Dr. Alessandro Pellegrini**
 
-{% capture local-url %}
-{{ site.url }}{{ page.id }}
-{% endcapture %}
+{% capture local-url %}{{ site.url }}{{ page.id }}{% endcapture %}
 
 La pagina principale del corso è
 [raggiungibile qui](http://www.dis.uniroma1.it/~ciciani/index.php?option=com_content&view=article&id=47).

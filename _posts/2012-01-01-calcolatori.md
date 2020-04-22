@@ -4,9 +4,7 @@ title: Calcolatori Elettronici
 ---
 **Academic Year 2012/2013**    
 
-{% capture local-url %}
-{{ site.url }}{{ page.id }}
-{% endcapture %}
+{% capture local-url %}{{ site.url }}{{ page.id }}{% endcapture %}
 
 
 Materiale didattico

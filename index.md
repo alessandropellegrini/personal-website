@@ -1,9 +1,7 @@
 ---
 layout: default
+title: General Information
 ---
-
-General Information
-===================
 
 I'm a Postdoctoral Researcher at the Institute of Systems Analysis and Informatics (IASI) at the National Research Council (CNR), in the Software and Knowledge-Based Systems research group.<br/>I'm also member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group.<br/>
 
@@ -32,4 +30,4 @@ Via Ariosto 25, 00185, Roma (Italy)
 **fax**: +39 06 77274106  
 **e-mail**: pellegrini<img src="images/at.gif" alt=" at " style="vertical-align:middle;"/>diag<img src="images/dot.gif" alt=" dot " />uniroma1<img src="images/dot.gif" alt=" dot " />it  
 **skype**: alessandro.pellegrini87  
-**public key**: <a href="http://pgp.mit.edu:11371/pks/lookup?search=0x727B52C0B30AEEB5" target="_blank"><tt>0xB30AEEB5</tt></a>
+**public key**: <a href="http://pgp.mit.edu:11371/pks/lookup?search=0x727B52C0B30AEEB5" target="_blank"><span style="font-family: monospace;">0xB30AEEB5</span></a>

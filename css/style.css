@@ -2,6 +2,10 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+.logo-img {
+  margin: 2.8rem 0 1.68rem 0;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +50,23 @@ label {
 nav .brand-logo {
     font-size: 1.5rem;
 }
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
 @media only screen and (min-width: 768px) {
   nav .brand-logo {
     font-size: 2.1rem;

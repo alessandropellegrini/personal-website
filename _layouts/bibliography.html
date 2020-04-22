@@ -8,16 +8,16 @@ hide on demand.
 
 {%- if entry.type == "book" -%}
 <div class="book">
-<img src="{{ site.url }}/images/book-box.png"/> [b<span class="b-counter"></span>] 
+<img alt="book" src="{{ site.url }}/images/book-box.png"/> [b<span class="b-counter"></span>] 
 {%- elsif entry.type == "incollection" -%}
 <div class="incollection">
-<img src="{{ site.url }}/images/incollection-box.png"/> [p<span class="p-counter"></span>] 
+<img alt="chapter" src="{{ site.url }}/images/incollection-box.png"/> [p<span class="p-counter"></span>] 
 {%- elsif entry.type == "article" -%}
 <div class="article">
-<img src="{{ site.url }}/images/article-box.png"/> [j<span class="j-counter"></span>] 
+<img alt="journal" src="{{ site.url }}/images/article-box.png"/> [j<span class="j-counter"></span>] 
 {%- elsif entry.type == "inproceedings" -%}
 <div class="inproceedings">
-<img src="{{ site.url }}/images/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<img alt="conference" src="{{ site.url }}/images/inproceedings-box.png"/> [c<span class="c-counter"></span>]
 {%- elsif entry.type == "phdthesis" -%}
 <div class="thesis">
 <strong>[PhD Thesis]</strong>
@@ -29,7 +29,7 @@ hide on demand.
 <strong>[MSc Thesis]</strong>
 {%- else -%}
 <div class="other">
-<img src="{{ site.url }}/images/informal-box.png"/> [i<span class="i-counter"></span>] 
+<img alt="other" src="{{ site.url }}/images/informal-box.png"/> [i<span class="i-counter"></span>] 
 {%- endif -%}
 
 {%- comment -%}
@@ -63,13 +63,13 @@ best paper awards.
 
 {%- if entry.note and entry.note == "Candidate for (but not winner of) the Best Paper Award" %}
 <br/>
-<img src="{{ site.url }}/images/podium.png" />
+<img alt="best-paper-candidate" src="{{ site.url }}/images/podium.png" />
 <span style="color:red">Candidate for (but not winner of) the Best Paper Award</span>
 {%- endif -%}
 
 {%- if entry.note and entry.note == "Winner of the Best Paper Award" %}
 <br/>
-<img src="{{ site.url }}/images/medal.png" />
+<img alt="best-paper" src="{{ site.url }}/images/medal.png" />
 <span style="color:red">Winner of the Best Paper Award</span>
 {%- endif -%}
 
