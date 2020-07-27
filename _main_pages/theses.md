@@ -40,10 +40,10 @@ To get more information on this thesis topic, you can read the following papers:
    In this thesis, a decision-making module should be designed and implemented. The goal is to determine, at runtime, the best-suited placement for LPs, worker threads, and memory pages in a NUMA architecture. See this supporting material for an additional framing of the topic: [1](numa.pdf).
 1. **Model-related fossil collection**    
    This thesis tackles the design and implementation of a transparent module to allow simulation models to perform fossil collection.
-1. **ABM for evacuation plans**    
-   The goal of this thesis is the implementation of an ABM model to study the emergent behavior of people during the evacuation of a building.
-1. **Compiler support to intercept arbitrary memory accesses**    
-   The goal of this thesis is to realize innovative compiler-assisted software modules to increment the efficiency of incremental state saving.
+1. **Spiking Neural Networks**     
+   Spiking neural networks (SNN) are among the most computationally intensive types of simulation models, with node counts on the order of up to 10^11. This thesis tackles the implementation of efficient runtime environments for SNN simulation on parallel and distributed architectures. See this supporting material for an additional framing of the topic: [1](timewarp7.pdf), [2](timewarp8.pdf).
+1. **Termination Detection**     
+   In speculative simulation, accurate termination detection could be an issue, performancewise. This thesis tackles the design of different algorithms which allow to identify a global termination condition in a model-independent way, with different accuracy/performance tradeoffs. See this supporting material for an additional framing of the topic: [1](../publications/Qua09.pdf), [2](../publications/Cuc07.pdf).
 
 ### Energy Efficiency
 
@@ -58,7 +58,7 @@ To get more information on this thesis topic, you can read the following papers:
 1. **Daemon to manage consumption**    
    Define an interface for low-overhead power management of the system. Define masks to set P-state of multiple cores with a single system call. The daemon should communicate with non-root process to allow them to self-tune power without required superuser privilege. In addition to P-state, should also allow enabling or disabling SMT and turbo boost.
 2. **Fine-grain Simultaneous Multi Threading**    
-   SMT can increase applications performance by up to 40% (Intel HT 2 way)  with very limited increase in power consumption. However this speed-up is highly performance-dependent and its use might even lead to a performance degradation. Moreover, applications generally are typically composed of different threads which might show a different workload, and thus, different SMT effectiveness. The goal of this thesis is to allow portions of threads of a single application to enable SMT while for others is still disabled. This could either be achieved at system level (TCB and scheduler modifications) or with an external module and affinity. Measuring the performance/power trade-offs for different applications is also part of this thesis.
+   SMT can increase applications performance by up to 40% (Intel HT 2 way)  with very limited increase in power consumption. However this speed-up is highly performance-dependent and its use might even lead to a performance degradation. Moreover, applications generally are typically composed of different threads which might show a different workload, and thus, different SMT effectiveness. The goal of this thesis is to allow portions of threads of a single application to enable SMT while for others it is still disabled. This could either be achieved at system level (TCB and scheduler modifications) or with an external module and affinity. Measuring the performance/power trade-offs for different applications is also part of this thesis.
 3. **Effective exploration of P-state configurations**    
    In the context of multi-threaded applications, we want to build an exploration policy which does not violate a specified power cap while collecting the data to support the prediction model.
 4. **Advanced exploration-based powercap**    
@@ -88,8 +88,7 @@ Heterogeneous architectures are computer architecture in which there are several
 
 ### Computer Architectures
 
-1. **Domain-Specific Language and Visual Tools to describe Device Drivers**    
-   The goal of this thesis is to design and implement a Domain-Specific Programming Language to describe the internal operations of device drivers in a simulator. During the thesis work, it will be developed a parser and a runtime interpreter of the language.    Moreover, the thesis will deal with the implementation of a visual tool to allow the visual construction of device interfaces. The tool will have to respond to signals/generate signals, and will have to support a minimal set of animations.
+No theses available at the moment.
 
 
 ### Cybersecurity
