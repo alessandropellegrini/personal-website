@@ -5,7 +5,7 @@
 @Book{Cin17c,
   author    = {Davide Cingolani},
   publisher = {EAI - Edizioni Accademiche Italiane},
-  title     = {Software Reversibility in Speculative Platforms: A reversible computing approach to state recovery},
+  title     = {{Software Reversibility in Speculative Platforms: A reversible computing approach to state recovery}},
   year      = {2017},
   isbn      = {978-3-330-77780-4},
   month     = jan,
@@ -14,7 +14,7 @@
 @Book{Pell14e,
   author    = {Pellegrini, Alessandro},
   publisher = {Sapienza Università Editrice},
-  title     = {Parallelization of Discrete Event Simulation Models},
+  title     = {{Parallelization of Discrete Event Simulation Models}},
   year      = {2015},
   isbn      = {978-88-98533-59-6},
   month     = nov,
@@ -32,11 +32,11 @@ In this thesis, we present methodological and technical innovations which will s
 We will clearly show, during the development of these supports, what is the effect on performance of these solutions, which will nevertheless be negligible, allowing a fruitful exploitation of the available computing power. In the end, we will highlight which are the clear benefits on the programming model that the developer will experience by relying on these innovative solutions.},
 }
 
-@book{Cio02,
-	title={Logic Network Design},
-	author={Cioffi, Giacomo and Ciciani, Bruno},
-	year={2002},
-	publisher={Mc. Graw Hill}
+@Book{Cio02,
+  author    = {Cioffi, Giacomo and Ciciani, Bruno},
+  publisher = {Mc. Graw Hill},
+  title     = {{Logic Network Design}},
+  year      = {2002},
 }
 
 @book{Cic95b,
@@ -157,13 +157,33 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Journal Articles %%%%%
 
+@Article{Pell20c,
+  author    = {Pellegrini, Alessandro and Di Sanzo, Pierangelo and Bevilacqua, Beatrice and Duca, Gabriella and Pascarella, Domenico and Palumbo, Roberto and Ramos, Juan José and Piera, Miquel Àngel and Gigante, Gabriella},
+  journal   = {IEEE Access},
+  title     = {Simulation-based Evolutionary Optimization of Air Traffic Management},
+  year      = {2020},
+  issn      = {2169-3536},
+  month     = {9},
+  volume    = {8},
+  pages     = {161551--161570},
+  abstract  = {In the context of aerospace engineering, the optimization of processes often may require to solve multi-objective optimization problems, including mixed variables, multi-modal and non-differentiable quantities, possibly involving highly-expensive objective function evaluations. In Air Traffic Management (ATM), the optimization of procedures and protocols becomes even more complicated, due to the involvement of human controllers, which act as final decision points in the control chain.
+
+In this article, we propose the use of computational intelligence techniques, such as Agent-Based Modelling and Simulation (ABMS) and Evolutionary Computing (EC), to design a simulation-based distributed architecture to optimize control plans and procedures in the context of ATM. We rely on Agent-Based fast-time simulations to carry out offline what-if analysis of multiple scenarios, also taking into account human-related decisions, during the strategic or pre-tactical phases. The scenarios are constructed using real-world traffic data traces, while multiple optimization variables governed by an EC algorithm allow to explore the search space to identify the best solutions. Our optimization approach relies on ad-hoc multi-objective performance metrics which allow to assess the goodness of the control of aircraft and air traffic regulations.
+
+We present experimental results which prove the viability of our approach, comparing them with real-world data traces, and proving their meaningfulness from an Air Traffic Control perspective.
+},
+  publisher = {IEEE},
+  series    = {Access},
+  doi       = {10.1109/ACCESS.2020.3021192}
+}
+
 
 @Article{Mar20,
   author    = {Marotta, Romolo and Tiriticco, Davide and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
   journal   = {Concurrency and Computation: Practice and Experience},
   title     = {Mutable Locks: Combining the Best of Spin and Sleep Locks},
   year      = {2020},
-  issn      = {1532-0634},
+  issn      = {2169-3536},
   month     = {5},
   abstract  = {In this article we present Mutable Locks, a synchronization construct with the same semantic of traditional locks (such as spin locks or sleep locks), but with a self-tuned optimized trade off between responsiveness and CPU-time usage during threads’ wait phases. Mutable locks tackle the need for efficient synchronization supports in the era of multi-core machines, where the run-time performance should be optimized while reducing resource usage. This goal should be achieved with no intervention by the programmers. Our proposal is intended for exploitation in generic concurrent applications, where scarce or no knowledge is available about the underlying software/hardware stack and the workload. This is an adverse scenario for static choices between spinning and sleeping, which is tackled by our mutable locks thanks to their hybrid waiting phase and self-tuning capabilities.},
   publisher = {Wiley},
@@ -969,13 +989,42 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Conference Proceedings %%%%%
 
+
+@InProceedings{Rab20,
+  author    = {Rab, Maryan and Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
+  booktitle = {Proceedings of the 24th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  title     = {NUMA-Aware Non-Blocking Calendar Queue},
+  year      = {2020},
+  month     = sep,
+  publisher = {IEEE Computer Society},
+  series    = {DS-RT},
+  abstract  = {Modern computing platforms are based on multi-processor/multi-core technology. This allows running applications with a high degree of hardware parallelism. However, medium-to-high end machines pose a problem related to the asymmetric delays threads experience when accessing shared data. Specifically, Non-Uniform-Memory-Access (NUMA) is the dominating technology---thanks to its capability for scaled-up memory bandwidth---which however imposes asymmetric distances between CPU-cores and memory banks, making an access by a thread to data placed on a far NUMA node severely impacting performance. In this article, we tackle this problem in the context of shared event-pool management, a relevant aspect in many fields, like parallel discrete event simulation. Specifically, we present a NUMA-aware calendar queue, which also has the advantage of making concurrent threads coordinate via a non-blocking scalable approach. Our proposal is based on work deferring combined with dynamic re-binding of the calendar queue operations (insertions/extractions) to the best suited among the concurrent threads hosted by the underlying computing platform. This changes the locality of the operations by threads in a way positively reflected onto NUMA tasks at the hardware level. We report the results of an experimental study, demonstrating the capability of our solution to achieve the order of 15% better performance compared to state-of-the-art solutions already suited for multi-core environments.},
+  location  = {Prague, Czech Republic},
+  note      = {To appear},
+}
+
+
+
+@InProceedings{Pic20,
+  author    = {Piccione, Andrea and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 24th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  title     = {Agent-based Modeling and Simulation for Emergency Scenarios: A Holistic Approach},
+  year      = {2020},
+  month     = sep,
+  publisher = {IEEE Computer Society},
+  series    = {DS-RT},
+  abstract  = {Agent-based Modeling and Simulation is a powerful technique which allows to study the interactions in complex systems, and allows to explore or even foresee the emergence of more complicated properties or behaviors related to the interaction among the simpler agents in the environment. In the context of emergency or crisis scenarios, Agent-based Modeling and Simulation can allow to effectively study emergency plans, with the goal of assessing their viability, also with respect to the number of possible fatalities. In this paper, we analyze Agent-based Modeling and Simulation for crisis scenarios from a methodological and empirical point of view, with the goal of identifying what are the behavioral parameters that a model should encompass, in order for the results of the simulation to be useful for emergency plan assessment and/or compilation. We also experimentally provide a characterization of the effects of such behavioral parameters.},
+  location  = {Prague, Czech Republic},
+  note      = {To appear},
+}
+
+
 @InProceedings{Con20,
   author    = {Conoci, Stefano and Ianni, Mauro and Marotta, Romolo and Pellegrini, Alessandro},
   booktitle = {Proceedings of the 2020 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
   title     = {Autonomic Power Management in Speculative Simulation Runtime Environments},
   year      = {2020},
   month     = jun,
-  note      = {To appear},
   publisher = {ACM},
   series    = {PADS},
   abstract  = {While transitioning to exascale systems, it has become clear that power management plays a fundamental role to support a viable utilization of the underlying hardware, also performance-wise. To meet power restrictions imposed by future exascale supercomputers, runtime environments will be required to enforce self-tuning schemes to run dynamic workloads under an imposed power cap. Literature results show that, for a wide class of multi-threaded applications, tuning both the degree of parallelism and frequency/voltage of cores allows a more effective use of the budget, compared to techniques that use only one of these mechanisms in isolation.  
@@ -990,7 +1039,6 @@ In this paper, we explore the issues associated with applying these techniques o
   title     = {Approximated Rollbacks},
   year      = {2020},
   month     = jun,
-  note      = {To appear},
   publisher = {ACM},
   series    = {PADS},
   abstract  = {A rollback operation in a speculative parallel discrete event simulator has traditionally targeted the perfect reconstruction of the state to be restored after a timestamp-order violation. This imposes that the rollback support entails specific capabilities and consequently pays given costs. In this article we propose approximated rollbacks, which allow a simulation object to perfectly realign its virtual time to the timestamp of the state to be restored, but lead the reconstructed state to be an approximation of what it should really be. The advantage is an important reduction of the cost for managing the state restore task in a rollback phase, as well as for managing the activities (i.e. state saving) that actually enable rollbacks to be executed. Our proposal is suited for stochastic simulations, and explores a tradeoff between the statistical representativeness of the outcome of the simulation run and the execution performance. We provide mechanisms that enable the application programmer to control this tradeoff, as well as simulation-platform level mechanisms that constitute the basis for managing approximate rollbacks in general simulation scenarios. A study on the aforementioned tradeoff is also presented.},
@@ -1004,7 +1052,6 @@ In this paper, we explore the issues associated with applying these techniques o
   title     = {Exploiting Inter-Processor-Interrupts for Virtual-Time Coordination in Speculative Parallel Discrete Event Simulation},
   year      = {2020},
   month     = jun,
-  note      = {To appear},
   publisher = {ACM},
   series    = {PADS},
   abstract  = {Reducing the waste of resource usage (e.g., CPU-cycles) when a causality error occurs in speculative parallel discrete event simulation (PDES) is still a core objective. In this article,
