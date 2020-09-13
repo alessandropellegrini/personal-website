@@ -1,67 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Alessandro Pellegrini - {{ page.title }}</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500&display=swap" rel="stylesheet">
-  <link href="{{ site.url }}/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,print"/>
-  <link href="{{ site.url }}/css/style.css" type="text/css" rel="stylesheet" media="screen,print"/>
-  {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
-  <link rel="stylesheet" href="{{ site.url }}/css/jquery-ui.css">
-  {%- endif %}
-  {% include scholar_meta.html %}
-</head>
-<body>
-	
-  <nav class="blue-grey lighten-2 pull-front">
-    <div class="nav-extended container">
-      <a href="{{ site.url }}"><span class="brand-logo">Alessandro&nbsp;Pellegrini<small><em>,&nbsp;PhD</em></small></span></a>
-      <ul id="nav-mobile" class="sidenav">
-        {% for p in site.main_pages %}<li><a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a></li>
-        {% endfor %}
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="row flex">
-      <div class="col l3 xl2 blue-grey lighten-4 hide-on-med-and-down">
-	<div class="container center-align">
-	   <div class="logo-img"><a href="{{ site.url }}"><img class="responsive-img circle" alt="Alessandro Pellegrini" src="{{ site.url }}/images/logo.jpg" /></a></div>
-           {% for p in site.main_pages %}<a href="{{ site.url }}/{{ p.url }}">{{ p.title }}</a><br/>
-           {% endfor %}
-        </div>
+<html lang="en" class=" js ">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- begin SEO -->
+      <title>Alessandro Pellegrini - {{ page.title }}</title>
+      <meta property="og:locale" content="en-US">
+      <meta property="og:site_name" content="Alessandro Pellegrini">
+      <meta property="og:title" content="Alessandro Pellegrini - {{ page.title }}">
+      <link rel="canonical" href="{{ site.url }}">
+      <meta property="og:url" content="{{ site.url }}">
+      <meta property="og:description" content="Alessandro Pellegrini personal webpage">
+      <script type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Alessandro Pellegrini", "url" : "{{ site.url }}", "sameAs" : null } </script>
+      <!-- end SEO -->
+      <!-- http://t.co/dKP3o1e -->
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script> <!-- For all browsers -->
+      <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+      {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
+      <link rel="stylesheet" href="{{ site.url }}/css/jquery-ui.css">
+      {% endif %}
+      <meta http-equiv="cleartype" content="on">
+      <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico">
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="{{ site.url }}/images/me.jpg">
+      <meta name="msapplication-config" content="{{ site.url }}/images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="{{ site.url }}/css/academicons.min.css">
+      <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+   </head>
+   <body class="vsc-initialized">
+      <div id="MathJax_Message" style="display: none;"></div>
+      <!--[if lt IE 9]>
+      <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</div>
+      <![endif]-->
+      <div class="masthead">
+         <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+               <nav id="site-nav" class="greedy-nav">
+                  <button class="hidden" count="0">
+                     <div class="navicon"></div>
+                  </button>
+                  <ul class="visible-links">
+                     <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ site.url }}">Alessandro Pellegrini</a></li>
+                     <li class="masthead__menu-item"><a href="{{ site.url}}/curriculum/">CV</a></li>
+                     <li class="masthead__menu-item"><a href="{{ site.url}}/publications/">Publications</a></li>
+                     <li class="masthead__menu-item"><a href="{{ site.url}}/teaching/">Teaching</a></li>
+                     <li class="masthead__menu-item"><a href="{{ site.url}}/theses/">Theses</a></li>
+                  </ul>
+                  <ul class="hidden-links hidden"></ul>
+               </nav>
+            </div>
+         </div>
       </div>
-      <div class="col s12 l9 xl10 grey lighten-4">
-	<div class="container flow-text">
-            <h1>{{ page.title }}</h1>
-            {{ content | regex_replace: '\<a class\="details" href\="\/publications\/.*\.html"\>DetailsToRemove\<\/a\>', '' }}
-        </div>
+      <div id="main" role="main">
+         <div class="sidebar sticky">
+            <div itemscope="" itemtype="http://schema.org/Person">
+               <div class="author__avatar"> <img src="{{ site.url }}/images/me.jpg" class="author__avatar" alt="Alessandro Pellegrini"></div>
+               <div class="author__content">
+                  <h3 class="author__name">Alessandro Pellegrini</h3>
+               </div>
+               <div class="author__urls-wrapper">
+                  <button class="btn btn--inverse">Follow</button>
+                  <ul class="author__urls social-icons">
+                     <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Rome, Italy</li>
+                     <li><a href="https://github.com/alessandropellegrini"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+                     <li><a href="https://scholar.google.com/citations?user=lrxSz_0AAAAJ"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+                     <li><a href="https://dblp.uni-trier.de/pers/hd/p/Pellegrini_0001:Alessandro"><i class="ai ai-dblp-square ai-fw"></i> DBLP</a></li>
+                     <li><a href="https://orcid.org/0000-0002-0179-9868"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="Alessandro Pellegrini personal page">
+            <meta itemprop="description" content="{{ page.title }}">
+            <div class="page__inner-wrap">
+               <header>
+                  <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+               </header>
+               <section class="page__content" itemprop="text">
+                  {{ content | regex_replace: '\<a class\="details" href\="\/publications\/.*\.html"\>DetailsToRemove\<\/a\>', '' }}
+               </section>
+               <footer class="page__meta"></footer>
+            </div>
+         </article>
       </div>
-    </div>
-  <footer class="page-footer blue-grey lighten-3 center-align">
-    <div class="footer-copyright">
-      <div class="container">
-        <span>
-		Copyright &copy; 2010&ndash;{{ 'now' | date: "%Y" }} &bull; All rights reserved &bull; 
-		<a href="https://github.com/alessandropellegrini/alessandropellegrini.github.io" target="_blank">made</a>
-		with
-		<a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
-	</span><br/>
-	<span>Last Update: {{ 'now' | date_to_string }}</span>
+      <div class="page__footer">
+         <footer>
+            <div class="page__footer-copyright">Copyright &copy; 2010&ndash;{{ 'now' | date: "%Y" }} &bull; All rights reserved &bull;
+              <a href="https://github.com/alessandropellegrini/alessandropellegrini.github.io" target="_blank">made</a>
+              with
+              <a href="https://jekyllrb.com/" target="_blank">Jekyll</a><br/>
+              Last Update: {{ 'now' | date_to_string }}
+            </div>
+         </footer>
       </div>
-    </div>
-  </footer>
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{{ site.url }}/js/materialize.js"></script>
-  <script src="{{ site.url }}/js/init.js"></script>
-  {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
-  <script src="{{ site.url }}/js/jquery-ui.js"></script>
-  <script src="{{ site.url }}/js/publications.js"></script>
-  {% endif %}
-  </body>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="{{ site.url}}/js/main.min.js"></script> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', '', 'auto'); ga('send', 'pageview'); </script>
+      {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
+      <script src="{{ site.url }}/js/jquery-ui.js"></script>
+      <script src="{{ site.url }}/js/publications.js"></script>
+      {% endif %}
+   </body>
 </html>

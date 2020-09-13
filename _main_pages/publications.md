@@ -30,10 +30,6 @@ My research is mainly focused on:
 
 Publication Archive
 -------------------
-(You can also access my personal pages at
-[DBLP](http://dblp.uni-trier.de/pers/hd/p/Pellegrini_0001:Alessandro),
-[ACM](http://dl.acm.org/author_page.cfm?id=81440592391), and
-[Google Scholar](http://scholar.google.it/citations?user=lrxSz_0AAAAJ)).
 
 
 **Copyright Information**:
@@ -51,11 +47,11 @@ version may no longer be accessible.
 
 **Apply Filters**
 
-<label><input type="checkbox" class="filled-in" onClick="toggle('book')" checked/><span><img alt="book" src="{{ site.url }}/images/book-box.png"/> Books ({{ book_count }})</span></label><br/>
-<label><input type="checkbox" class="filled-in" onClick="toggle('incollection')" checked/><span><img alt="chapter" src="{{ site.url }}/images/incollection-box.png"/> Book Chapters ({{ incollection_count }})</span></label><br/>
-<label><input type="checkbox" class="filled-in" onClick="toggle('article')" checked/><span><img alt="article" src="{{ site.url }}/images/article-box.png"/> Journal Articles ({{ article_count }})</span></label><br/>
-<label><input type="checkbox" class="filled-in" onClick="toggle('inproceedings')" checked/><span><img alt="conference" src="{{ site.url }}/images/inproceedings-box.png"/> Conference Proceedings ({{ inproceedings_count }})</span></label><br/>
-<label><input type="checkbox" class="filled-in" onClick="toggle('other')" checked/><span><img alt="other" src="{{ site.url }}/images/informal-box.png"/> Other publications ({{ other_count }})</span></label><br/>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('book')" checked/><span><img alt="book" src="{{ site.url }}/images/book-box.png"/> Books ({{ book_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('incollection')" checked/><span><img alt="chapter" src="{{ site.url }}/images/incollection-box.png"/> Book Chapters ({{ incollection_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('article')" checked/><span><img alt="article" src="{{ site.url }}/images/article-box.png"/> Journal Articles ({{ article_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('inproceedings')" checked/><span><img alt="conference" src="{{ site.url }}/images/inproceedings-box.png"/> Conference Proceedings ({{ inproceedings_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('other')" checked/><span><img alt="other" src="{{ site.url }}/images/informal-box.png"/> Other publications ({{ other_count }})</span></label>
 (total publications: {% bibliography_count -q @*[author ~= Pellegrini] %})
 
 {% bibliography -q @*[author ~= Pellegrini] %}

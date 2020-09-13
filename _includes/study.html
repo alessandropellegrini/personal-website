@@ -1,26 +1,26 @@
-<div class="card-panel">
-  <div class="row valign-wrapper">
-    <div class="col s3 right-align"><strong>Dates</strong>:</div>
-    <div class="col s9">{{ include.dates }}</div>
-  </div>
-  <div class="row valign-wrapper">
-    <div class="col s3 right-align"><strong>Qualification Awarded</strong>:</div>
-    <div class="col s9">{{ include.qualification }}</div>
-  </div>
+<table class="study">
+<tr>
+  <td class="key">Dates:</td>
+  <td>{{ include.dates }}</td>
+</tr>
+<tr>
+  <td class="key">Qualification Awarded:</td>
+  <td>{{ include.qualification }}</td>
+</tr>
 {%- if include.thesis -%}
-  <div class="row valign-wrapper">
-    <div class="col s3 right-align"><strong>Thesis</strong>:</div>
-    <div class="col s9"><a href="{{ site.url }}/{{ include.thesis_link }}">{{ include.thesis }}</a></div>
-  </div>
+<tr>
+  <td class="key">Thesis:</td>
+  <td><a href="{{ site.url }}/{{ include.thesis_link }}">{{ include.thesis }}</a></td>
+</tr>
 {%- endif -%}
 {%- if include.subjects -%}
-  <div class="row valign-wrapper">
-    <div class="col s3 right-align"><strong>Principal Subjects</strong>:</div>
-    <div class="col s9">{{ include.subjects }}</div>
-  </div>
+<tr>
+  <td class="key">Principal Subjects:</td>
+  <td>{{ include.subjects }}</td>
+</tr>
 {%- endif -%}
-  <div class="row valign-wrapper">
-    <div class="col s3 right-align"><strong>Name/Type of Organization</strong>:</div>
-    <div class="col s9"><em>{{ include.organization }}</em></div>
-  </div>
-</div>
+<tr>
+  <td class="key">Name/Type of Organization:</td>
+  <td><a href="{{ include.organization_url }}" target="_blank">{{ include.organization }}</a></td>
+</tr>
+</table>
