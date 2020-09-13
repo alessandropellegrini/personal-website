@@ -7,18 +7,12 @@ permalink: /teaching/
 Office Hours
 ------------
 
-<span style="color: red; font-weight: bold;">Based on the provisions of the competent authorities (Decree of the President of the Council of Ministers of 4 March 2020), face to face office hours are suspended in relation to the Coronavirus emergency.</span>
-
-<span style="color: red; font-weight: bold;"><u>Remote office hours will replace regular ones</u>. To allow a seamless experience, please send an email to the teacher. You will be provided a time slot and a Google Meet link. In case of a no show, you will lose your slot.</span>
-
 Students office consulting is at:
 
-* ~~Sapienza [S]: at Via Ariosto 25, room B120~~
-* ~~Tor Vergata [T]: at Viale del Politecnico, room A1-05~~
+* Tor Vergata (Viale del Politecnico 1), Ingegneria dell'Informazione Building, Room A1-05
+* Online (Google Meet)
 
-according to the following schedule:
-
-* see note above
+Due to the Coronavirus pandemic, online consulting shall be preferred. In order to book an appointment, please send me an email.
 
 Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
 
