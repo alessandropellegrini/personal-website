@@ -3,7 +3,8 @@ layout: default
 title: General Information
 ---
 
-I'm a Postdoctoral Researcher at the Institute of Systems Analysis and Informatics (IASI) at the National Research Council (CNR), in the Software and Knowledge-Based Systems research group.<br/>I'm also member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group.<br/>
+I'm a Postdoctoral Researcher at the Institute of Systems Analysis and Informatics (IASI) at the National Research Council (CNR), in the Software and Knowledge-Based Systems research group.<br/>I have  the Italian "Abilitazione Scientifica Nazionale" (ASN) in 09/H1 - II Fascia, granted on September 09, 2019.<br/>I'm also member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group at University of Rome "Tor Vergata" and Sapienza, University of Rome.<br/>
+I have previously been a Postdoctoral Researcher at the [Department of Computer, Control and Management Engineering](https://www.diag.uniroma1.it/en) at [Sapienza, University of Rome](https://www.uniroma1.it/en/) (until 2020).
 
 
 <div class="valign-wrapper">
@@ -21,13 +22,12 @@ Contact Information
 ===================
 
 **address**:  
-Dipartimento di Informatica e Sistemistica "Antonio Ruberti"  
-Sapienza, Universit&agrave; di Roma  
-Via Ariosto 25, 00185, Roma (Italy)  
-1st Floor, Room B 120  
+Dipartimento di Ingegneria Civile e Ingegneria Informatica  
+Università degli Studi di Roma "Tor Vergata"  
+Via del Politecnico 1, 00133, Roma (Italy)  
+Edificio di Ingegneria dell'Informazione         
+Stanza A1-05
 
-**tel**: +39 06 77274108  
-**fax**: +39 06 77274106  
-**e-mail**: pellegrini<img src="images/at.gif" alt=" at " style="vertical-align:middle;"/>diag<img src="images/dot.gif" alt=" dot " />uniroma1<img src="images/dot.gif" alt=" dot " />it  
+**e-mail**: a.pellegrini<img src="images/at.gif" alt=" at " style="vertical-align:middle;"/>ing<img src="images/dot.gif" alt=" dot " />uniroma2<img src="images/dot.gif" alt=" dot " />it  
 **skype**: alessandro.pellegrini87  
 **public key**: <a href="http://pgp.mit.edu:11371/pks/lookup?search=0x727B52C0B30AEEB5" target="_blank"><span style="font-family: monospace;">0xB30AEEB5</span></a>
