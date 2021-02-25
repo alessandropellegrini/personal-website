@@ -5,7 +5,7 @@
 @Book{Cin17c,
   author    = {Davide Cingolani},
   publisher = {EAI - Edizioni Accademiche Italiane},
-  title     = {{Software Reversibility in Speculative Platforms: A reversible computing approach to state recovery}},
+  title     = {Software Reversibility in Speculative Platforms: A reversible computing approach to state recovery},
   year      = {2017},
   isbn      = {978-3-330-77780-4},
   month     = jan,
@@ -14,7 +14,7 @@
 @Book{Pell14e,
   author    = {Pellegrini, Alessandro},
   publisher = {Sapienza Università Editrice},
-  title     = {{Parallelization of Discrete Event Simulation Models}},
+  title     = {Parallelization of Discrete Event Simulation Models},
   year      = {2015},
   isbn      = {978-88-98533-59-6},
   month     = nov,
@@ -32,11 +32,11 @@ In this thesis, we present methodological and technical innovations which will s
 We will clearly show, during the development of these supports, what is the effect on performance of these solutions, which will nevertheless be negligible, allowing a fruitful exploitation of the available computing power. In the end, we will highlight which are the clear benefits on the programming model that the developer will experience by relying on these innovative solutions.},
 }
 
-@Book{Cio02,
-  author    = {Cioffi, Giacomo and Ciciani, Bruno},
-  publisher = {Mc. Graw Hill},
-  title     = {{Logic Network Design}},
-  year      = {2002},
+@book{Cio02,
+	title={Logic Network Design},
+	author={Cioffi, Giacomo and Ciciani, Bruno},
+	year={2002},
+	publisher={Mc. Graw Hill}
 }
 
 @book{Cic95b,
@@ -157,34 +157,101 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Journal Articles %%%%%
 
-@Article{Pell20c,
-  author    = {Pellegrini, Alessandro and Di Sanzo, Pierangelo and Bevilacqua, Beatrice and Duca, Gabriella and Pascarella, Domenico and Palumbo, Roberto and Ramos, Juan José and Piera, Miquel Àngel and Gigante, Gabriella},
-  journal   = {IEEE Access},
-  title     = {Simulation-based Evolutionary Optimization of Air Traffic Management},
-  year      = {2020},
-  issn      = {2169-3536},
-  month     = {9},
-  volume    = {8},
-  pages     = {161551--161570},
-  abstract  = {In the context of aerospace engineering, the optimization of processes often may require to solve multi-objective optimization problems, including mixed variables, multi-modal and non-differentiable quantities, possibly involving highly-expensive objective function evaluations. In Air Traffic Management (ATM), the optimization of procedures and protocols becomes even more complicated, due to the involvement of human controllers, which act as final decision points in the control chain.
 
-In this article, we propose the use of computational intelligence techniques, such as Agent-Based Modelling and Simulation (ABMS) and Evolutionary Computing (EC), to design a simulation-based distributed architecture to optimize control plans and procedures in the context of ATM. We rely on Agent-Based fast-time simulations to carry out offline what-if analysis of multiple scenarios, also taking into account human-related decisions, during the strategic or pre-tactical phases. The scenarios are constructed using real-world traffic data traces, while multiple optimization variables governed by an EC algorithm allow to explore the search space to identify the best solutions. Our optimization approach relies on ad-hoc multi-objective performance metrics which allow to assess the goodness of the control of aircraft and air traffic regulations.
-
-We present experimental results which prove the viability of our approach, comparing them with real-world data traces, and proving their meaningfulness from an Air Traffic Control perspective.
-},
-  publisher = {IEEE},
-  series    = {Access},
-  doi       = {10.1109/ACCESS.2020.3021192}
+@Article{Gig21,
+  author    = {Gigante, Gabriella and Palumbo, Roberto and Pascarella, Domenico and Pellegrini, Alessandro and Duca, Gabriella and Piera, Miquel Àngel and Ramos, Juan José},
+  journal   = {International Journal of Aviation, Aeronautics, and Aerospace},
+  title     = {Support to Design for Air Traffic Management: An Approach with Agent-Based Modelling and Evolutionary Search},
+  year      = {2021},
+  abstract  = {To enhance Air Traffic Management (ATM) and meet the future traffic demand and environmental requirements, present ATM system is going to be modified (SESAR Joint Undertaking, 2017), designing new services to be integrated in future architecture considering the evolution of present fragmented structure of the airspace and the entanglement of air routes. Such a change process is complicated due to the nature of ATM, which is a large-scale Socio-Technical System (STS), typically involving a complex interaction between humans, machines and the environment. In such kind of systems, managing their evolution is a complex and difficult task since the social and technical implications of any proposed concept should be fully assessed before a choice is made whether or not to proceed with the related development. Often, simulation tools are also used to support the design of the concept itself by enabling what-if-analyses. However, these may be too effort and time consuming due to the exponential growth of the required analysis cases. A quite common mismatch between the performance evaluations in simulated conditions and those achieved in real life is represented by the partial assessment of human aspects that can be performed throughout the new concept lifecycle from its lowest maturity level up to “ready to market”.
+The proposed work defines an approach to support the design of new ATM solutions, including the evaluation on human behaviour. The approach adopts a combined paradigm, which involves Agent-Based Modelling and Simulation (ABMS) to specify and analyse the ATM models, and Agent-based Evolutionary Search (AES) to optimize the design of the new solutions. A specific case study is used to demonstrate the effectiveness of the proposed approach. Transition from Direct Routing Airspace (DRA) to Free Routing Airspace (FRA), respectively described by Solution #32 and Solution #33 in the SESAR solutions catalogue (SESAR Joint Undertaking, 2017), is used for both validation and experimentation activities. In detail, the proposed experimentation case regards the design of sector collapsing/decollapsing configuration to optimize controller workloads. The achieved results are presented and discussed.},
+  series    = {IJAAA},
+  note      = {To appear},
 }
 
+
+@Article{Mar21,
+  author    = {Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
+  journal   = {Transactions on Computers},
+  title     = {NBBS: A Non-Blocking Buddy System for Multi-core Machines},
+  year      = {2021},
+  abstract  = {Common implementations of core memory allocation components handle concurrent allocation/release requests by synchronizing threads via spin-locks. This approach is not prone to scale, a problem that has been addressed in the literature by introducing layered allocation services or replicating the core allocators—the bottom-most ones within the layered architecture. Both these solutions tend to reduce the pressure of actual concurrent accesses to each individual core allocator. In this article, we explore an alternative approach to scalability of memory allocation/release, which can be still combined with those literature proposals. We present a fully non-blocking buddy system, where threads performing concurrent allocations/releases do not undergo any spin-lock based synchronization. Our solution allows threads to proceed in parallel, and commit their allocations/releases unless a conflict is materialized while handling the allocator metadata—memory fragmentation and coalescing is also carried out in a fully non-blocking manner. Conflict detection relies in our solution on atomic Read-Modify-Write (RMW) machine instructions, guaranteed to execute atomically by the processor firmware. We also provide a proof of the correctness of our non-blocking buddy system and show the results of a comparative study that outlines the advantages of our solution with respect to the Linux-kernel buddy system, which is one of the most diffused and optimized buddy systems in the state of the art.},
+  publisher = {IEEE},
+  series    = {TC},
+  doi       = {10.1109/TC.2021.3060393},
+}
+
+@Article{Con21,
+  author    = {Conoci, Stefano and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
+  journal   = {Concurrency and Computation: Practice and Experience},
+  title     = {On Power Capping and Performance Optimization of Multi-threaded Applications},
+  year      = {2021},
+  abstract  = {Multi-threaded applications facilitate the exploitation of the computing power of multicore architectures. On the other hand, these applications can become extremely energy-intensive, in contrast with the need for limiting the energy usage of computing systems.
+In this article, we explore the design of techniques enabling multi-threaded applications to maximize their performance under a power cap. We consider two control parameters: the number of cores used by the application, and the core power state. We target the design of an auto-tuning power-capping technique with minimal intrusiveness and high portability, which is agnostic about the workload profile of the application. We investigate two different approaches for building the strategy for selecting the best configuration of the parameters under control, namely a heuristic approach and a model-based approach. Through an extensive experimental study, we evaluate the effectiveness of the proposed technique considering two different selection strategies, and we compare them with existing solutions.},
+  publisher = {Wiley},
+  series    = {CCPE},
+  doi       = {10.1002/cpe.6205},
+}
+
+@article{DiS21,
+  author = {Di Sanzo, Pierangelo and Avresky, Dimiter R. and Pellegrini, Alessandro},
+  journal = {Software: Practice and Experience},
+  title = {Autonomic Rejuvenation of Cloud Applications as a Countermeasure to Software Anomalies},
+  abstract = {Failures in computer systems can be often tracked down to software anomalies of various kinds. In many scenarios, it could be difficult, unfeasible, or unprofitable to carry out extensive debugging activity to spot the causes of anomalies and remove them. In other cases, taking corrective actions may led to undesirable service downtime. In this article, we propose an alternative approach to cope with the problem of software anomalies in cloud-based applications, and we present the design of a distributed autonomic framework that implements our approach. It exploits the elastic capabilities of cloud infrastructures, and relies on machine learning models, proactive rejuvenation techniques and a new load balancing approach. By putting together all these elements, we show that it is possible to improve both availability and performance of applications deployed over heterogeneous cloud regions and subject to frequent failures. Overall, our study demonstrates the viability of our approach, thus opening the way towards it adoption, and encouraging further studies and practical experiences to evaluate and improve it.},
+  year = {2021},
+  month = jan,
+  volume = {51},
+  number = {1},
+  pages = {46--71},
+  issn = {1097-024X},
+  publisher = {Wiley},
+  series = {SPE},
+  doi = {10.1002/spe.2908}
+}
+
+@Article{Pell20d,
+  author    = {Pellegrini, Alessandro},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
+  title     = {Replication of Computational Results Report for “Green Simulation with Database Monte Carlo”},
+  year      = {2020},
+  issn      = {1049-3301},
+  month     = {12},
+  volume    = {31},
+  number    = {1},
+  abstract  = {This article presents the reproducibility results associated with the article ``Green Simulation with Database Monte Carlo'' by Mingbin Feng and
+Jeremy Staum. The authors have uploaded their artifact to Zenodo, which ensures a long-term retention of the artifact. The artifact, which is based on a set of R scripts, allows to easily regenerate data for the figures and the tables, it completes successfully, and allows to reproduce all the experimental results in the article.
+The article can thus receive the Artifacts Available, the Artifacts Evaluated---Functional, and the Results Reproduced badges.},
+  publisher = {ACM},
+  series    = {TOMACS},
+  doi       = {10.1145/3426823},
+}
+
+@article{Pell20c,
+  author = {Pellegrini, Alessandro and Di Sanzo, Pierangelo and Bevilacqua, Beatrice and Duca, Gabriella and Pascarella, Domenico and Palumbo, Roberto and Ramos, Juan José and Piera, Miquel Àngel and Gigante, Gabriella},
+  journal = {IEEE Access},
+  title = {Simulation-based Evolutionary Optimization of Air Traffic Management},
+  abstract = {In the context of aerospace engineering, the optimization of processes often may require to solve multi-objective optimization problems, including mixed variables, multi-modal and non-differentiable quantities, possibly involving highly-expensive objective function evaluations. In Air Traffic Management (ATM), the optimization of procedures and protocols becomes even more complicated, due to the involvement of human controllers, which act as final decision points in the control chain.
+In this article, we propose the use of computational intelligence techniques, such as Agent-Based Modelling and Simulation (ABMS) and Evolutionary Computing (EC), to design a simulation-based distributed architecture to optimize control plans and procedures in the context of ATM. We rely on Agent-Based fast-time simulations to carry out offline what-if analysis of multiple scenarios, also taking into account human-related decisions, during the strategic or pre-tactical phases. The scenarios are constructed using real-world traffic data traces, while multiple optimization variables governed by an EC algorithm allow to explore the search space to identify the best solutions. Our optimization approach relies on ad-hoc multi-objective performance metrics which allow to assess the goodness of the control of aircraft and air traffic regulations.
+We present experimental results which prove the viability of our approach, comparing them with real-world data traces, and proving their meaningfulness from an Air Traffic Control perspective.},
+  year = {2020},
+  issn = {2169-3536},
+  month = sep,
+  volume = {8},
+  pages = {161551--161570},
+  publisher = {IEEE},
+  series = {Access},
+  doi = {10.1109/ACCESS.2020.3021192}
+}
 
 @Article{Mar20,
   author    = {Marotta, Romolo and Tiriticco, Davide and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
   journal   = {Concurrency and Computation: Practice and Experience},
   title     = {Mutable Locks: Combining the Best of Spin and Sleep Locks},
   year      = {2020},
-  issn      = {2169-3536},
-  month     = {5},
+  volume    = {32},
+  number    = {22},
+  issn      = {1532-0634},
+  month     = {6},
   abstract  = {In this article we present Mutable Locks, a synchronization construct with the same semantic of traditional locks (such as spin locks or sleep locks), but with a self-tuned optimized trade off between responsiveness and CPU-time usage during threads’ wait phases. Mutable locks tackle the need for efficient synchronization supports in the era of multi-core machines, where the run-time performance should be optimized while reducing resource usage. This goal should be achieved with no intervention by the programmers. Our proposal is intended for exploitation in generic concurrent applications, where scarce or no knowledge is available about the underlying software/hardware stack and the workload. This is an adverse scenario for static choices between spinning and sleeping, which is tackled by our mutable locks thanks to their hybrid waiting phase and self-tuning capabilities.},
   publisher = {Wiley},
   series    = {CCPE},
@@ -196,21 +263,39 @@ We present experimental results which prove the viability of our approach, compa
   journal   = {ACM Transactions on Modeling and Computer Simulation},
   title     = {A Distributed Shared-Memory Middleware for Speculative Parallel Discrete Event Simulation},
   year      = {2020},
+  volume    = {30},
+  number    = {2},
   issn      = {1049-3301},
-  month     = {3},
+  pages     = {11:1--11:26},
+  month     = feb,
   abstract  = {The large diffusion of multi-core machines has pushed the research in the field of Parallel Discrete Event Simulation (PDES) towards new programming paradigms, based on the exploitation of shared memory. On the opposite side, the advent of Cloud computing—and the possibility to group together many (low-cost) virtual machines to form a distributed-memory cluster capable of hosting simulation applications—has raised the need to bridge shared-memory programming and seamless distributed execution. In this article, we present the design of a distributed middleware that transparently allows a PDES application coded for shared memory systems to run on clusters of (Cloud) resources. Our middleware is based on a synchronization protocol called Event & Cross State (ECS) Synchronization. It allows cross-simulation-object access by event handlers, thus representing a powerful tool for the development of various types of PDES applications. We also provide data for an experimental assessment of our middleware architecture, which has been integrated into the open source ROOT-Sim speculative PDES platform.},
   doi       = {10.1145/3373335},
   publisher = {ACM},
   series    = {TOMACS},
 }
 
+@article{Qua20,
+  author = {Quaglia, Francesco and Theodoropoulos, Georgios and Pellegrini, Alessandro},
+  journal = {Transactions on Modeling and Computer Simulations},
+  title = {Editorial to the Special Issue on the Principles of Advanced Discrete Simulation (PADS)},
+  year = {2020},
+  month = mar,
+  number = {5},
+  pages = {8:1--8:2},
+  volume = {69},
+  doi = {10.1145/3381903}
+}
+
 @Article{DiS19,
   author    = {Di Sanzo, Pierangelo and Pellegrini, Alessandro and Sannicandro, Marco and Ciciani, Bruno and Quaglia, Francesco},
   journal   = {IEEE Transactions on Computers},
   title     = {Adaptive Model-based Scheduling in Software Transactional Memory},
-  year      = {2019},
+  year      = {2020},
+  volume    = {69},
+  number    = {5},
+  pages     = {621--632},
   issn      = {0018-9340},
-  month     = {12},
+  month     = {5},
   abstract  = {Software Transactional Memory (STM) stands as powerful concurrent programming paradigm, enabling atomicity and isolation while accessing shared data. On the downside, STM may suffer from performance degradation due to excessive conflicts among concurrent transactions, which cause waste of CPU-cycles and energy because of transaction aborts. An approach to cope with this issue consists of putting in place smart scheduling strategies which temporarily suspend the execution of some transaction in order to reduce the transaction conflict rate. In this article, we present an adaptive model-based transaction scheduling technique relying on a Markov Chain-based performance model of STM systems. Our scheduling technique is adaptive in a twofold sense: (i) it controls the execution of transactions depending on throughput predictions by the model as a function of the current system state, (ii) it re-tunes on-line the Markov Chain-based model to adapt it—and the outcoming transaction scheduling decisions—to dynamic variations of the workload. We have been able to achieve the latter target thanks to the fact that our performance model is extremely lightweight. In fact, to be recomputed, it requires a reduced set of input parameters, whose values can be estimated via a few on-line samples related to the current workload dynamics. We also present a scheduler that implements our adaptive technique, which we integrated within the open source TinySTM package. Further, we report the results of an experimental study based on the STAMP benchmark suite, which has been aimed at assessing both the accuracy of our performance model in predicting the actual system throughput and the advantages of the adaptive scheduling policy over literature techniques},
   doi       = {10.1109/TC.2019.2954139},
   publisher = {IEEE},
@@ -232,7 +317,7 @@ We present experimental results which prove the viability of our approach, compa
   series    = {JPDC},
 }
 
-@Article{Ian18c,
+@Article{Ian19,
   author    = {Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
   journal   = {IEEE Transactions on Parallel and Distributed Systems},
   title     = {Anonymous Readers Counting: A Wait-free Multi-word Atomic Register Algorithm for Scalable Data Sharing on Multi-core Machines},
@@ -241,7 +326,7 @@ We present experimental results which prove the viability of our approach, compa
   month     = {2},
   pages     = {286--299},
   volume    = {30},
-  abstract  = {In this article we present Anonymous Readers Counting (ARC), a multi-word atomic (1,N) register algorithm for multi-core machines. ARC exploits Read-Modify-Write (RMW) instructions to coordinate the writer and reader threads in a wait-free manner and enables large-scale data sharing by admitting up to ($2^{32} - 2$) concurrent readers on off-the-shelf 64-bits machines, as opposed to the most advanced RMW-based approach which is limited to 58 readers on the same kind of machines. Further, ARC avoids multiple copies of the register content when accessing it—this is a problem that affects classical register algorithms based on atomic read/write operations on single words. Thus it allows for higher scalability with respect to the register size. Moreover, ARC explicitly reduces the overall energy consumption, via a proper limitation of RMW instructions in case of read operations re-accessing a still-valid snapshot of the register content, and by showing constant time for read operations and amortized constant time for write operations. Our proposal has therefore a strong focus on real-world off-the-shelf architectures, allowing us to capture properties which benefit both performance and energy consumption. A proof of correctness of our register algorithm is also provided, together with experimental data for a comparison with literature proposals. Beyond assessing ARC on physical platforms, we carry out as well an experimentation on virtualized infrastructures, which shows the resilience of wait-free synchronization as provided by ARC with respect to CPU-steal times, proper of modern paradigms such as cloud computing. Finally, we discuss how to extend ARC for scenarios with multiple writers and multiple readers—the so called (M,N) register. This is achieved not by changing the operations (and their wait-free nature) executed along the critical path of the threads, rather only changing the ratio between the number of buffers keeping the register snapshots and the number of threads to coordinate, as well as the number of bits used for counting readers within a 64-bit mask accessed via RMW instructions—just depending on the target balance between the number of readers and the number of writers to be supported.},
+  abstract  = {In this article we present Anonymous Readers Counting (ARC), a multi-word atomic (1,N) register algorithm for multi-core machines. ARC exploits Read-Modify-Write (RMW) instructions to coordinate the writer and reader threads in a wait-free manner and enables large-scale data sharing by admitting up to (2^32 - 2) concurrent readers on off-the-shelf 64-bits machines, as opposed to the most advanced RMW-based approach which is limited to 58 readers on the same kind of machines. Further, ARC avoids multiple copies of the register content when accessing it—this is a problem that affects classical register algorithms based on atomic read/write operations on single words. Thus it allows for higher scalability with respect to the register size. Moreover, ARC explicitly reduces the overall energy consumption, via a proper limitation of RMW instructions in case of read operations re-accessing a still-valid snapshot of the register content, and by showing constant time for read operations and amortized constant time for write operations. Our proposal has therefore a strong focus on real-world off-the-shelf architectures, allowing us to capture properties which benefit both performance and energy consumption. A proof of correctness of our register algorithm is also provided, together with experimental data for a comparison with literature proposals. Beyond assessing ARC on physical platforms, we carry out as well an experimentation on virtualized infrastructures, which shows the resilience of wait-free synchronization as provided by ARC with respect to CPU-steal times, proper of modern paradigms such as cloud computing. Finally, we discuss how to extend ARC for scenarios with multiple writers and multiple readers—the so called (M,N) register. This is achieved not by changing the operations (and their wait-free nature) executed along the critical path of the threads, rather only changing the ratio between the number of buffers keeping the register snapshots and the number of threads to coordinate, as well as the number of bits used for counting readers within a 64-bit mask accessed via RMW instructions—just depending on the target balance between the number of readers and the number of writers to be supported.},
   doi       = {10.1109/TPDS.2018.2865932},
   publisher = {IEEE},
   series    = {TPDS},
@@ -996,14 +1081,11 @@ We present experimental results which prove the viability of our approach, compa
   title     = {NUMA-Aware Non-Blocking Calendar Queue},
   year      = {2020},
   month     = sep,
-  publisher = {IEEE Computer Society},
+  publisher = {IEEE},
   series    = {DS-RT},
   abstract  = {Modern computing platforms are based on multi-processor/multi-core technology. This allows running applications with a high degree of hardware parallelism. However, medium-to-high end machines pose a problem related to the asymmetric delays threads experience when accessing shared data. Specifically, Non-Uniform-Memory-Access (NUMA) is the dominating technology---thanks to its capability for scaled-up memory bandwidth---which however imposes asymmetric distances between CPU-cores and memory banks, making an access by a thread to data placed on a far NUMA node severely impacting performance. In this article, we tackle this problem in the context of shared event-pool management, a relevant aspect in many fields, like parallel discrete event simulation. Specifically, we present a NUMA-aware calendar queue, which also has the advantage of making concurrent threads coordinate via a non-blocking scalable approach. Our proposal is based on work deferring combined with dynamic re-binding of the calendar queue operations (insertions/extractions) to the best suited among the concurrent threads hosted by the underlying computing platform. This changes the locality of the operations by threads in a way positively reflected onto NUMA tasks at the hardware level. We report the results of an experimental study, demonstrating the capability of our solution to achieve the order of 15% better performance compared to state-of-the-art solutions already suited for multi-core environments.},
   location  = {Prague, Czech Republic},
-  note      = {To appear},
 }
-
-
 
 @InProceedings{Pic20,
   author    = {Piccione, Andrea and Pellegrini, Alessandro},
@@ -1011,13 +1093,11 @@ We present experimental results which prove the viability of our approach, compa
   title     = {Agent-based Modeling and Simulation for Emergency Scenarios: A Holistic Approach},
   year      = {2020},
   month     = sep,
-  publisher = {IEEE Computer Society},
+  publisher = {IEEE},
   series    = {DS-RT},
   abstract  = {Agent-based Modeling and Simulation is a powerful technique which allows to study the interactions in complex systems, and allows to explore or even foresee the emergence of more complicated properties or behaviors related to the interaction among the simpler agents in the environment. In the context of emergency or crisis scenarios, Agent-based Modeling and Simulation can allow to effectively study emergency plans, with the goal of assessing their viability, also with respect to the number of possible fatalities. In this paper, we analyze Agent-based Modeling and Simulation for crisis scenarios from a methodological and empirical point of view, with the goal of identifying what are the behavioral parameters that a model should encompass, in order for the results of the simulation to be useful for emergency plan assessment and/or compilation. We also experimentally provide a characterization of the effects of such behavioral parameters.},
   location  = {Prague, Czech Republic},
-  note      = {To appear},
 }
-
 
 @InProceedings{Con20,
   author    = {Conoci, Stefano and Ianni, Mauro and Marotta, Romolo and Pellegrini, Alessandro},
@@ -1044,6 +1124,7 @@ In this paper, we explore the issues associated with applying these techniques o
   abstract  = {A rollback operation in a speculative parallel discrete event simulator has traditionally targeted the perfect reconstruction of the state to be restored after a timestamp-order violation. This imposes that the rollback support entails specific capabilities and consequently pays given costs. In this article we propose approximated rollbacks, which allow a simulation object to perfectly realign its virtual time to the timestamp of the state to be restored, but lead the reconstructed state to be an approximation of what it should really be. The advantage is an important reduction of the cost for managing the state restore task in a rollback phase, as well as for managing the activities (i.e. state saving) that actually enable rollbacks to be executed. Our proposal is suited for stochastic simulations, and explores a tradeoff between the statistical representativeness of the outcome of the simulation run and the execution performance. We provide mechanisms that enable the application programmer to control this tradeoff, as well as simulation-platform level mechanisms that constitute the basis for managing approximate rollbacks in general simulation scenarios. A study on the aforementioned tradeoff is also presented.},
   doi       = {10.1145/3384441.3395984},
   location  = {Miami, FL, USA},
+  badges    = {available, reusable, reproduced},
 }
 
 @InProceedings{Sil20,
@@ -1166,6 +1247,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   abstract  = {The share-everything PDES (Parallel Discrete Event Simulation) paradigm is based on fully sharing the possibility to process any individual event across concurrent threads, rather than binding Logical Processes (LPs) and their events to threads. It allows concentrating, at any time, the computing power—the CPU-cores on board of a shared-memory machine—towards the unprocessed events that stand closest to the current commit horizon of the simulation run. This fruitfully biases the delivery of the computing power towards the hot portion of the model execution trajectory. In this article we present an innovative share-everything PDES system that provides (1) fully non-blocking coordination of the threads when accessing shared data structures and (2) fully speculative processing capabilities—Time Warp style processing—of the events. As we show via an experimental study, our proposal can cope with hard workloads where both classical Time Warp systems—based on LPs to threads binding—and previous share-everything proposals—not able to exploit fully speculative processing of the events—tend to fail in delivering adequate performance.},
   doi       = {10.1145/3200921.3200931},
   location  = {Rome, Italy},
+  badges    = {available, reusable, reproduced},
 }
 
 @InProceedings{Con18b,
@@ -1180,6 +1262,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   abstract  = {Controlling power usage has become a core objective in modern computing platforms. In this article we present an innovative Time Warp architecture oriented to efficiently run parallel simulations under a power cap. Our architectural organization considers power usage as a foundational design principle, as opposed to classical power-unaware Time Warp design. We provide early experimental results showing the potential of our proposal.},
   doi       = {10.1145/3200921.3200930},
   location  = {Rome, Italy},
+  badges    = {available, reusable, reproduced},
 }
 
 @InProceedings{Pri18,
@@ -1938,9 +2021,7 @@ In this work we propose generally-applicable design principles for a new memory 
   note     = {Workshop di Informatica Quantitativa (InfQ) 2014},
   abstract = {High-performance computing on shared-memory/multi-core architectures could suffer from non-negligible performance bottlenecks due to coordination algorithms, which are nevertheless necessary to ensure the overall correctness and/or to support the execution of housekeeping operations, e.g. to recover computing resources (e.g., memory). Although more complex in design/development, a paradigm switch from classical coordination algorithms to 
 wait-free ones could significantly boost the performance of HPC applications.
-
 In this paper we explore the relevance of this paradigm shift in shared-memory architectures, by focusing on the context of Parallel Discrete Event Simulation, where the Global Virtual Time (GVT) represents a fundamental coordination algorithm. It allows to compute the lower bound on the value  of the logical time passed through by all the entities participating in a parallel/distributed computation.  Hence it can be used to discriminate what events belong to the past history of the computation---thus being considered as committed---and allowing for memory recovery (e.g. of obsolete  logs that were taken in order to support state recoverability) and non-revokable operations (e.g. I/O). 
-
 We compare the reference (blocking) algorithm for shared memory, the one proposed by by Fujimoto and Hybinette \cite{Fuj97}, with an innovative wait-free implementation, emphasizing on what design choices must be made to enforce this paradigm shift, and what are the performance implications of removing critical sections in coordination algorithms.},
   journal  = {CoRR},
   archiveprefix = {arXiv},
@@ -2031,6 +2112,38 @@ We present here an innovative approach to load sharing on multi-core/multiproces
 
 
 %%%%% THESES %%%%%
+
+@MastersThesis{tIzz21,
+  author   = {Izzillo, Alessio},
+  school   = {Sapienza, University of Rome},
+  title    = {Graph and Flow-based Distributed Detection and Mitigation of Botnet Attacks},
+  year     = {2021},
+  month    = jan,
+  type     = {mathesis},
+  abstract = {Nowadays, many organizations are constantly victims of several security threats which may cause economic and reputation damages. Among the large varietyof malware which affects several systems and online services, we can found software such as worms, viruses, spyware, trojans, key-loggers and botnets. Botnets are one of the most dangerous type of cyber-attacks, which are used in a variety of malicious campaigns such as email spam, financial theft, click fraud, distributed denial-of-service (DDoS) attacks for taking online services offline, and for committing cryptocurrency scams (using users’ processing power to mine cryptocurrency).
+
+According to the Federal Bureau of Investigation, "Botnets have caused over $9 billion in losses to U.S. victims and over $110 billion in losses globally. Approximately 500 million computers are infected globally each year, translating into 18 victims per second". The first official recognized Botnet named "EarthLink Spammer" appeared in 2000: it was created to send phishing emails in large numbers, masked as communications from legitimate websites. Over 1.25 million malicious emails were sent to collect sensitive information. The botnet had downloaded viruses on victims’ computers when they clicked on the links in the emails, and these viruses remotely fed the information to the sender. In 2016, there was one of the largest and most lucrative digital ad malware ever devised: Methbot. It acquired thousands of IP addresses with US-based ISPs. The operators first created more than 6000 domains and 250267 distinct URLs that appeared to be from premium publishers (such as ESPN and Vogue), and then, video ads from malicious advertisers were posted on these websites which sent their bots “watch” around 30 million ads daily.
+
+Over the years, the Botnet technology has evolved making the detection and mitigation of botnet attacks a very challenging problem. Many approaches have been proposed: signature-based, anomaly-based, DNS-based and mining-based. As it will be discussed, each approach presents advantages and disadvantages. The goal of this thesis is to use a hybrid analysis that relies on data mining flow and graph based patterns which can identify malicious external hosts which communicate with our hosts on which a distributed application of an online service is deployed. The hybrid analysis of this approach is performed online in order to mitigate the attacks. The process starts by capturing, in kernel space, some fields of the packets by means of an eBPF filter and passing them to userspace for grouping them in "batches" of a certain size, on which the hybrid analysis is carried out.
+
+The eBPF filter in kernel space allows to inspect in real-time the packets in an unobtrusive and effective way. In fact, in addition to collecting packets characteristics, it is able to reject the packets coming from external hosts having IPs labeled as malicious by the userspace analysis.},
+  comment  = {Supervisor: A. Pellegrini.},
+}
+
+
+
+@MastersThesis{tPimp20,
+  author   = {Pimpini, Adriano},
+  school   = {Sapienza, University of Rome},
+  title    = {High Performance Simulation of Spiking Neural Networks},
+  year     = {2020},
+  month    = oct,
+  type     = {mathesis},
+  abstract = {Spiking Neural Networks (SNNs) are a class of Artificial Neural Networks that closely mimic biological neural networks. They are particularly interesting for the scientific community because of their potential to advance research in a number of fields, both because of better insights on neural behaviour, benefitting medicine, neuroscience, psychology, and because of the potential in Artificial Intelligence. Their ability to run on a very low energy budget once implemented in hardware makes them even more appealing. However, because of their behaviour that evolves with time, when a hardware implementation is not available, their output cannot simply be computed with a one-shot function—however large—, but rather they need to be simulated.
+Simulating Spiking Neural Networks is extremely costly, mainly due to their sheer size. Current simulation methods have trouble scaling up on more powerful systems because of their use of conservative global synchronization methods. In this work, Parallel Discrete Event Simulation (PDES) with Time Warp is proposed as a highly scalable solution to simulate Spiking Neural Networks, thanks to the optimistic approach to synchronization.
+The main problem of PDES is the complexity of implementing a model on it, especially of a system that is continuous in time, as time in PDES “jumps” from one event to the next. This greatly increases friction towards adoption of PDES to simulate SNNs. As such, current simulation-based work on SNNs is relegated to worse-scaling approaches. In order to foster the adoption of PDES and further the work on simulation of SNNs on larger scales, in this work a solution is developed and presented that hides the underlying complexity of PDES.},
+  comment  = {Supervisor: A. Pellegrini.},
+}
 
 @MastersThesis{tAlta20,
   author   = {Altamura, Lorenzo},
@@ -2588,18 +2701,6 @@ As we will show, some of the building blocks underlying the previous fault toler
   year    = {1995},
   type    = {mathesis},
   comment = {Supervisor: B. Ciciani},
-}
-
-@Article{Qua20,
-  author  = {Quaglia, Francesco and Theodoropoulos, Georgios and Pellegrini, Alessandro},
-  journal = {Transactions on Modeling and Computer Simulations},
-  title   = {Editorial to the Special Issue on the Principles of Advanced Discrete Simulation (PADS)},
-  year    = {2020},
-  month   = mar,
-  number  = {5},
-  pages   = {8:1--8:2},
-  volume  = {69},
-  doi     = {10.1145/3381903},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
