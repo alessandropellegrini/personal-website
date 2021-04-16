@@ -8,8 +8,8 @@ Dependencies
 
 You need `jekyll`, with the following plugins:
 * `jekyll-scholar` 
-* jekyll-sitemap
-* jekyll-regex-replace
+* `jekyll-sitemap`
+* `jekyll-regex-replace`
 to generate the site.
 
 Everything can be installed from the ruby `gem` installer as:
