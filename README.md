@@ -7,9 +7,9 @@ Dependencies
 ------------
 
 You need `jekyll`, with the following plugins:
-*     `jekyll-scholar` 
-*     `jekyll-sitemap`
-*    `jekyll-regex-replace`
+*  `jekyll-scholar`
+*  `jekyll-sitemap`
+*  `jekyll-regex-replace`
 
 to generate the site.
 
