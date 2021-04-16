@@ -63,14 +63,32 @@ best paper awards.
 
 {%- if entry.note and entry.note == "Candidate for (but not winner of) the Best Paper Award" %}
 <br/>
-<img alt="best-paper-candidate" src="{{ site.url }}/images/podium.png" />
-<span style="color:red">Candidate for (but not winner of) the Best Paper Award</span>
+<img alt="best-paper-shortlisted" src="{{ site.url }}/images/podium.png" />
+<span style="color:red">Shortlisted for the Best Paper Award</span>
 {%- endif -%}
 
 {%- if entry.note and entry.note == "Winner of the Best Paper Award" %}
 <br/>
 <img alt="best-paper" src="{{ site.url }}/images/medal.png" />
 <span style="color:red">Winner of the Best Paper Award</span>
+{%- endif -%}
+
+{%- if entry.badges %}
+<br/>
+{%- assign badges = entry.badges | split: ',' -%}
+{%- for badge in badges -%}
+  {%- if badge == "available" -%}
+  <img style="max-width: 32px;" alt="repro-available" title="Artifact Available" src="{{ site.url }}/images/available.png" />
+  {%- elsif badge == "functional" -%}
+  <img style="max-width: 32px;" alt="repro-functional" title="Artifact Functional—Evaluated" src="{{ site.url }}/images/functional.png" />
+  {%- elsif badge == "reusable" -%}
+  <img style="max-width: 32px;" alt="repro-reusable" title="Artifact Functional—Reusable" src="{{ site.url }}/images/reusable.png" />
+  {%- elsif badge == "reproduced" -%}
+  <img style="max-width: 32px;" alt="repro-reproduced" title="Results Reproduced v1.1" src="{{ site.url }}/images/reproduced.png" />
+  {%- elsif badge == "replicated" -%}
+  <img style="max-width: 32px;" alt="repro-replicated" title="Results Replicated v1.1" src="{{ site.url }}/images/replicated.png" />
+  {%- endif -%}
+{% endfor %}
 {%- endif -%}
 
 {%- if entry.type == "phdthesis" or entry.type == "bathesis" or entry.type == "mathesis" -%}
