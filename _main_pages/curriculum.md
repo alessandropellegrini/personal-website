@@ -7,7 +7,8 @@ permalink: /curriculum/
 
 Here you can find a
 ![PDF]({{ site.url }}/images/pdf.png)
-[PDF Version of my Curriculum Vitae]({{ site.url }}/pub/curriculum.pdf).
+[PDF Version of my Curriculum Vitae]({{ site.url }}/pub/curriculum.pdf)
+(last updated on {{ "./pub/curriculum.pdf" | file_date | date_to_string }}).
 
 
 ## Awards and Honors
@@ -36,9 +37,10 @@ Here you can find a
 
 * 2020 - present: [ICPE](https://icpe2019.spec.org/),  in the Reproducibility Techincal Committee.
 * 2017 - present: [SIGSIM PADS](http://www.acm-sigsim-pads.org/), ACM SIGSIM Conference on Principles of Advanced Discrete Simulation.
+* 2017 - present: [WSC](http://informs-sim.org/), Winter Simulation Conference.
 * 2014 - present: [SIMULTECH](http://www.simultech.org/), International Conference on Simulation and Modeling Methodologies, Technologies and Applications.
 * 2019 - present: [SIMUL](https://www.iaria.org/conferences2019/SIMUL19.html), International Conference on Advances in System Simulation.
-* 2017 - 2019: [WSC](http://informs-sim.org/), Winter Simulation Conference.
+* 2020 - present: [CLOUD COMPUTING](https://www.iaria.org/conferences2021/ComCLOUDCOMPUTING21.html), International Conference on Cloud Computing, GRIDs, and Virtualization.
 * 2019: [Euro-Par](http://www.europar.org/), in the Parallel Programming Models Track.
 * 2019: [AHPC](http://hpcs2019.cisedu.info/2-conference/workshops/workshop09-ahpc), International Workshop on Autonomic High Performance Computing–co-located with the International Conference on High Performance Computing & Simulation ([HPCS](http://hpcs2019.cisedu.info/)).
 * 2015 - 2019: [DS-RT](http://ds-rt.com/), IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications.
