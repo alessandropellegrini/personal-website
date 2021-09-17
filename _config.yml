@@ -3,7 +3,7 @@ markdown: kramdown
 highlighter: pygments
 exclude: [README.md, pubs.bib, LICENSE, upload.sh]
 
-url: "http://www.ce.uniroma2.it/~pellegrini/"
+url: "https://www.alessandropellegrini.it/"
 
 # Blog posts map to courses
 permalink: /didattica/:year/:title.html

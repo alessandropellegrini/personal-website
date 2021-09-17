@@ -1078,6 +1078,40 @@ We present experimental results which prove the viability of our approach, compa
 %%%%% Conference Proceedings %%%%%
 
 
+@InProceedings{DeA21b,
+  author    = {De~Angelis, Emanuele and Pellegrini, Alessandro and Proietti, Maurizio},
+  booktitle = {Proceedings of the 2021 IEEE International Symposium on Software Reliability Engineering Workshops},
+  title     = {Automatic Extraction of Behavioral Features for Test Program Similarity Analysis},
+  year      = {2021},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {ISSREW},
+  abstract  = {We present a methodology for performing automatic extraction of behavioral features from test programs, that is, for collecting pieces of information about the test programs execution. These features are then exploited to carry out analysis and reasoning about test program similarity. The similarity information can be used to drive the execution of test campaigns, in the attempt to either reduce the time-to-test, or to increase the testing capabilities of a given test suite. Our methodology is embedded in the Hyperion analysis framework, which can be configured to define a wide range of test program similarity criteria.},
+  location  = {Wuhan, China},
+  note      = {To appear},
+}
+
+
+
+@InProceedings{DeA21,
+  author    = {De~Angelis, Emanuele and De~Angelis, Guglielmo and Pellegrini, Alessandro and Proietti, Maurizio},
+  booktitle = {Proceedings of the 15th IEEE International Conference on Service Oriented Systems Engineering},
+  title     = {Inferring Relations Among Test Programs in Microservices Applications},
+  year      = {2021},
+  month     = aug,
+  publisher = {IEEE},
+  series    = {SOSE},
+  abstract  = {The emergence of the microservices-oriented architectural style calls for novel methodologies and technological frameworks that support the design, development, and maintainance of applications structured according to that new style. In this paper, we consider the issue of designing suitable strategies for the governance and the automation of testing activities within the microservices paradigm. 
+		We focus on the problem of discovering relations between test programs that help avoiding to re-run all the available test suites each time one of its constituents evolves. 
+		We propose an analysis technique, based on symbolic execution of test programs, which is able to collect information about the invocations of local and remote APIs performed when running such programs.
+		Symbolic execution enables the analysis of sets of executions corresponding to different input data, and hence it is also suitable for parametric test programs. 
+		The information extracted by symbolic execution is processed by a rule-based automated reasoning engine, which infers dependencies and similarities among test programs. In particular, test programs are considered similar if they involve the same microservice instance, or they connect to the same remote API, or they locally activate overlapping APIs, or they raise similar kinds of errors.
+		We show the viability of our approach by presenting a case study within the context of a real-world microservice application that implements an open-source educational platform.},
+  location  = {Oxford, UK},
+  note      = {Winner of the Best Paper Award},
+}
+
+
 @InProceedings{Rab20,
   author    = {Rab, Maryan and Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
   booktitle = {Proceedings of the 24th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
@@ -1274,7 +1308,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   title     = {Porting Event \& Cross-State Synchronization to the Cloud},
   year      = {2018},
   month     = may,
-  note      = {Candidate for (but not winner of) the Best Paper Award},
+  note      = {Shortlisted for the Best Paper Award},
   pages     = {177--188},
   publisher = {ACM},
   series    = {PADS},
@@ -1355,7 +1389,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   title     = {A Non-blocking Global Virtual Time Algorithm with Logarithmic Number of Memory Operations},
   year      = {2017},
   month     = oct,
-  note      = {Candidate for (but not winner of) the Best Paper Award},
+  note      = {Shortlisted for the Best Paper Award},
   pages     = {17--24},
   publisher = {IEEE Computer Society},
   series    = {DS-RT},
@@ -1820,7 +1854,7 @@ In this paper, we present an architectural solution (realized as a static C libr
   title     = {Hijacker: Efficient Static Software Instrumentation with Applications in High Performance Computing (poster paper)},
   year      = {2013},
   month     = jul,
-  note      = {Candidate for (but not winner of) the Outstanding Poster Paper Award},
+  note      = {Shortlisted for the Outstanding Poster Paper Award},
   pages     = {650--655},
   publisher = {IEEE Computer Society},
   series    = {HPCS},
@@ -2003,7 +2037,7 @@ In this work we propose generally-applicable design principles for a new memory 
   booktitle = {Proceedings of the 2009 ACM/IEEE/SCS 23rd Workshop on Principles of Advanced and Distributed Simulation},
   title     = {{Di-DyMeLoR}: Logging only Dirty Chunks for Efficient Management of Dynamic Memory Based Optimistic Simulation Objects},
   year      = {2009},
-  note      = {Candidate for (but not winner of) the Best Paper Award},
+  note      = {Shortlisted for the Best Paper Award},
   pages     = {45--53},
   publisher = {IEEE Computer Society},
   series    = {PADS},
@@ -2016,6 +2050,22 @@ In this work we propose generally-applicable design principles for a new memory 
 
 %%%%% Talks %%%%%
 
+@TechReport{Pell21,
+  author   = {Pellegrini, Alessandro},
+  title    = {Reproducibility Report for the Paper: QN-based Modeling and Analysis of Software Performance Antipatterns for Cyber-Physical Systems},
+  year     = {2021},
+  month    = apr,
+  note     = {Workshop di Informatica Quantitativa (InfQ) 2014},
+  abstract = {The authors have uploaded their artifact to Zenodo, which ensures a long-term retention of the artifact. The artifact allows to re-run the experiments very smoothly, and the dependencies are well documented. The process to regenerate data for the figures and tables in the paper completes, and all results are reproducible.
+This paper can thus receive the Artifacts Available badge. The software in the artifact runs correctly with no trouble, and is relevant to the paper, thus deserving the Artifacts Evaluated -- Functional badge. Given the successful reproduction of all figures and tables, the Results Reproduced badge can be assigned.},
+  journal  = {CoRR},
+  eprint={2104.10030},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE},
+  url           = {http://arxiv.org/abs/2104.10030},
+  volume        = {abs/2104.10030},
+}
+
 @TechReport{Pell20b,
   author   = {Pellegrini, Alessandro and Quaglia, Francesco},
   title    = {On the Relevance of Wait-free Coordination Algorithms in Shared-Memory HPC: The Global Virtual Time Case},
@@ -2026,7 +2076,6 @@ In this work we propose generally-applicable design principles for a new memory 
 wait-free ones could significantly boost the performance of HPC applications.
 In this paper we explore the relevance of this paradigm shift in shared-memory architectures, by focusing on the context of Parallel Discrete Event Simulation, where the Global Virtual Time (GVT) represents a fundamental coordination algorithm. It allows to compute the lower bound on the value  of the logical time passed through by all the entities participating in a parallel/distributed computation.  Hence it can be used to discriminate what events belong to the past history of the computation---thus being considered as committed---and allowing for memory recovery (e.g. of obsolete  logs that were taken in order to support state recoverability) and non-revokable operations (e.g. I/O). 
 We compare the reference (blocking) algorithm for shared memory, the one proposed by by Fujimoto and Hybinette \cite{Fuj97}, with an innovative wait-free implementation, emphasizing on what design choices must be made to enforce this paradigm shift, and what are the performance implications of removing critical sections in coordination algorithms.},
-  journal  = {CoRR},
   archiveprefix = {arXiv},
   eprint        = {2004.10033},
   journal       = {CoRR},
