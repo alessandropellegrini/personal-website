@@ -12,4 +12,5 @@ find _site -type f -exec chmod 604 {} \;
 find _site -type d -exec chmod 705 {} \;
 
 #rsync -avz -e ssh --delete _site/ $1@users.diag.uniroma1.it:./public_html/
-rsync -avz -e ssh --delete _site/ $1@claudius.ce.uniroma2.it:./public_html/
+#rsync -avz -e ssh --delete _site/ $1@claudius.ce.uniroma2.it:./public_html/
+rsync -avz -e ssh --delete _site/ $1@alessandropellegrini.it:/var/www/alessandropellegrini.it

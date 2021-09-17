@@ -7,12 +7,7 @@ permalink: /teaching/
 Office Hours
 ------------
 
-Students office consulting is at:
-
-* ~~Tor Vergata (Viale del Politecnico 1), Ingegneria dell'Informazione Building, Room A1-05~~
-* Online (Microsoft Teams)
-
-Due to the Coronavirus pandemic, we can meet only online. In order to book an appointment, contact me on Teams.
+Due to the Coronavirus pandemic, we can meet only online. In order to book an appointment, contact me.
 
 Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
 
