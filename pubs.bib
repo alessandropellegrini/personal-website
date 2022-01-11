@@ -158,6 +158,18 @@ We will clearly show, during the development of these supports, what is the effe
 %%%%% Journal Articles %%%%%
 
 
+@Article{Sil21,
+  author    = {Silvestri, Emiliano and Pellegrini, Alessandro and Di~Sanzo, Pierangelo and Quaglia, Francesco},
+  journal   = {Transactions on Computers},
+  title     = {Effective Runtime Management of Tasks and Priorities in GNU OpenMP Applications},
+  year      = {2021},
+  month     = dec,
+  abstract  = {OpenMP has become a reference standard for the design of parallel applications. This standard is evolving very fast, thus offering ever new opportunities to the application programmers. However, OpenMP runtime environments are often not fully aligned to the actual requirements imposed by the evolution of such standard. Among the main lacks, we find: (a) a limited capability to effectively cope with task priorities, and (b) the inadequacy in guaranteeing core properties while processing tasks such as the so called work-conservativeness---the ability of the OpenMP runtime environment to fully exploit the underlying multi-processor/multi-core machine through the avoidance of thread-blocking phases. In this article we present the design of extensions to the GNU OpenMP (GOMP) implementation, integrated into gcc, which allow the effective management of tasks and their priorities. Our proposal is based on a user-space library---modularly combined with the one already offered by GOMP---and an external kernel-level Linux module---offering the opportunity to exploit raising hardware facilities for the purpose of task/priority management. We also provide experimental results showing the effectiveness of our proposal, achieved by running either OpenMP common benchmarks or a new benchmark application (named Hashtag-Text) that we explicitly devised in order to stress the OpenMP runtime environment in relation to the above-mentioned task/priority management aspects.},
+  publisher = {IEEE},
+  series    = {TC},
+  doi       = {10.1109/TC.2021.3139463},
+  note      = {To appear},
+}
 @Article{Gig21,
   author    = {Gigante, Gabriella and Palumbo, Roberto and Pascarella, Domenico and Pellegrini, Alessandro and Duca, Gabriella and Piera, Miquel Àngel and Ramos, Juan José},
   journal   = {International Journal of Aviation, Aeronautics, and Aerospace},
@@ -1088,7 +1100,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {ISSREW},
   abstract  = {We present a methodology for performing automatic extraction of behavioral features from test programs, that is, for collecting pieces of information about the test programs execution. These features are then exploited to carry out analysis and reasoning about test program similarity. The similarity information can be used to drive the execution of test campaigns, in the attempt to either reduce the time-to-test, or to increase the testing capabilities of a given test suite. Our methodology is embedded in the Hyperion analysis framework, which can be configured to define a wide range of test program similarity criteria.},
   location  = {Wuhan, China},
-  note      = {To appear},
 }
 
 
@@ -1214,6 +1225,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   abstract  = {Agent-Based Modeling and Simulation (ABMS) is an effective paradigm to model systems exhibiting complex interactions, also with the goal of studying the emergent behavior of these systems. While ABMS has been effectively used in many disciplines, many successful models are still run only sequentially. Relying on simple and easy-to-use languages such as NetLogo limits the possibility to benefit from more effective runtime paradigms, such as speculative Parallel Discrete Event Simulation (PDES). In this paper, we discuss a semantically-rich API allowing to implement Agent-Based Models in a simple and effective way. We also describe the critical points which should be taken into account to implement this API in a speculative PDES environment, to scale up simulations on distributed massively-parallel clusters. We present an experimental assessment showing how our proposal allows to implement complicated interactions with a reduced complexity, while delivering a non-negligible performance increase.},
   doi       = {10.1145/3316480.3322890},
   location  = {Chicago, IL, USA},
+  badges    = {available,reusable},
 }
 
 @InProceedings{Mar19,
