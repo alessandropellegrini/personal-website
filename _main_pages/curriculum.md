@@ -13,6 +13,7 @@ Here you can find a
 
 ## Awards and Honors
 
+* Best Paper Award, IEEE SOSE Conference, 2021.
 * HiPEAC Technology Transfer Award, 2018.
 * Best Paper Award, DS-RT Conference, 2016.
 * Best PhD Thesis of the year, Sapienza University of Rome, 2015.
