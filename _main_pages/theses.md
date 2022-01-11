@@ -57,14 +57,6 @@ To get more information on this thesis topic, you can read the following papers:
 
 1. **Daemon to manage consumption**    
    Define an interface for low-overhead power management of the system. Define masks to set P-state of multiple cores with a single system call. The daemon should communicate with non-root process to allow them to self-tune power without required superuser privilege. In addition to P-state, should also allow enabling or disabling SMT and turbo boost.
-2. **Fine-grain Simultaneous Multi Threading**    
-   SMT can increase applications performance by up to 40% (Intel HT 2 way)  with very limited increase in power consumption. However this speed-up is highly performance-dependent and its use might even lead to a performance degradation. Moreover, applications generally are typically composed of different threads which might show a different workload, and thus, different SMT effectiveness. The goal of this thesis is to allow portions of threads of a single application to enable SMT while for others it is still disabled. This could either be achieved at system level (TCB and scheduler modifications) or with an external module and affinity. Measuring the performance/power trade-offs for different applications is also part of this thesis.
-3. **Effective exploration of P-state configurations**    
-   In the context of multi-threaded applications, we want to build an exploration policy which does not violate a specified power cap while collecting the data to support the prediction model.
-4. **Advanced exploration-based powercap**    
-   Devising exploration strategies which are resilient to local maxima/minima to build prediction model of massively parallel p-state configurations.
-5. **Synthetic Benchmark Generation from real-world applications**    
-   The goal of this thesis is to generate a synthetic program starting from a real application, which has a very short duration but is meaningful from a workload point of view with respect to the original application. This generation shall be done using hardware performance counters. See this supporting material for an additional framing of the topic: [1](pmu.pdf) [2](IBS.pdf).
 
 ### Non-Blocking Algorithms
 
@@ -93,10 +85,7 @@ No theses available at the moment.
 
 ### Cybersecurity
 
-1. **`Unveil()`**    
-   Design and implementation of a BSD `unveil()`-like system to support mandatory filesystem access.
-1. **Security against Malicious Loadable Kernel Modules**    
-   Design and implementation of a set of patches to protect the Linux kernel from malicious modules.
+No theses available at the moment.
 
 
 
