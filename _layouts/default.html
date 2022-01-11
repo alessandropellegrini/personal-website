@@ -28,7 +28,9 @@
       <meta name="msapplication-config" content="{{ site.url }}/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <link rel="stylesheet" href="{{ site.url }}/css/academicons.min.css">
-      <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+      {% if page.title == "Research & Publications" or page.title == "Theses Proposals" -%}
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      {% endif %}
    </head>
    <body class="vsc-initialized">
       <div id="MathJax_Message" style="display: none;"></div>

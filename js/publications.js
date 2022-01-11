@@ -8,6 +8,19 @@ function toggle(type) {
 	$("."+type).toggle(300);
 }
 
+function showOnly(type) {
+	if(type != "book")
+		$(".book").toggle(300);
+	if(type != "incollection")
+		$(".incollection").toggle(300);
+	if(type != "article")
+		$(".article").toggle(300);
+	if(type != "inproceedings")
+		$(".inproceedings").toggle(300);
+	if(type != "other")
+		$(".other").toggle(300);
+}
+
 
 $(function(){
 	$(".dialog").dialog({
