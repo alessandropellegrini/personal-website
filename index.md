@@ -5,31 +5,32 @@ title: General Information
 
 I'm a Tenure-Track Assistant Professor (RTDb) at the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/).
 
-I am also collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)* of the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR). I am also member of the *[High Performance and Dependable Computing Systems](http://www.dis.uniroma1.it/~hpdcs)* research group
+I am also collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)* of the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR). I am also member of the *[High Performance and Dependable Computing Systems](https://hpdcs.github.io/)* research group.
+
+<div class="valign-wrapper">
+<p>I am a co-founder of the University Startup <a href="https://www.lockless.it" target="_blank">Lockless S.r.l</a>. <img alt="Lockless S.r.l." src="{{ site.url }}/images/lockless.png"/></p>
+</div>
 
 I have previously been a Postdoctoral Researcher at the [Department of Computer, Control and Management Engineering](https://www.diag.uniroma1.it/en) at [Sapienza, University of Rome](https://www.uniroma1.it/en/) (until 2020).
 
+## Memberships
 
 <div class="valign-wrapper">
-<img alt="HiPEAC Member" src="{{ site.url }}/images/hipeac.png"/> HiPEAC Member since October 2018
+<ul>
+    <li>HiPEAC Member since October 2018 <img alt="HiPEAC Member" src="{{ site.url }}/images/hipeac.png"/></li>
+    <li>ACM Member since November 2011 <img alt="ACM Member" src="{{ site.url }}/images/ACM_member.png"/></li>
+    <li>IEEE Member from March 2012 to February 2021 <img alt="IEEE Member" src="{{ site.url }}/images/IEEE_member.png"/></li>
+</ul>
 </div>
-<div class="valign-wrapper">
-<img alt="IEEE Member" src="{{ site.url }}/images/IEEE_member.png"/> IEEE Member since March 2012
-</div>
-<div class="valign-wrapper">
-<img alt="ACM Member" src="{{ site.url }}/images/ACM_member.png"/> ACM Member since November 2011
-</div>
-
-​    
-
 ## Contact Information
 
 **address**:
-Dipartimento di Ingegneria Civile e Ingegneria Informatica   
-Università degli Studi di Roma “Tor Vergata”   
-Edificio di Ingegneria dell’Informazione   
-Stanza A3-06    
-Via del Politecnico 1, 00133, Roma (Italy)
+
+> Dipartimento di Ingegneria Civile e Ingegneria Informatica   
+> Università degli Studi di Roma “Tor Vergata”   
+> Edificio di Ingegneria dell’Informazione   
+> Stanza A3-06    
+> Via del Politecnico 1, 00133, Roma (Italy)
 
 **e-mail**: a<img src="images/dot.gif" alt=" dot " />pellegrini<img src="images/at.gif" alt=" at " style="vertical-align:middle;"/>ing<img src="images/dot.gif" alt=" dot " />uniroma2<img src="images/dot.gif" alt=" dot " />it   
 **phone**: 7945   
