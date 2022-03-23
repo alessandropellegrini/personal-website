@@ -3,15 +3,15 @@ layout: default
 title: General Information
 ---
 
-I'm a Tenure-Track Assistant Professor (RTDb) at the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/).
+I'm a Tenure-Track Assistant Professor (RTDb) in the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/).
 
-I am also collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)* of the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR). I am also member of the *[High Performance and Dependable Computing Systems](https://hpdcs.github.io/)* research group.
+I am also collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)* in the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR). I am also member of the *[High Performance and Dependable Computing Systems](https://hpdcs.github.io/)* research group.
 
 <div class="valign-wrapper">
 <p>I am a co-founder of the University Startup <a href="https://www.lockless.it" target="_blank">Lockless S.r.l</a>. <img alt="Lockless S.r.l." src="{{ site.url }}/images/lockless.png"/></p>
 </div>
 
-I have previously been a Postdoctoral Researcher at the [Department of Computer, Control and Management Engineering](https://www.diag.uniroma1.it/en) at [Sapienza, University of Rome](https://www.uniroma1.it/en/) (until 2020).
+I have previously been a Postdoctoral Researcher in the [Department of Computer, Control and Management Engineering](https://www.diag.uniroma1.it/en) at [Sapienza, University of Rome](https://www.uniroma1.it/en/) (until 2020).
 
 ## Memberships
 
