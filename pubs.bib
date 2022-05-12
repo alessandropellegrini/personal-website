@@ -2,15 +2,6 @@
 
 %%%%% Books %%%%%
 
-@Book{Cin17c,
-  author    = {Davide Cingolani},
-  publisher = {EAI - Edizioni Accademiche Italiane},
-  title     = {Software Reversibility in Speculative Platforms: A reversible computing approach to state recovery},
-  year      = {2017},
-  isbn      = {978-3-330-77780-4},
-  month     = jan,
-}
-
 @Book{Pell14e,
   author    = {Pellegrini, Alessandro},
   publisher = {Sapienza Università Editrice},
@@ -20,51 +11,11 @@
   month     = nov,
   series    = {Studi e Ricerche},
   abstract  = {Simulation is a powerful technique to represent the evolution of real-world phenomena or systems over time. It has been extensively used in different research fields (from medicine to biology, from economy, to disaster rescue) to study the behaviour of complex systems during their evolution (symbiotic simulation) or before their actual realization (what-if analysis).
-
 A traditional way to achieve high performance simulations is the employment of Parallel Discrete Event Simulation (PDES) techniques, which are based on the partitioning of the simulation model into Logical Processes (LPs) that can execute events in parallel on different CPUs and/or different CPU cores, and rely on synchronization mechanisms to achieve causally consistent execution of simulation events. As it is well recognized, the optimistic synchronization approach, namely the Time Warp protocol, which is based on rollback for recovering possible timestamp-order violations due to the absence of block-until-safe policies for event processing, is likely to favour speedup in general application/architectural contexts.
-
 However, the optimistic PDES paradigm implicitly relies on a programming model that drifts from traditional sequential-style programming, given that there is no notion of global address space (fully accessible while processing events at any LP). Furthermore, there is the underlying assumption that the code associated with event handlers cannot execute unrecoverable operations given their speculative processing nature. Nevertheless, even though no unrecoverable action is ever executed by event handlers, some means to actually undo the action upon request needs to be devised and implemented within the software stack.
-
 On the other hand, sequential-style programming is a very easy paradigm for the development of simulation code, given that it does not require the programmer to reason about memory partitioning (and therefore message passing) and speculative (concurrent) processing of the application.
-
 In this thesis, we present methodological and technical innovations which will show how it is possible, by developing innovative runtime mechanisms, to allow a programmer to implement his simulation model in a fully sequential way, and have the underlying simulation framework to execute it in parallel according to speculative processing techniques. Some of the approaches we provide show applicability in either shared- or distributed-memory systems, while others will be specifically tailored to multi/many-core architectures.
-
 We will clearly show, during the development of these supports, what is the effect on performance of these solutions, which will nevertheless be negligible, allowing a fruitful exploitation of the available computing power. In the end, we will highlight which are the clear benefits on the programming model that the developer will experience by relying on these innovative solutions.},
-}
-
-@book{Cio02,
-	title={Logic Network Design},
-	author={Cioffi, Giacomo and Ciciani, Bruno},
-	year={2002},
-	publisher={Mc. Graw Hill}
-}
-
-@book{Cic95b,
-	title={Manufacturing yield evaluation of VLSI/WSI systems},
-	author={Ciciani, Bruno},
-	year={1995},
-	publisher={IEEE Computer Society}
-}
-
-@book{Cio94,
-	title={Microprogramming and Microprocessors},
-	author={Cioffi, Giacomo and Ciciani, Bruno and Congiu, S.},
-	year={1994},
-	publisher={Ingegneria 2000}
-}
-
-@book{Cic93,
-	title={Architettura del Processore PD32},
-	author={Ciciani, Bruno},
-	year={1993},
-	publisher={CUD}
-}
-
-@book{Cic86,
-	title={Logic Network Projects},
-	author={Ciciani, Bruno and Pugnaloni, Andrea},
-	year={1986},
-	publisher={Siderea}
 }
 
 
@@ -98,62 +49,6 @@ We will clearly show, during the development of these supports, what is the effe
   abstract  = {In this chapter, we discuss some key aspects related to the reorganization process of these platforms and present in detail a recent literature approach exactly tackling this issue. The presentation is also targeted at showing how the approach, which is based on the symmetric multithreading software programming paradigm, can be suited for a change in the perspective on how to exploit computing resources for PDES applications in a balanced and effective manner. This is achieved via an innovative load-sharing paradigm suited for PDES systems run on top of multicore machines.},
   doi       = {10.1201/b17902-10},
 }
-
-@INCOLLECTION{Barr14,
-	author = {Barreto, João and Di Sanzo, Pierangelo and Palmieri, Roberto and Romano, Paolo},
-	year = {2014},
-	month = {01},
-	pages = {749-781},
-	title = {Cloud-TM: An elastic, self-tuning transactional store for the cloud},
-	volume = {2},
-	booktitle = {Data Intensive Storage Services for Cloud Environments}
-}
-
-@incollection{Chi98,
-	title={A Fault-Robust SPMD Architecture for 3D-TV Image Processing},
-	author={Chiari, Armando and Ciciani, Bruno and Romero, Milton},
-	booktitle={Fault-Tolerant Parallel and Distributed Systems},
-	pages={231--245},
-	year={1998},
-	publisher={Springer}
-}
-
-@incollection{Qua98b,
-	title={A checkpointing-recovery scheme for domino-free distributed systems},
-	author={Quaglia, Francesco and Ciciani, Bruno and Baldoni, Roberto},
-	booktitle={Fault-Tolerant Parallel and Distributed Systems},
-	pages={93--107},
-	year={1998},
-	publisher={Springer}
-}
-
-@incollection{Cic93,
-	author = {Ciciani, Bruno and de Nitto Personè, V. and Iazeolla, G and Marinuzzi, F.},
-	title = {LISPACK/SIMCOR a parallel tool for the performance evaluation of massively parallel computer architectures},
-	publisher = {National Research Council},
-	year = {1993},
-	pages = {235--246}
-}
-
-@incollection{Cic92,
-	title={Yield Evaluation of Tree Dynamic RAM},
-	author={Ciciani, Bruno},
-	booktitle={Hardware and Software Fault Tolerance in Parallel Computing Systems},
-	pages={169--184},
-	year={1992},
-	publisher={Ellis Horwood Limited}
-}
-
-@incollection{Cic87,
-	title = {Yield and Performability Evaluation of VLSI Reconfigurable Multiprocessor Structures.},
-	author = {Ciciani, Bruno and Grassi, Vincenzo and Iazeolla, Giuseppe},
-	booktitle = {Computer Performance and Reliability},
-	pages = {369--382},
-	year = {1987}
-}
-
-
-
 
 %%%%% Journal Articles %%%%%
 
@@ -213,6 +108,9 @@ The proposed work defines an approach to support the design of new ATM solutions
   journal   = {Concurrency and Computation: Practice and Experience},
   title     = {On Power Capping and Performance Optimization of Multi-threaded Applications},
   year      = {2021},
+  month     = jan,
+  volume    = {33},
+  number    = {11},
   abstract  = {Multi-threaded applications facilitate the exploitation of the computing power of multicore architectures. On the other hand, these applications can become extremely energy-intensive, in contrast with the need for limiting the energy usage of computing systems.
 In this article, we explore the design of techniques enabling multi-threaded applications to maximize their performance under a power cap. We consider two control parameters: the number of cores used by the application, and the core power state. We target the design of an auto-tuning power-capping technique with minimal intrusiveness and high portability, which is agnostic about the workload profile of the application. We investigate two different approaches for building the strategy for selecting the best configuration of the parameters under control, namely a heuristic approach and a model-based approach. Through an extensive experimental study, we evaluate the effectiveness of the proposed technique considering two different selection strategies, and we compare them with existing solutions.},
   publisher = {Wiley},
@@ -359,33 +257,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {TPDS},
 }
 
-@Article{Rug17,
-  author   = {Diego Rughetti and Pierangelo Di Sanzo and Bruno Ciciani and Francesco Quaglia},
-  journal  = {Journal of Parallel and Distributed Computing},
-  title    = {Machine learning-based thread-parallelism regulation in software transactional memory},
-  year     = {2017},
-  issn     = {0743-7315},
-  pages    = {208 - 229},
-  volume   = {109},
-  doi      = {10.1016/j.jpdc.2017.06.001},
-  keywords = {dependable},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0743731517301909},
-}
-
-@article{DiS17,
-	doi = {10.1109/tpds.2017.2740285},
-	url = {https://doi.org/10.1109%2Ftpds.2017.2740285},
-	year = 2017,
-	month = {dec},
-	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-	volume = {28},
-	number = {12},
-	pages = {3356--3373},
-	author = {Pierangelo Di Sanzo},
-	title = {Analysis, Classification and Comparison of Scheduling Techniques for Software Transactional Memories},
-	journal = {{IEEE} Transactions on Parallel and Distributed Systems}
-}
-
 @Article{Cin17b,
   author    = {Cingolani, Davide and Pellegrini, Alessandro and Quaglia, Francesco},
   journal   = {ACM Transactions on Modeling and Computer Simulation},
@@ -433,27 +304,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {IJPP},
 }
 
-@article{Pelu16,
-	title = {GMU: Genuine Multiversion Update-Serializable Partial Data Replication},
-	author = {Peluso, Sebastiano and Ruivo, Pedro and Romano, Paolo and Quaglia, Francesco and Rodrigues, Luis},
-	journal = {IEEE Transactions on Parallel and Distributed Systems},
-	volume = {27},
-	number = {10},
-	pages = {2911--2925},
-	year = {2016},
-	publisher = {IEEE}
-}
-
-@article{Qua15,
-	title = {A low-overhead constant-time lowest-timestamp-first CPU scheduler for high-performance optimistic simulation platforms},
-	author = {Quaglia, Francesco},
-	journal = {Simulation Modelling Practice and Theory},
-	volume = {53},
-	pages = {103--122},
-	year = {2015},
-	publisher = {Elsevier}
-}
-
 @Article{DiS15,
   author    = {Di Sanzo, Pierangelo and Quaglia, Francesco and Ciciani, Bruno and Pellegrini, Alessandro and Didona, Diego and Romano, Paolo and Palmieri, Roberto and Peluso, Sebastiano},
   journal   = {Simulation Modelling Practice and Theory},
@@ -486,39 +336,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {TPDS},
 }
 
-@article{Did14,
-	title = {Transactional auto scaler: Elastic scaling of replicated in-memory transactional data grids},
-	author = {Didona, Diego and Romano, Paolo and Peluso, Sebastiano and Quaglia, Francesco},
-	journal = {ACM Transactions on Autonomous and Adaptive Systems (TAAS)},
-	volume = {9},
-	number = {2},
-	pages = {11},
-	year = {2014},
-	publisher = {ACM}
-}
-
-@article{Rom14,
-	title = {On speculative replication of transactional systems},
-	author = {Romano, Paolo and Palmieri, Roberto and Quaglia, Francesco and Carvalho, Nuno and Rodrigues, Luis},
-	journal = {Journal of Computer and System Sciences},
-	volume = {80},
-	number = {1},
-	pages = {257--276},
-	year = {2014},
-	publisher = {Elsevier}
-}
-
-@article{Rom14b,
-	title = {Design and evaluation of a parallel invocation protocol for transactional applications over the web},
-	author = {Romano, Paolo and Quaglia, Francesco},
-	journal = {IEEE Transactions on Computers},
-	volume = {63},
-	number = {2},
-	pages = {317--334},
-	year = {2014},
-	publisher = {IEEE}
-}
-
 @Article{Vit12e,
   author     = {Vitali, Roberto and Pellegrini, Alessandro and Quaglia, Francesco},
   journal    = {SIGMETRICS Performance Evaluation Review},
@@ -537,570 +354,25 @@ We present experimental results which prove the viability of our approach, compa
   series     = {PER},
 }
 
-@article{DiS12,
-	title = {On the analytical modeling of concurrency control algorithms for software transactional memories: The case of commit-time-locking},
-	author = {Di Sanzo, Pierangelo and Ciciani, Bruno and Palmieri, Roberto and Quaglia, Francesco and Romano, Paolo},
-	journal = {Performance Evaluation},
-	volume = {69},
-	number = {5},
-	pages = {187--205},
-	year = {2012},
-	publisher = {Elsevier}
-}
-
-@article{San12,
-	title={Transparent optimistic synchronization in the high-level architecture via time-management conversion},
-	author={Santoro, Andrea and Quaglia, Francesco},
-	journal={ACM Transactions on Modeling and Computer Simulation (TOMACS)},
-	volume={22},
-	number={4},
-	pages={21},
-	year={2012},
-	publisher={ACM}
-}
-
-@article{Pelu12,
-	title={Supports for transparent object-migration in PDES systems},
-	author={Peluso, Sebastiano and Didona, Diego and Quaglia, Francesco},
-	journal={Journal of Simulation},
-	volume={6},
-	number={4},
-	pages={279--293},
-	year={2012},
-	publisher={Springer}
-}
-
-@article{Rom11,
-	title={Providing e-transaction guarantees in asynchronous systems with no assumptions on the accuracy of failure detection},
-	author={Romano, Paolo and Quaglia, Francesco},
-	journal={IEEE Transactions on Dependable and Secure Computing},
-	volume={8},
-	number={1},
-	pages={104--121},
-	year={2011},
-	publisher={IEEE}
-}
-
-@article{Rom10,
-	title={Cloud-TM: harnessing the cloud with distributed transactional memories},
-	author={Romano, Paolo and Rodrigues, Luis and Carvalho, Nuno and Cachopo, Jo{\"a}o},
-	journal={ACM SIGOPS Operating Systems Review},
-	volume={44},
-	number={2},
-	pages={1--6},
-	year={2010},
-	publisher={ACM}
-}
-
-@article{Qua09,
-	title={On the construction of committed consistent global states in optimistic simulation},
-	author={Quaglia, Francesco},
-	journal={International Journal of Simulation and Process Modelling},
-	volume={5},
-	number={2},
-	pages={172--181},
-	year={2009},
-	publisher={Inderscience Publishers}
-}
-
-@article{Rom09,
-	title={Accuracy versus efficiency of hyper-exponential approximations of the response time distribution of MMPP/M/1 queues},
-	author={Romano, Paolo and Ciciani, Bruno and Santoro, Andrea and Quaglia, Francesco},
-	journal={International Journal of Parallel, Emergent and Distributed Systems},
-	volume={24},
-	number={2},
-	pages={107--125},
-	year={2009},
-	publisher={Taylor \& Francis}
-}
-
-@article{Qua07,
-	title = {Software diversity-based active replication as an approach for enhancing the performance of advanced simulation systems},
-	author = {Quaglia, Francesco},
-	journal = {International Journal of Foundations of Computer Science},
-	volume = {18},
-	number = {03},
-	pages = {495--515},
-	year = {2007},
-	publisher = {World Scientific}
-}
-
-@article{San07,
-	title={Multiprogrammed non-blocking checkpoints in support of optimistic simulation on myrinet clusters},
-	author={Santoro, Andrea and Quaglia, Francesco},
-	journal={Journal of Systems Architecture},
-	volume={53},
-	number={9},
-	pages={659--676},
-	year={2007},
-	publisher={Elsevier}
-}
-
-@article{Qua07b,
-	title={Ensuring e-Transaction with asynchronous and uncoordinated application server replicas},
-	author={Quaglia, Francesco and Romano, Paolo},
-	journal={IEEE Transactions on Parallel and Distributed Systems},
-	volume={18},
-	number={3},
-	year={2007},
-	publisher={IEEE}
-}
-
-@article{Ped07,
-	title={PELCR: parallel environment for optimal lambda-calculus reduction},
-	author={Pedicini, Marco and Quaglia, Francesco},
-	journal={ACM Transactions on Computational Logic (TOCL)},
-	volume={8},
-	number={3},
-	pages={14},
-	year={2007},
-	publisher={ACM}
-}
-
-@article{San06,
-	title={Transparent state management for optimistic synchronization in the High Level Architecture},
-	author={Santoro, Andrea and Quaglia, Francesco},
-	journal={Simulation},
-	volume={82},
-	number={1},
-	pages={5--20},
-	year={2006},
-	publisher={Sage Publications Sage CA: Thousand Oaks, CA}
-}
-
-@article{Cos06,
-	title={Supporting function calls within PELCR},
-	author={Cosentino, Antonio and Pedicini, Marco and Quaglia, Francesco},
-	journal={Electronic Notes in Theoretical Computer Science},
-	volume={135},
-	number={3},
-	pages={107--117},
-	year={2006},
-	publisher={Elsevier}
-}
-
-@article{San06b,
-	title={Software supports for event preemptive rollback in optimistic parallel simulation on myrinet clusters},
-	author={Santoro, Andrea and Quaglia, Francesco},
-	journal={Journal of Interconnection Networks},
-	volume={6},
-	number={04},
-	pages={435--457},
-	year={2005},
-	publisher={World Scientific}
-}
-
-@article{Rom05,
-	title={A lightweight and scalable e-Transaction protocol for three-tier systems with centralized back-end database},
-	author={Romano, Paolo and Quaglia, Francesco and Ciciani, Bruno},
-	journal={IEEE Transactions on Knowledge and Data Engineering},
-	volume={17},
-	number={11},
-	pages={1578--1583},
-	year={2005},
-	publisher={IEEE}
-}
-
-@ARTICLE{Qua05,
-	title = {Modeling and Optimization of Nonblocking Checkpointing for Optimistic Simulation on Myrinet Clusters},
-	author = {Quaglia, Francesco and Santoro, Andrea},
-	journal = {Journal Parallel and Distributed Computing},
-	pages = {667--677},
-	volume = {65},
-	issue = {6},
-	year = {2005},
-}
-
-@article{Qua03,
-	title={Nonblocking checkpointing for optimistic parallel simulation: Description and an implementation},
-	author={Quaglia, Francesco and Santoro, Andrea},
-	journal={IEEE Transactions on Parallel and Distributed systems},
-	volume={14},
-	number={6},
-	pages={593--610},
-	year={2003},
-	publisher={IEEE}
-}
-
-@article{Qua02,
-	title={On the processor scheduling problem in time warp synchronization},
-	author={Quaglia, Francesco and Cortellessa, Vittorio},
-	journal={ACM Transactions on Modeling and Computer Simulation (TOMACS)},
-	volume={12},
-	number={3},
-	pages={143--175},
-	year={2002},
-	publisher={ACM}
-}
-
-@article{Qua02b,
-	title={A restriction of the elastic time algorithm},
-	author={Quaglia, Francesco},
-	journal={Information processing letters},
-	volume={83},
-	number={5},
-	pages={243--249},
-	year={2002},
-	publisher={Elsevier}
-}
-
-@article{Qua02c,
-	title={Performance analysis of adaptive wormhole routing in a two-dimensional torus},
-	author={Quaglia, Francesco and Ciciani, Bruno and Colajanni, Michele},
-	journal={Parallel Computing},
-	volume={28},
-	number={3},
-	pages={485--501},
-	year={2002},
-	publisher={Elsevier}
-}
-
-@article{Bal01,
-	title={Consistent checkpointing for transaction systems},
-	author={Baldoni, Roberto and Quaglia, Francesco and Raynal, Michel},
-	journal={The Computer Journal},
-	volume={44},
-	number={2},
-	pages={92--100},
-	year={2001},
-	publisher={Oxford University Press}
-}
-
-@article{Qua01,
-	title={A cost model for selecting checkpoint positions in Time Warp parallel simulation},
-	author={Quaglia, Francesco},
-	journal={IEEE Transactions on Parallel and Distributed Systems},
-	volume={12},
-	number={4},
-	pages={346--362},
-	year={2001},
-	publisher={IEEE}
-}
-
-@article{Cor01,
-	title={A checkpointing--recovery scheme for Time Warp parallel simulation},
-	author={Cortellessa, Vittorio and Quaglia, Francesco},
-	journal={Parallel Computing},
-	volume={27},
-	number={9},
-	pages={1227--1252},
-	year={2001},
-	publisher={Elsevier}
-}
-
-@article{Qua00,
-	title={On the no-z-cycle property in distributed executions},
-	author={Quaglia, Francesco and Baldoni, Roberto and Ciciani, Bruno},
-	journal={Journal of Computer and System Sciences},
-	volume={61},
-	number={3},
-	pages={400--427},
-	year={2000},
-	publisher={Elsevier}
-}
-
-@article{Qua99,
-	title={Trade-off between sequential and time warp-based parallel simulation},
-	author={Quaglia, Francesco and Cortellessa, Vittorio and Ciciani, Bruno},
-	journal={IEEE Transactions on Parallel and Distributed Systems},
-	volume={10},
-	number={8},
-	pages={781--794},
-	year={1999},
-	publisher={IEEE}
-}
-
-@article{Qua99b,
-	title={Exploiting intra-object dependencies in parallel simulation},
-	author={Quaglia, Francesco and Baldoni, Roberto},
-	journal={Information Processing Letters},
-	volume={70},
-	number={3},
-	pages={119--125},
-	year={1999},
-	publisher={Elsevier}
-}
-
-@article{Qua99c,
-	title={Performance vs. cost of redundant arrays of inexpensive disks},
-	author={Quaglia, Francesco and Ciciani, Bruno},
-	journal={Simulation Practice and Theory},
-	volume={7},
-	number={2},
-	pages={153--170},
-	year={1999},
-	publisher={Elsevier}
-}
-
-@article{Bal99,
-	title={An index-based checkpointing algorithm for autonomous distributed systems},
-	author={Baldoni, Roberto and Quaglia, Francesco and Fornara, Paolo},
-	journal={IEEE Transactions on Parallel and Distributed Systems},
-	volume={10},
-	number={2},
-	pages={181--192},
-	year={1999},
-	publisher={IEEE}
-}
-
-@ARTICLE{Bat98,
-	title = {Realistic Yield Evaluations of Fault Tolerant PLA's},
-	author = {Battaglini, G. and Ciciani, B.},
-	journal = {IEEE Transactions on Reliability},
-	volume={23},
-	issue={1},
-	pages = {15--33},
-	year = {1998},
-	publisher = {IEEE}
-}
-
-@article{Qua98b,
-	title={Multidatabase global concurrency control algorithms: a performance analysis},
-	author={Quaglia, F and Baldoni, R and Ciciani, B},
-	journal={Foundations of Computing and Decision Sciences},
-	volume={23},
-	number={1},
-	pages={15--33},
-	year={1998}
-}
-
-@ARTICLE{Qua98,
-	title = {Checkpointing protocols in distributed systems with mobile hosts: A performance analysis},
-	author = {Quaglia, Francesco and Ciciani, Bruno and Baldoni, Roberto},
-	journal = {Parallel and Distributed Processing},
-	pages = {742--755},
-	year = {1998},
-	publisher = {Springer}
-}
-
-@article{Cic98,
-	title={Performance evaluation of deterministic wormhole routing in k-ary n-cubes},
-	author={Ciciani, Bruno and Colajanni, Michele and Paolucci, Claudio},
-	journal={Parallel Computing},
-	volume={24},
-	number={14},
-	pages={2053--2075},
-	year={1998},
-	publisher={Elsevier}
-}
-
-@article{Aur98,
-	title={Run-time selection of the checkpoint interval in time warp based simulations},
-	author={Auriche, Laurent RG and Quaglia, Francesco and Ciciani, Bruno},
-	journal={Simulation Practice and Theory},
-	volume={6},
-	number={5},
-	pages={461--478},
-	year={1998},
-	publisher={Elsevier}
-}
-
-@article{Col98,
-	title={Performance analysis of circuit-switching interconnection networks with deterministic and adaptive routing},
-	author={Colajanni, Michele and Ciciani, Bruno and Tucci, Salvatore},
-	journal={Performance Evaluation},
-	volume={34},
-	number={1},
-	pages={1--26},
-	year={1998},
-	publisher={Elsevier}
-}
-
-@article{Col98b,
-	title={Performance evaluation of message passing strategies and routing policies in multicomputers},
-	author={Colajanni, Michele and Dell'Arte, A and Ciciani, Bruno},
-	journal={Simulation Practice and Theory},
-	volume={6},
-	number={4},
-	pages={369--385},
-	year={1998},
-	publisher={Elsevier}
-}
-
-@article{Cic95,
-	title={On modelling of an adaptive routing algorithm for massively parallel processing systems},
-	author={Ciciani, Bruno and Tucci, Salvatore},
-	journal={Simulation Practice and Theory},
-	volume={2},
-	number={6},
-	pages={237--255},
-	year={1995},
-	publisher={Elsevier}
-}
-
-@article{Bal95,
-	title={A class of high performance Maekawa-type algorithms for distributed systems under heavy demand},
-	author={Baldoni, Roberto and Ciciani, Bruno},
-	journal={Distributed computing},
-	volume={8},
-	number={4},
-	pages={171--180},
-	year={1995},
-	publisher={Springer}
-}
-
-@article{Bal95b,
-	title={On the Correctness of Goscinski′ s Algorithm},
-	author={Baldoni, Roberto and Ciciani, Bruno and Cioffi, Giacomo},
-	journal={Journal of Parallel and Distributed Computing},
-	volume={27},
-	number={2},
-	pages={201--204},
-	year={1995},
-	publisher={Elsevier}
-}
-
-@article{Bal94,
-	title={Distributed algorithms for multiple entries to a critical section with priority},
-	author={Baldoni, Roberto and Ciciani, Bruno},
-	journal={Information Processing Letters},
-	volume={50},
-	number={3},
-	pages={165--172},
-	year={1994},
-	publisher={Elsevier}
-}
-
-@article{Cic92c,
-	title={Analysis of concurrency-coherency control protocols for distributed transaction processing systems with regional locality},
-	author={Ciciani, Bruno and Dias, Daniel M. and Yu, Philip S.},
-	journal={IEEE Transactions on Software Engineering},
-	volume={18},
-	number={10},
-	pages={899--914},
-	year={1992},
-	publisher={IEEE}
-}
-
-@ARTICLE{Cic92b,
-	title = {Performance Analysis of Hypercube Interconnection Network},
-	author = {Ciciani, Bruno},
-	journal = {Parallel Computing: Problems. Methods and Applications},
-	year = {1992},
-	publisher = {Elsevier Science Publishers BV}
-}
-
-@article{Cic92d,
-	title={Fault-tolerance considerations for redundant binary-tree-dynamic random-access-memory (RAM) chips},
-	author={Ciciani, Bruno},
-	journal={IEEE transactions on reliability},
-	volume={41},
-	number={1},
-	pages={139--148},
-	year={1992},
-	publisher={IEEE}
-}
-
-@article{Cic92e,
-	title={Dynamic and static load sharing in hybrid distributed-centralized database systems},
-	author={Ciciani, Bruno and Dias, Daniel M and Philip, S Yu},
-	journal={Computer Systems Science and Engineering},
-	volume={7},
-	number={1},
-	pages={25--41},
-	year={1992},
-	publisher={CRL Publishing}
-}
-
-@article{Cic91,
-	title={A Markov chain-based yield formula for VLSI fault-tolerant chips},
-	author={Ciciani, Bruno and Iazeolla, Giuseppe},
-	journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
-	volume={10},
-	number={2},
-	pages={252--259},
-	year={1991},
-	publisher={IEEE}
-}
-
-@article{Cic91b,
-	title={Redundancy effect on yield of binary tree RAMs},
-	author={Ciciani, Bruno},
-	journal={Journal of Electronic Testing},
-	volume={2},
-	number={3},
-	pages={293--306},
-	year={1991},
-	publisher={Springer}
-}
-
-@article{Cic90,
-	title={A hybrid distributed centralized system structure for transaction processing},
-	author={Ciciani, Bruno and Dias, Daniel M. and Iyer, Balakrishna R. and Yu, Philip S.},
-	journal={IEEE Transactions on Software Engineering},
-	volume={16},
-	number={8},
-	pages={791--806},
-	year={1990},
-	publisher={IEEE}
-}
-
-@article{Cic90b,
-	title={Analysis of replication in distributed database systems},
-	author={Ciciani, Bruno and Dias, Daniel M and Yu, Philip S.},
-	journal={IEEE Transactions on Knowledge and Data Engineering},
-	volume={2},
-	number={2},
-	pages={247--261},
-	year={1990},
-	publisher={IEEE}
-}
-
-@article{Cic89,
-	title={Comments, on" Design and evaluation of a fault-tolerant multiprocessor using hardware recovery blocks" by Y.-H. Lee and KG Shin},
-	author={Ciciani, Bruno and Cantone, Giovanni},
-	journal={IEEE transactions on computers},
-	volume={38},
-	number={9},
-	pages={1336--1337},
-	year={1989},
-	publisher={IEEE}
-}
-
-@ARTICLE{Bai83,
-	title = {The operating system kernel of a message passing distributed multiprocessor},
-	author = {Baiardi, F and Ciciani, B and Cioffi, G and Di Vito, G and Fantechi, A and Tomasi, A and Vanneschi, M},
-	journal = {The MuTEAM experience in designing distributed systems of microprocessors'.(National Computer Science Program Volume, 1983)},
-	pages = {93--122},
-	year = {1983}
-}
-
-@article{Cic84,
-	title={Analysis and comparison of two distributed procedures for the process termination in ECSP environment.},
-	author={Ciciani, Bruno and Di Vito, Giovanni},
-	journal={INT. J. MINI MICROCOMP.},
-	volume={6},
-	number={3},
-	pages={44--48},
-	year={1984}
-}
-
-@article{Cic84b,
-	title={An efficient strategy for the detection of faults and a domino-free recovery in distributed systems},
-	author={Ciciani, Bruno and Di Vito, Giovanni and Rosati, Marco},
-	journal={Microprocessing and microprogramming},
-	volume={14},
-	number={1},
-	pages={29--34},
-	year={1984},
-	publisher={Elsevier}
-}
-
-@article{Vel83,
-	title={Recovery blocks for communicating systems},
-	author={Velardi, Paola and Ciciani, Bruno},
-	journal={Microprocessing and microprogramming},
-	volume={11},
-	number={5},
-	pages={287--294},
-	year={1983},
-	publisher={Elsevier}
-}
-
-
 
 %%%%% Conference Proceedings %%%%%
 
+
+@InProceedings{Pim22,
+  author    = {Pimpini, Adriano and Piccione, Andrea and Ciciani, Bruno and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 2022 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {Speculative Distributed Simulation of Very Large Spiking Neural Networks},
+  year      = {2022},
+  month     = jun,
+  publisher = {ACM},
+  series    = {PADS},
+  abstract  = {Spiking Neural Networks are a class of Artificial Neural Networks that closely mimic biological neural networks. They are particularly interesting because of their potential to advance research in several fields, both because of better insights on neural behaviour (benefiting medicine, neuroscience, psychology) and the potential in Artificial Intelligence. Their ability to run on a  low energy budget once implemented in hardware makes them even more appealing. However, because of their behaviour that evolves with time, when a hardware implementation is not available, their output cannot simply be computed with a one-shot function (however complex), but instead they need to be simulated.
+Simulating Spiking Neural Networks is exceptionally costly, mainly due to their sheer size. Many current simulation methods have trouble scaling up on more powerful systems because of conservative synchronisation methods. Scalability is often offered through approximation of the actual results. In this paper, we present a modelling methodology and runtime-environment support adhering to the Time Warp synchronisation protocol, which enables speculative distributed simulation of Spiking Neural Network models with improved accuracy of the results. We discuss the methodological and technical aspects that will allow effective speculative simulation and present an experimental assessment on large virtualised environments, which shows the viability of simulating networks made of millions of neurons.},
+  doi       = {10.1145/3518997.3531027},
+  location  = {Atlanta, GA, USA},
+  badges    = {available,reusable},
+  note      = {To appear},
+}
 
 @InProceedings{DeA21b,
   author    = {De~Angelis, Emanuele and Pellegrini, Alessandro and Proietti, Maurizio},
@@ -1112,9 +384,9 @@ We present experimental results which prove the viability of our approach, compa
   series    = {ISSREW},
   abstract  = {We present a methodology for performing automatic extraction of behavioral features from test programs, that is, for collecting pieces of information about the test programs execution. These features are then exploited to carry out analysis and reasoning about test program similarity. The similarity information can be used to drive the execution of test campaigns, in the attempt to either reduce the time-to-test, or to increase the testing capabilities of a given test suite. Our methodology is embedded in the Hyperion analysis framework, which can be configured to define a wide range of test program similarity criteria.},
   location  = {Wuhan, China},
+  doi       = {10.1109/ISSREW53611.2021.00054},
+  pages     = {129--136},
 }
-
-
 
 @InProceedings{DeA21,
   author    = {De~Angelis, Emanuele and De~Angelis, Guglielmo and Pellegrini, Alessandro and Proietti, Maurizio},
@@ -1123,6 +395,7 @@ We present experimental results which prove the viability of our approach, compa
   year      = {2021},
   month     = aug,
   publisher = {IEEE},
+  pages     = {114--123},
   series    = {SOSE},
   abstract  = {The emergence of the microservices-oriented architectural style calls for novel methodologies and technological frameworks that support the design, development, and maintainance of applications structured according to that new style. In this paper, we consider the issue of designing suitable strategies for the governance and the automation of testing activities within the microservices paradigm. 
 		We focus on the problem of discovering relations between test programs that help avoiding to re-run all the available test suites each time one of its constituents evolves. 
@@ -1131,9 +404,9 @@ We present experimental results which prove the viability of our approach, compa
 		The information extracted by symbolic execution is processed by a rule-based automated reasoning engine, which infers dependencies and similarities among test programs. In particular, test programs are considered similar if they involve the same microservice instance, or they connect to the same remote API, or they locally activate overlapping APIs, or they raise similar kinds of errors.
 		We show the viability of our approach by presenting a case study within the context of a real-world microservice application that implements an open-source educational platform.},
   location  = {Oxford, UK},
+  doi       = {10.1109/SOSE52839.2021.00018},
   note      = {Winner of the Best Paper Award},
 }
-
 
 @InProceedings{Rab20,
   author    = {Rab, Maryan and Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
@@ -1341,15 +614,6 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   location  = {Rome, Italy},
 }
 
-
-@inproceedings{Con18,
-	author = {Conoci, Stefano and Pierangelo, Di Sanzo and Bruno, Ciciani and Francesco, Quaglia},
-	title = {Adaptive Performance Optimization under Power Constraint in Multi-thread Applications with Diverse Scalability},
-	booktitle = {Proceedings of the 9th ACM/SPEC International Conference on Performance Engineering (ICPE 2018), Berlin,April 9-13,2018},
-	year = {2018},
-	doi={10.1145/3184407.3184419}
-}
-
 @InProceedings{Eco17,
   author    = {Economo, Simone and Silvestri, Emiliano and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Quaglia, Francesco},
   booktitle = {Proceedings of the 16th IEEE International Symposium on Network Computing and Applications},
@@ -1446,8 +710,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   publisher = {ACM},
   series    = {PADS},
   abstract  = {State recoverability is a crucial aspect of speculative Time Warp-based Parallel Discrete Event Simulation. In the literature, we can identify three major classes of techniques to support the correct restoration of a previous simulation state upon the execution of a rollback operation: state checkpointing/restore, manual reverse computation and automatic reverse computation. The latter class has been recently supported by relying either on binary code instrumentation or on source-to-source code transformation. Nevertheless, both solutions are not intrinsically meant to support a reversible execution of third-party shared libraries, which can be pretty useful when implementing complex simulation models.
-
-In this paper, we present an architectural solution (realized as a static C library) which allows to transparently instrument at runtime any third party shared library, with no need for any modification to the model's code. We also present a preliminary experimental evaluation, based on the integration of our library with the ROOT-Sim simulation engine.},
+               In this paper, we present an architectural solution (realized as a static C library) which allows to transparently instrument at runtime any third party shared library, with no need for any modification to the model's code. We also present a preliminary experimental evaluation, based on the integration of our library with the ROOT-Sim simulation engine.},
   location  = {Singapore},
   name      = {pads17b},
 }
@@ -1898,10 +1161,8 @@ In this paper, we present an architectural solution (realized as a static C libr
   publisher = {ACM},
   series    = {PADS},
   abstract  = {Optimistic synchronization is considered an effective means for supporting Parallel Discrete Event Simulations. It relies on a speculative approach, where concurrent processes execute simulation events regardless of their safety, and consistency is ensured via proper rollback mechanisms, upon the a-posteriori detection of causal inconsistencies along the events' execution path. Interactions with the outside world (e.g. generation of output streams) are a well-known problem for rollback-based systems, since the outside world may have no notion of rollback. In this context, approaches for allowing the simulation modeler to generate consistent output rely on either the usage of ad-hoc APIs (which must be provided by the underlying simulation kernel) or temporary suspension of processing activities in order to wait for the final outcome (commit/rollback) associated with a speculatively-produced output.
-
-In this paper we present design indications and a reference implementation for an output streams' management subsystem which allows the simulation-model writer to rely on standard output-generation libraries (e.g. stdio) within code blocks associated with event processing. Further, the subsystem ensures that the produced output is consistent, namely associated with events that are eventually committed, and system-wide ordered along the simulation time axis.
-
-The above features jointly provide the illusion of a classical (simple to deal with) sequential programming model, which spares the developer from being aware that the simulation program is run concurrently and speculatively. We also show, via an experimental study, how the design/development optimizations we present lead to limited overhead, giving rise to the situation where the simulation run would have been carried out with near-to-zero or reduced output management cost. At the same time, the delay for materializing the output stream (making it available for any type of audit activity) is shown to be fairly limited and constant, especially for good mixtures of I/O-bound vs CPU-bound behaviors at the application level. Further, the whole output streams' management subsystem has been designed in order to provide scalability for I/O management on clusters.},
+               In this paper we present design indications and a reference implementation for an output streams' management subsystem which allows the simulation-model writer to rely on standard output-generation libraries (e.g. stdio) within code blocks associated with event processing. Further, the subsystem ensures that the produced output is consistent, namely associated with events that are eventually committed, and system-wide ordered along the simulation time axis.
+               The above features jointly provide the illusion of a classical (simple to deal with) sequential programming model, which spares the developer from being aware that the simulation program is run concurrently and speculatively. We also show, via an experimental study, how the design/development optimizations we present lead to limited overhead, giving rise to the situation where the simulation run would have been carried out with near-to-zero or reduced output management cost. At the same time, the delay for materializing the output stream (making it available for any type of audit activity) is shown to be fairly limited and constant, especially for good mixtures of I/O-bound vs CPU-bound behaviors at the application level. Further, the whole output streams' management subsystem has been designed in order to provide scalability for I/O management on clusters.},
   doi       = {10.1145/2486092.2486133},
   location  = {Montréal, Canada},
 }
@@ -2072,7 +1333,7 @@ In this work we propose generally-applicable design principles for a new memory 
 }
 
 
-%%%%% Talks %%%%%
+%%%%% Technical Reports %%%%%
 
 @TechReport{Pell21,
   author   = {Pellegrini, Alessandro},
@@ -2197,16 +1458,22 @@ We present here an innovative approach to load sharing on multi-core/multiproces
   month    = jan,
   type     = {mathesis},
   abstract = {Nowadays, many organizations are constantly victims of several security threats which may cause economic and reputation damages. Among the large varietyof malware which affects several systems and online services, we can found software such as worms, viruses, spyware, trojans, key-loggers and botnets. Botnets are one of the most dangerous type of cyber-attacks, which are used in a variety of malicious campaigns such as email spam, financial theft, click fraud, distributed denial-of-service (DDoS) attacks for taking online services offline, and for committing cryptocurrency scams (using users’ processing power to mine cryptocurrency).
-
 According to the Federal Bureau of Investigation, "Botnets have caused over $9 billion in losses to U.S. victims and over $110 billion in losses globally. Approximately 500 million computers are infected globally each year, translating into 18 victims per second". The first official recognized Botnet named "EarthLink Spammer" appeared in 2000: it was created to send phishing emails in large numbers, masked as communications from legitimate websites. Over 1.25 million malicious emails were sent to collect sensitive information. The botnet had downloaded viruses on victims’ computers when they clicked on the links in the emails, and these viruses remotely fed the information to the sender. In 2016, there was one of the largest and most lucrative digital ad malware ever devised: Methbot. It acquired thousands of IP addresses with US-based ISPs. The operators first created more than 6000 domains and 250267 distinct URLs that appeared to be from premium publishers (such as ESPN and Vogue), and then, video ads from malicious advertisers were posted on these websites which sent their bots “watch” around 30 million ads daily.
-
 Over the years, the Botnet technology has evolved making the detection and mitigation of botnet attacks a very challenging problem. Many approaches have been proposed: signature-based, anomaly-based, DNS-based and mining-based. As it will be discussed, each approach presents advantages and disadvantages. The goal of this thesis is to use a hybrid analysis that relies on data mining flow and graph based patterns which can identify malicious external hosts which communicate with our hosts on which a distributed application of an online service is deployed. The hybrid analysis of this approach is performed online in order to mitigate the attacks. The process starts by capturing, in kernel space, some fields of the packets by means of an eBPF filter and passing them to userspace for grouping them in "batches" of a certain size, on which the hybrid analysis is carried out.
-
 The eBPF filter in kernel space allows to inspect in real-time the packets in an unobtrusive and effective way. In fact, in addition to collecting packets characteristics, it is able to reject the packets coming from external hosts having IPs labeled as malicious by the userspace analysis.},
   comment  = {Supervisor: A. Pellegrini.},
 }
 
-
+@MastersThesis{tSilv21,
+  author   = {Silvestri, Emiliano},
+  school   = {Sapienza, University of Rome},
+  title    = {Micro-Threading: Effective Management of Tasks in Parallel Applications},
+  year     = {2021},
+  month    = jan,
+  type     = {phdthesis},
+  abstract = {Modern parallel applications, to be run on top of multi-core systems, are ever more characterized by the presence of many differentiated activities, which can be (re-)dispatched on different elaboration units—at disparate wall-clock-times—in order to make parallelism effective. Consequently, several programming models (or environments) for multi-core shared-memory architectures give to developers the capability to indicate what portions of the application must be treated as tasks, which can then be run in parallel. However, once these tasks have been CPU- dispatched they are executed in a non-preemptible manner until they spontaneously re-interact with the specific runtime layer hosting the application, a possibility for which there is no guarantee on when it will occur again at run-time. In the meantime, sudden program state changes can always arise as a consequence of the effects that each of these tasks can have on the program evolution throughout its execution. Operating System classical preemption does not fully cope with this problem—given that the timeline for this preemption procedure is general purpose and not necessarily suited for a given application context—and may be attempted to be exploited limited to scenarios where multiple tasks are assigned for being processed to different threads, which is not the optimal case for most application domains. Also, in some application fields we also have the exploitation of speculation (giving rise to potential causality inconsistencies), which is something not dealt with by the Operating System. As a result, whenever one of such (speculative) changes in the application state occurs, the application’s current execution dynamics may already be far from the optimal ones, which is a condition that can affect its performance in a significant manner. This must be addressed through timely re-assessments of the work assigned to the underlying computing resources regardless of whether the application tasks were intended to release the CPU at that time. To cope with this problem, we propose a new execution model for tasks, called Micro-Threading model, which provides for application-transparent task interruptions at arbitrary points of their executions. These interruptions are aimed at re-evaluating the current task-to-CPU assignments, in a manner fully alternative with respect to the thread-to-CPU assignment established by the Operating System. Also, we provide an implementation of this model to support task-preemptive execution in a wide range of applications contexts deployed on top of x86 machines with Unix-like Operating Systems. These include Transactional Memory, OpenMP and speculative Parallel Discrete Event Simulation. Clearly, the exploitation of micro-threads in these contexts has also led us to introduce new algorithms and solutions suited for optimizing the linkage of the micro-thread based execution to application level specific features. These proposals form a kind of reference to be considered for the exploitation of micro-threads in application scenarios related to the specific ones considered in this thesis. The results obtained by the experiments we carried out confirm the capability of our proposal to provide better run-time dynamics thanks to higher reactivity to program state changes, which is reflected in promptly renewing the overall scheduling of tasks to CPU-cores and/or in re-assessing the execution trajectory of each single task whenever is deemed counterproductive for the performance of the application as a whole.},
+  comment  = {Supervisor: F. Quaglia.},
+}
 
 @MastersThesis{tPimp20,
   author   = {Pimpini, Adriano},
@@ -2241,40 +1508,33 @@ Experimental data show how relevant the gain in terms of performance is when sel
   type     = {mathesis},
   abstract = {Simple computing architectures are just memories. The Moore’s law is the empirical rule that predicts the electronic development for over 40 years, so accurately, that lays the "roadmap" foundations for most of the semiconductor manufacturers. Until a few decades ago, the computer architecture evolution was mainly based on the operating frequency growth, namely the speed of the processor. However, in 2003 the gap between the performance achieved by processors and the Moore’s law came up, diverting the com-
 puter progression to other ways. Moore’s law is still sound. The more and more availability of transistors has been exploited to implement more sophisticated architectures, able to take advantage of polished capabilities rather than simple brute force.
-
 Nowadays, processors are based on supercalar architectures as well as out-of-order execution engines. These not only allows achieving better instructions per clock (IPC) than scalar solutions, but also optimize the code execution through the employment of further mechanisms such as speculative computation.
-
-Besides these core improvements, companies walks the road toward the process parallelism. This led to multi-core processors, which include more computing cores on the same chip. However, the increasing power capability on processors and the memory speed did not go hand in hand. Accessing the memory still represents a bottleneck during computation because CPU-core processing is far faster than memory operations. To overcome this speed limitation, memory elements have been directly implemented on chip such
-that the communication with the processing units is subjected to smaller latency. These memories are know as cache memories which are so pervasive that their structure have been further enhanced by providing several layers, resulting, along with the main memory, in a sophisticated hierarchy. 
-
+Besides these core improvements, companies walks the road toward the process parallelism. This led to multi-core processors, which include more computing cores on the same chip. However, the increasing power capability on processors and the memory speed did not go hand in hand. Accessing the memory still represents a bottleneck during computation because CPU-core processing is far faster than memory operations. To overcome this speed limitation, memory elements have been directly implemented on chip such that the communication with the processing units is subjected to smaller latency. These memories are know as cache memories which are so pervasive that their structure have been further enhanced by providing several layers, resulting, along with the main memory, in a sophisticated hierarchy. 
 The high number of cores sharing memory in a single system bumped in another memory issue. As a matter of fact, the memory cannot easily handle the concurrent requests by all the cores thus becoming the main performance bottleneck in different scenarios. Non Uniform Memory Access (NUMA) systems were born from the need of coping with this ineptitude. Such systems are formed by a set of nodes which cooperate, sharing computational power and memory resources to carry out advanced system management and problem resolution.
-
 Heterogeneous computing refers to systems that take advantage of dedicated cores to carry out specific tasks. An example of such solution is the combined work of CPUs and GPUs. They are suitable for different kinds of calculations and mixing their capabilities allows achieving several goals such as efficiency, higher performance and less power consumption. In such a complex world, modern software, for its part, tries to benefit—in the best possible way— from the underlying hardware facilities without exposing too many hardware-level details to developers.  Yet, how is it possible to find out the reason of a program behaviour when it does not act as we expected? Simple: use a profiler!
-
 Profilers are tools specially designed for observing the execution of an application or the entire system with the aim of a profile creation. Such a profile holds the information gathered during the investigation and can be fed to external tools for further analysis. Most of the profilers are based on software techniques which, though capable of revealing a lot of execution information, may just observe high-level events also incurring in a significant overhead.
 Most of the modern processors include within their architecture some specialized elements used to gather information about what is going on, atthe hardware level, during code execution. Such elements are known as Performance Monitor Units and allow to understand the reasons of several issues that may not directly recognized at higher level. Enhancing profiling tools with this support may lead to a low-overhead and more transparent software analysis.},
   comment  = {Supervisor: F. Quaglia - Co-Supervisor: S. Economo},
 }
 
 @PhdThesis{tMaro20,
-  author  = {Marotta, Romolo},
-  school  = {Sapienza, University of Rome},
-  title   = {Innovative Algorithms for Shared Data Structures in Multi-core Platforms},
-  year    = {2020},
-  month   = nov,
-  type    = {phdthesis},
-  comment = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
+  author   = {Marotta, Romolo},
+  school   = {Sapienza, University of Rome},
+  title    = {Innovative Algorithms for Shared Data Structures in Multi-core Platforms},
+  year     = {2020},
+  month    = nov,
+  type     = {phdthesis},
+  comment  = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
 }
 
-
 @PhdThesis{tEcon20,
-  author  = {Economo, Simone},
-  school  = {Sapienza, University of Rome},
-  title   = {Techniques and tools for program tracing and analysis with applications to parallel programming},
-  year    = {2020},
-  month   = nov,
-  type    = {phdthesis},
-  comment = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
+  author   = {Economo, Simone},
+  school   = {Sapienza, University of Rome},
+  title    = {Techniques and tools for program tracing and analysis with applications to parallel programming},
+  year     = {2020},
+  month    = nov,
+  type     = {phdthesis},
+  comment  = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
 }
 
 @MastersThesis{tMazz20,
@@ -2295,10 +1555,8 @@ Most of the modern processors include within their architecture some specialized
   year     = {2019},
   type     = {phdthesis},
   abstract = {In this thesis, we propose an innovative approach to reversible computing that shifts the focus from the operations to the memory outcome of a generic program. This choice allows us to overcome some typical challenges of “plain” reversible computing. Our methodology is to instrument a generic application with the help of an instrumentation tool, namely Hijacker, which we have redesigned and developed for the purpose. Through compile-time instrumentation, we enhance the program’s code to keep track of the memory trace it produces until the end. Regardless of the complexity behind the generation of each computational step of the program, we can build inverse machine instructions just by inspecting the instruction that is attempting to write some value to memory. Therefore from this information, we craft an ad-hoc instruction that conveys this old value and the knowledge of where to replace it. This instruction will become part of a more comprehensive structure, namely the reverse window. Through this structure, we have sufficient information to cancel all the updates done by the generic program during its execution.
-
-In this writing, we will discuss the structure of the reverse window, as the building block for the whole reversing framework we designed and finally realized. Albeit we settle our solution in the specific context of the parallel discrete event simulation (PDES) adopting the Time Warp synchronization protocol, this framework paves the way for further general-purpose development and employment. We also present two additional innovative contributions coming from our innovative reversibility approach, both of them still embrace traditional state savingbased rollback strategy. The first contribution aims to harness the advantages of both the possible approaches. We implement the rollback operation combining state saving together with our reversible support through a mathematical model. This model enables the system to choose in autonomicity the best rollback strategy, by the mutable runtime dynamics of programs. The second contribution explores an orthogonal direction, still related to reversible computing aspects. In particular, we will address the problem of reversing shared libraries. Indeed, leading from their nature, shared objects are visible to the whole system and so does every possible external modification of their code. As a consequence, it is not possible to instrument them without affecting other unaware applications. We propose a different method to deal with the instrumentation of shared objects.
-
-All our innovative proposals have been assessed using the last generation of the open source ROOT-Sim PDES platform, where we integrated our solutions. ROOTSim is a C-based package implementing a general purpose simulation environment based on the Time Warp synchronization protocol.},
+              In this writing, we will discuss the structure of the reverse window, as the building block for the whole reversing framework we designed and finally realized. Albeit we settle our solution in the specific context of the parallel discrete event simulation (PDES) adopting the Time Warp synchronization protocol, this framework paves the way for further general-purpose development and employment. We also present two additional innovative contributions coming from our innovative reversibility approach, both of them still embrace traditional state savingbased rollback strategy. The first contribution aims to harness the advantages of both the possible approaches. We implement the rollback operation combining state saving together with our reversible support through a mathematical model. This model enables the system to choose in autonomicity the best rollback strategy, by the mutable runtime dynamics of programs. The second contribution explores an orthogonal direction, still related to reversible computing aspects. In particular, we will address the problem of reversing shared libraries. Indeed, leading from their nature, shared objects are visible to the whole system and so does every possible external modification of their code. As a consequence, it is not possible to instrument them without affecting other unaware applications. We propose a different method to deal with the instrumentation of shared objects.
+              All our innovative proposals have been assessed using the last generation of the open source ROOT-Sim PDES platform, where we integrated our solutions. ROOTSim is a C-based package implementing a general purpose simulation environment based on the Time Warp synchronization protocol.},
   comment  = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
 }
 
@@ -2323,12 +1581,18 @@ All our innovative proposals have been assessed using the last generation of the
 }
 
 @MastersThesis{tPicc19,
-  author  = {Piccione, Andrea},
-  school  = {Sapienza, University of Rome},
-  title   = {An Agent-Based Simulation API for Speculative PDES Runtime Environments},
-  year    = {2019},
-  type    = {mathesis},
-  comment = {Supervisor: A. Pellegrini},
+  author   = {Piccione, Andrea},
+  school   = {Sapienza, University of Rome},
+  title    = {An Agent-Based Simulation API for Speculative PDES Runtime Environments},
+  year     = {2019},
+  type     = {mathesis},
+  abstract = {
+		  Agent-Based Modeling and Simulation is an effective paradigm to model systems which exhibit complex interactions. The goal is studying them in the hope of devising their emergent behavior, if it exists. Applications of this methodology range from modeling agent decisions in the stock market, supply chains, and consumer markets, to predicting the spread of epidemics, the threat of bio-warfare, and the factors responsible for the fall of ancient civilizations.
+		  While Agent-Based Modeling and Simulation has been effectively used in many disciplines, most successful models are still run only sequentially, causing a potential waste of the computing resources offered by modern multi-core architectures. The high reliance of the model developers community on simple and easy-to-use languages such as NetLogo places a limit on the possibility to benefit from more effective runtime paradigms, such as Parallel Discrete Event Simulation (PDES). This is a significant problem since the required size of Agent-Based Models simulations is increasing everyday: traditional implementations are not up to the challenge.
+		  The aim of this thesis is to somewhat bridge the gap between efficient simulation runtime paradigms, in particular Speculative PDES, and AgentBased Modeling and Simulation. For this purpose we propose a semanticallyrich API which allows to implement Agent-Based Models in a simple and effective way.
+		  We also describe the critical points which should be taken into account when implementing this API in a speculative Parallel Discrete Event Simulation environment, in order to scale up simulations on distributed massively-parallel clusters. We include in this thesis a description of the implementation we developed, with a focus on the various optimizations we devised.
+		  Our experimental assessment, carried on our reference implementation, shows that our API allows to implement complex interactions between agents and the surrounding environment with a reduced complexity, while delivering a non-negligible performance increase. This is a first important step in finally making powerful simulation tools accessible to the practitioners, independently of their computer science knowledge.},
+  comment  = {Supervisor: A. Pellegrini},
 }
 
 @MastersThesis{tPrin18,
@@ -2338,15 +1602,11 @@ All our innovative proposals have been assessed using the last generation of the
   year     = {2018},
   type     = {mathesis},
   abstract = {Parallel Discrete Event Simulation (PDES) is a powerful technique to simulate real world complex models. In fact, by sharing the workload over different machines, thus parallelizing it over different entities it is possible to satisfy the high amount of computational power and resources needed by such a kind of models. Indeed, taking advantage of this sort of organization allows to overcome both the power wall ([Sut05]) and the memory wall ([McK04]), which represent the main aspects limiting the delivery of high performance executions.
-
-In particular, this thesis directly faces the disadvantages given by distributed memory accesses arising between Logical Processes (LPs, which are the main simulation entities representing real world objects evolving over time, [Fuj90]) while synchronizing between each other. In fact, those LPs are continuously communicating and often requesting access to portions of memory owned by
-others. This scenario needs the involved (two or more) LPs to synchronize in order to ensure that the requested operation will be correctly reflected in their memory. This could lead of course to a degradation of performance, given the distributed nature of the system on top of which the  simulations are executed. The innovative technique presented in this document exploits the new kernel-level facilities in order to detect, manage and optimize the aforementioned situation, which is known as Event Cross State Synchronization (ECS).
-
-Also, an important result reached in this work is represented by the fact that the provided solution is transparent to the final model developer in the sense that the whole job is handled by the underlying run-time environment, leveraging shared-memory accesses of the simulation state by relying on the data-sharing paradigm and executing and deploying in a seamless manner on distributed memory within clusters of multicore machines.
-
-The whole work was developed on top of an open source, optimistic simulation platform provided by the High Performance and Dependable Computing Systems (HPDCS) research group at Sapienza, University of Rome, called ROme OpTimistic Simulator (ROOT-Sim).
-
-The remainder of this thesis is organized as follows. In the first chapter, an overview and an explanation of the main topics of simulation and PDES is presented, focusing in particular on the environment and the choices made in this work. In Chapter 2, an introduction to the programming models of PDES is given, going through what literature proposes. Then, in Chapter 3, the proposed solution is discussed, concentrating on the specific implementation and design choices that were made in order to get the best results. Finally, Chapter 4 shows the experimental data for an assessment of the proposed solution.},
+		In particular, this thesis directly faces the disadvantages given by distributed memory accesses arising between Logical Processes (LPs, which are the main simulation entities representing real world objects evolving over time, [Fuj90]) while synchronizing between each other. In fact, those LPs are continuously communicating and often requesting access to portions of memory owned by
+		others. This scenario needs the involved (two or more) LPs to synchronize in order to ensure that the requested operation will be correctly reflected in their memory. This could lead of course to a degradation of performance, given the distributed nature of the system on top of which the  simulations are executed. The innovative technique presented in this document exploits the new kernel-level facilities in order to detect, manage and optimize the aforementioned situation, which is known as Event Cross State Synchronization (ECS).
+		Also, an important result reached in this work is represented by the fact that the provided solution is transparent to the final model developer in the sense that the whole job is handled by the underlying run-time environment, leveraging shared-memory accesses of the simulation state by relying on the data-sharing paradigm and executing and deploying in a seamless manner on distributed memory within clusters of multicore machines.
+		The whole work was developed on top of an open source, optimistic simulation platform provided by the High Performance and Dependable Computing Systems (HPDCS) research group at Sapienza, University of Rome, called ROme OpTimistic Simulator (ROOT-Sim).
+		The remainder of this thesis is organized as follows. In the first chapter, an overview and an explanation of the main topics of simulation and PDES is presented, focusing in particular on the environment and the choices made in this work. In Chapter 2, an introduction to the programming models of PDES is given, going through what literature proposes. Then, in Chapter 3, the proposed solution is discussed, concentrating on the specific implementation and design choices that were made in order to get the best results. Finally, Chapter 4 shows the experimental data for an assessment of the proposed solution.},
   comment  = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
 }
 
@@ -2357,12 +1617,9 @@ The remainder of this thesis is organized as follows. In the first chapter, an o
   year     = {2017},
   type     = {mathesis},
   abstract = {In the early years of the past decade, the exponential growth of the sequential computing performance that has characterized the previous fifty years suffered a setback. Although the quantity of transistors on a chip continues to follow Moore’s law, it has become increasingly difficult to continue to improve the performance of sequential processors by simply raising the clock frequency, mainly due to power and cooling motivations. To remedy this situation, the industry released the so-called “multicore”, or “chip multiprocessors” systems, which provide for the presence of multiple processing units on a single chip and connected through a shared memory. In subsequent years the number of processors on a chip will increase at the Moore’s law rate, as well as the peak number of instructions executed per seconds, allowing this architecture to be the potential solution to the problem of stalled performance growth.
-
-On the other hand, a parallel program is far more difficult to design than an equivalent sequential program, and rarely offers a significant performance increase which may be attributable to the nature of the program and the impossibility to structure it in a set of parallel independent tasks. The most real-world computational problems cannot be effectively parallelized without incurring the cost of inter-processor communication and coordination because, while parts of the program mandatory need to be performed in a serial manner, the parallel parts may also need to access shared data, which in turn require particular synchronization techniques. Parallelization and synchronization can have therefore a dominant effect on performance resulting in this way in an extremely non-linear speed-up curve tending to stall or worse. Thus, parallel programming makes more complex the programmer work with respect to the sequential one; a simple task requires much more attention in order to guarantee fundamental properties such as “safety” and “liveness”, and an approach that seems to be very good in solving a problem could give rise to bad outcomes in solving another one.
-
-While parallelism has been a difficult problem for general-purpose programming, database systems have successfully exploited parallel hardware for decades by executing many queries concurrently on multiple processors. The author of the query does not care anymore about parallelism and has only to focus on the correctness of the query itself, leaving the hard task of ensuring atomicity, consistency, isolation and durability (A.C.I.D.) to the transactional engine that is part of the database management system (DBMS). The transaction is indeed the heart of the programming model for databases and can be expressed as a group of read and write operations performed on shared objects which must appear to be executed atomically at a single point in time, before and after the effect of other transactions running or not concurrently, in a serial one-at-a-time order. Transactions offer therefore a proven abstraction mechanism in database systems for constructing reusable parallel computations, and the advent of multicore processors has renewed interest in an old idea, that of incorporating transactions into the programming model used to write parallel programs.
-
-This is the approach followed in Transactional Memory (TM), a paradigm that enables programmers of concurrent applications to rely on atomicity and isolation guarantees provided by some TM layer. In this thesis I will present a fully innovative mechanism enabling in-memory transactions to be executed as preemptable tasks, with preemption actuated according to very fine grain intervals. This in turn enables a single thread to exploit one CPU-core in the most effective manner with respect to different priority levels of the transactions to be processed, an issue that as not yet been tackled by any literature study.},
+		On the other hand, a parallel program is far more difficult to design than an equivalent sequential program, and rarely offers a significant performance increase which may be attributable to the nature of the program and the impossibility to structure it in a set of parallel independent tasks. The most real-world computational problems cannot be effectively parallelized without incurring the cost of inter-processor communication and coordination because, while parts of the program mandatory need to be performed in a serial manner, the parallel parts may also need to access shared data, which in turn require particular synchronization techniques. Parallelization and synchronization can have therefore a dominant effect on performance resulting in this way in an extremely non-linear speed-up curve tending to stall or worse. Thus, parallel programming makes more complex the programmer work with respect to the sequential one; a simple task requires much more attention in order to guarantee fundamental properties such as “safety” and “liveness”, and an approach that seems to be very good in solving a problem could give rise to bad outcomes in solving another one.
+		While parallelism has been a difficult problem for general-purpose programming, database systems have successfully exploited parallel hardware for decades by executing many queries concurrently on multiple processors. The author of the query does not care anymore about parallelism and has only to focus on the correctness of the query itself, leaving the hard task of ensuring atomicity, consistency, isolation and durability (A.C.I.D.) to the transactional engine that is part of the database management system (DBMS). The transaction is indeed the heart of the programming model for databases and can be expressed as a group of read and write operations performed on shared objects which must appear to be executed atomically at a single point in time, before and after the effect of other transactions running or not concurrently, in a serial one-at-a-time order. Transactions offer therefore a proven abstraction mechanism in database systems for constructing reusable parallel computations, and the advent of multicore processors has renewed interest in an old idea, that of incorporating transactions into the programming model used to write parallel programs.
+		This is the approach followed in Transactional Memory (TM), a paradigm that enables programmers of concurrent applications to rely on atomicity and isolation guarantees provided by some TM layer. In this thesis I will present a fully innovative mechanism enabling in-memory transactions to be executed as preemptable tasks, with preemption actuated according to very fine grain intervals. This in turn enables a single thread to exploit one CPU-core in the most effective manner with respect to different priority levels of the transactions to be processed, an issue that as not yet been tackled by any literature study.},
   comment  = {Supervisor: F. Quaglia - Co-Supervisors: S. Economo, A. Pellegrini, P. Di Sanzo},
 }
 
@@ -2393,16 +1650,11 @@ This is the approach followed in Transactional Memory (TM), a paradigm that enab
   year     = {2017},
   type     = {mathesis},
   abstract = {In the last years the time of easy performance gaining is ended due to a physical constraint called Power Wall. In this scenario, the large diffusion of shared-memory multi-core machines offers a new opportunities to face the increasing demand for improved performance. Anyhow, common lock-based synchronization techniques could be deleterious for performances and frustrate the presence of the increasing number of cores.
-
-In order to optimize parallel execution, the non-blocking synchronization paradigm, based on the exploitation of Read-Modify-write (RMW) instructions, was born. This new technique requires a deep knowledge of the underlying hardware capabilities and on the assumptions that can be made on it.
-
-On the other hand, the memory allocation problem is still relevant to support fast execution of both system and user applications.
-
-An efficient allocator is required to avoid memory requests to become a bottleneck in high-performance scenarios characterized by large amount of processes. Moreover, requests could be very different depending on the target application; a good memory allocator has to works well in as many as possible scenarios.
-
-In this work I present the design and the implementation of a lock-free buddy system memory allocator based on a binary tree structure. The proposed algorithm offers great performances in highly parallel machines and it is very memory efficient, producing low data overhead to work.
-
-The results obtained in the experiments confirm the actual scalability of this proposal and the effectiveness of the lock-free synchronization.},
+		In order to optimize parallel execution, the non-blocking synchronization paradigm, based on the exploitation of Read-Modify-write (RMW) instructions, was born. This new technique requires a deep knowledge of the underlying hardware capabilities and on the assumptions that can be made on it.
+		On the other hand, the memory allocation problem is still relevant to support fast execution of both system and user applications.
+		An efficient allocator is required to avoid memory requests to become a bottleneck in high-performance scenarios characterized by large amount of processes. Moreover, requests could be very different depending on the target application; a good memory allocator has to works well in as many as possible scenarios.
+		In this work I present the design and the implementation of a lock-free buddy system memory allocator based on a binary tree structure. The proposed algorithm offers great performances in highly parallel machines and it is very memory efficient, producing low data overhead to work.
+		The results obtained in the experiments confirm the actual scalability of this proposal and the effectiveness of the lock-free synchronization.},
   comment  = {Supervisor: B. Ciciani - Co-Supervisor: F. Quaglia, M. Ianni, R. Marota},
 }
 
@@ -2451,8 +1703,7 @@ The results obtained in the experiments confirm the actual scalability of this p
   title    = {Transactional Memory Based Speculative Parallel Execution of Discrete Event Applications},
   year     = {2015},
   type     = {mathesis},
-  abstract = {Speculative parallel processing is a well known means to deliver high performance and scalability when executing discrete event simulation models. Nevertheless, it requires the runtime support to restore the application’s state to some past (consistent) image. Traditionally, the recoverability support has been realized via proper software layers. However, although a lot
-of optimizations have been provided in literature for making software-based recoverability highly efficient, its relative overhead may still represent an impairment to performance in case of (very) fine grain applications. This work presents an innovative runtime support for speculative parallel processing of discrete event simulation models on multi-core architectures, which exploits Hardware-Transactional-Memory (HTM) facilities, nowadays offered by offthe-shelf processors, for the purpose of state recoverability. In this thesis, the speculative updates on the state of the simulation model are executed as concurrent HTM-based transactions that are also in charge of detecting whether the update is consistent with the advancement of logical-time along model execution. This is achieved by including in the HTM-based transactional code-block both the activation of the application layer in charge of processing the simulation event, and the execution of housekeeping tasks aimed at determining the safety (in terms of causal consistency) of the executed transaction. This proposal is fully transparent to the application code. Hence, this HTM-based run-time support can host conventionally developed discrete event models relying on the concept of event-handlers to be dispatched by an underlying simulation engine. Experimental data show that this proposal provides 75% to 92% of the ideal speedup on an Intel Haswell based platform (equipped with 4 physical cores and HTM support) for discrete event models with event granularity ranging between 2 and 12 microseconds. The data also show that these same models cannot be executed efficiently on top of a last generation parallel discrete event simulation platform employing software-based recoverability},
+  abstract = {Speculative parallel processing is a well known means to deliver high performance and scalability when executing discrete event simulation models. Nevertheless, it requires the runtime support to restore the application’s state to some past (consistent) image. Traditionally, the recoverability support has been realized via proper software layers. However, although a lot of optimizations have been provided in literature for making software-based recoverability highly efficient, its relative overhead may still represent an impairment to performance in case of (very) fine grain applications. This work presents an innovative runtime support for speculative parallel processing of discrete event simulation models on multi-core architectures, which exploits Hardware-Transactional-Memory (HTM) facilities, nowadays offered by offthe-shelf processors, for the purpose of state recoverability. In this thesis, the speculative updates on the state of the simulation model are executed as concurrent HTM-based transactions that are also in charge of detecting whether the update is consistent with the advancement of logical-time along model execution. This is achieved by including in the HTM-based transactional code-block both the activation of the application layer in charge of processing the simulation event, and the execution of housekeeping tasks aimed at determining the safety (in terms of causal consistency) of the executed transaction. This proposal is fully transparent to the application code. Hence, this HTM-based run-time support can host conventionally developed discrete event models relying on the concept of event-handlers to be dispatched by an underlying simulation engine. Experimental data show that this proposal provides 75% to 92% of the ideal speedup on an Intel Haswell based platform (equipped with 4 physical cores and HTM support) for discrete event models with event granularity ranging between 2 and 12 microseconds. The data also show that these same models cannot be executed efficiently on top of a last generation parallel discrete event simulation platform employing software-based recoverability},
   comment  = {Supervisor: F. Quaglia - Co-Supervisor: A. Pellegrini},
 }
 
@@ -2473,12 +1724,8 @@ of optimizations have been provided in literature for making software-based reco
   year     = {2015},
   type     = {mathesis},
   abstract = {The Solvency II Directive (Directive 2009/138/EC) [14] is a European law adopted in November 2009, and amended by Directive 2014/51/EU of the European Parliament and of the Council of 16 April 2014 (the so-called "Omnibus II Directive"). It was enacted by the European Union to regulate the insurance sector through risk management. Solvency II requires that European insurance companies conduct consistent evaluations and constant monitoring of risk. The main regulation requires the insurance undertaking to compute the SCR (Solvency Capital Requirement) and the pdf (Probability Distribution Forecast). The SCR is the capital amount that should hedge the losses up to a given level. To calculate the SCR the directive allows the company to choose between two different computational methodology: the standard formula and the internal model. The pdf is a mathematical function that assigns to an exhaustive set of mutually exclusive future events a probability of realisation. Its computation relies on non closed form calculus based on several Monte Carlo simulations and different hypothesis.
-
-To fulfill the directives, companies should equip themselves with particular computational systems which, due to their complexity, require for their execution significant underlying IT infrastructures. This IT equipments represent a significant outlay for the company, not only for what concerns their direct costs due to the purchase, but also those for power consumption, cooling, maintenance and upgrades. Moreover, the technological progress that characterizes the IT field makes these computing resources become obsolete quickly. On the other hand, we face the risk that such resources become underused since these procedures could be used only periodically (at most monthly). If for the insurance company the utilization of "on premises" resources may not be advantageous, for a cloud services provider, increasing steadily its resources, leads to reduce the costs and consequently reduce the rates charged to the user.
-
-The idea of this work is to put together the needs arising from Solvency II accomplishment with the always more advantageous scenario of cloud services. Within the project, as a case study, the focus is on a particular "module" of a more complex system named DISAR® 1
-, that deals with the calculation of the pdf and other significant items for an insurance company. This procedure relies on a Monte Carlo simulation algorithm developed on parallel MPI environment. The goal of the project is to develop a framework that, by exploiting a learning algorithm is able to: calculate the computational power and the size of the IT infrastructure necessary for the execution of the procedure for a given input, deploy and make it available in a few minutes on the cloud, transfer to the grid the data necessary to the simulation, execute it and retrieve the output in a fully automated way transparent to the final user. The
-latter has the only task of choosing the segregated funds the to work on. Moreover after each elaboration, the data relative to it are stored and subsequently utilized to improve the model for the next simulation. The cloud services provider adopted for this project is Amazon Web Services (AWS), however the core algorithm as the methodology can be applied independently of the provider.},
+		To fulfill the directives, companies should equip themselves with particular computational systems which, due to their complexity, require for their execution significant underlying IT infrastructures. This IT equipments represent a significant outlay for the company, not only for what concerns their direct costs due to the purchase, but also those for power consumption, cooling, maintenance and upgrades. Moreover, the technological progress that characterizes the IT field makes these computing resources become obsolete quickly. On the other hand, we face the risk that such resources become underused since these procedures could be used only periodically (at most monthly). If for the insurance company the utilization of "on premises" resources may not be advantageous, for a cloud services provider, increasing steadily its resources, leads to reduce the costs and consequently reduce the rates charged to the user.
+		The idea of this work is to put together the needs arising from Solvency II accomplishment with the always more advantageous scenario of cloud services. Within the project, as a case study, the focus is on a particular "module" of a more complex system named DISAR® 1, that deals with the calculation of the pdf and other significant items for an insurance company. This procedure relies on a Monte Carlo simulation algorithm developed on parallel MPI environment. The goal of the project is to develop a framework that, by exploiting a learning algorithm is able to: calculate the computational power and the size of the IT infrastructure necessary for the execution of the procedure for a given input, deploy and make it available in a few minutes on the cloud, transfer to the grid the data necessary to the simulation, execute it and retrieve the output in a fully automated way transparent to the final user. The latter has the only task of choosing the segregated funds the to work on. Moreover after each elaboration, the data relative to it are stored and subsequently utilized to improve the model for the next simulation. The cloud services provider adopted for this project is Amazon Web Services (AWS), however the core algorithm as the methodology can be applied independently of the provider.},
   comment  = {Supervisor: B. Ciciani - Co-Supervisors: A. Pellegrini},
 }
 
@@ -2488,7 +1735,7 @@ latter has the only task of choosing the segregated funds the to work on. Moreov
   title    = {Proactive Workload Management in Cloud Environments in the Presence of Software Aging},
   year     = {2015},
   type     = {mathesis},
-  abstract = {This work is structured as follows. In Chapter 2 it will be discussed related work. In Chapter 3 presents the problems related to the software aging. Chapter 4 discusses the ML-based frameworks used in this works. The design and the  umplementation choices of this framework are discussed Chapter 5. Chapter 6 shows the experimental evaluation and the Chapter 7 draws the conclusions.},
+  abstract = {This work is structured as follows. In Chapter 2 it will be discussed related work. Chapter 3 presents the problems related to the software aging. Chapter 4 discusses the ML-based frameworks used in this works. The design and the  umplementation choices of this framework are discussed Chapter 5. Chapter 6 shows the experimental evaluation and the Chapter 7 draws the conclusions.},
   comment  = {Supervisor: B. Ciciani - Co-Supervisors: P. Di Sanzo, A. Pellegrini},
 }
 
@@ -2509,12 +1756,9 @@ latter has the only task of choosing the segregated funds the to work on. Moreov
   year     = {2014},
   type     = {phdthesis},
   abstract = {Simulation is a powerful technique to represent the evolution of real-world phenomena or systems over time. It has been extensively used in different research fields (from medicine to biology, to economy, and to disaster rescue) to study the behaviour of complex systems during their evolution (symbiotic simulation) or before their actual realization (what-if analysis). A traditional way to achieve high performance simulations is the employment of Parallel Discrete Event Simulation (PDES) techniques, which are based on the partitioning of the simulation model into Logical Processes (LPs) that can execute events in parallel on different CPUs and/or different CPU cores, and rely on synchronization mechanisms to achieve causally consistent execution of simulation events. As it is well recognized, the optimistic synchronization approach, namely the Time Warp protocol, which is based on rollback for recovering possible timestamporder violations due to the absence of block-until-safe policies for event processing, is likely to favour speedup in general application/architectural contexts.
-
-However, the optimistic PDES paradigm implicitly relies on a programming model that shifts from traditional sequential-style programming, given that there is no notion of global address space (fully accessible while processing events at any LP). Furthermore, there is the underlying assumption that the code associated with event handlers cannot execute unrecoverable operations given their speculative processing nature. Nevertheless, even though no unrecoverable action is ever executed by event handlers, a means to actually undo the action if requested needs to be devised and implemented within the software stack.
-
-On the other hand, sequential-style programming is an easy paradigm for the development of simulation code, given that it does not require the programmer to reason about memory partitioning (and therefore message passing) and speculative (concurrent) processing of the application. In this thesis, we present methodological and technical innovations which will show how it is possible, by developing innovative runtime mechanisms, to allow a programmer to implement his simulation model in a fully sequential way, and have the underlying simulation framework to execute it in parallel according to speculative processing techniques. Some of the approaches we provide show applicability in either shared- or distributed-memory systems, while others will be specifically tailored to multi/many-core architectures.
-
-We will clearly show, during the development of these supports, what is the effect on performance of these solutions, which will nevertheless be negligible, allowing a fruitful exploitation of the available computing power. In the end, we will highlight which are the clear benefits on the programming model that the model developer will experience by relying on these innovative solutions.},
+		However, the optimistic PDES paradigm implicitly relies on a programming model that shifts from traditional sequential-style programming, given that there is no notion of global address space (fully accessible while processing events at any LP). Furthermore, there is the underlying assumption that the code associated with event handlers cannot execute unrecoverable operations given their speculative processing nature. Nevertheless, even though no unrecoverable action is ever executed by event handlers, a means to actually undo the action if requested needs to be devised and implemented within the software stack.
+		On the other hand, sequential-style programming is an easy paradigm for the development of simulation code, given that it does not require the programmer to reason about memory partitioning (and therefore message passing) and speculative (concurrent) processing of the application. In this thesis, we present methodological and technical innovations which will show how it is possible, by developing innovative runtime mechanisms, to allow a programmer to implement his simulation model in a fully sequential way, and have the underlying simulation framework to execute it in parallel according to speculative processing techniques. Some of the approaches we provide show applicability in either shared- or distributed-memory systems, while others will be specifically tailored to multi/many-core architectures.
+		We will clearly show, during the development of these supports, what is the effect on performance of these solutions, which will nevertheless be negligible, allowing a fruitful exploitation of the available computing power. In the end, we will highlight which are the clear benefits on the programming model that the model developer will experience by relying on these innovative solutions.},
   comment  = {Supervisor: F. Quaglia},
 }
 
@@ -2525,10 +1769,8 @@ We will clearly show, during the development of these supports, what is the effe
   year     = {2014},
   type     = {phdthesis},
   abstract = {Over the last years several relevant technological trends have significantly increased the relative impact that the inter-replica synchronization costs have on the performance of transactional systems. Indeed, the emergence of technologies like Transactional Memory, Solid-State Drives and Cloud computing has exacerbated the ratio between the latencies of replication coordination and transaction processing. The requirements of these environments harshly challenge state of the art techniques for replication of transactional systems, raising the need for rethinking existing approaches to this problem.
-
-This dissertation advances the state of the art on replicated transactional systems by presenting a set of innovative replication protocols designed to achieve high efficiency even in such challenging scenarios. 
-
-More in detail, four transactional replication protocols are proposed, which tackle the aforementioned issues from various angles. The first two cope with full replication scenarios, and exploit orthogonal techniques, such as speculation and transaction migration, which allow for amortizing, in different ways, the impact of distributed coordination on system performance. The other two proposals explicitly cope with the issue of scalability, by introducing the first genuine partial replication techniques that support abort-free read-only transactions while ensuring, respectively, One-Copy Serializability and Extended Update Serializability. The core of these protocols is a distributed multi-version concurrency control algorithm, which relies on a novel logical clock synchronization mechanism to track, in a totally decentralized (and consequently scalable) way, both data and causal dependency relations among transactions. The trade-offs arising across the different presented solutions are also discussed and experimentally evaluated by integrating them into state of the art academic and industrial transactional platforms.},
+		This dissertation advances the state of the art on replicated transactional systems by presenting a set of innovative replication protocols designed to achieve high efficiency even in such challenging scenarios. 
+		More in detail, four transactional replication protocols are proposed, which tackle the aforementioned issues from various angles. The first two cope with full replication scenarios, and exploit orthogonal techniques, such as speculation and transaction migration, which allow for amortizing, in different ways, the impact of distributed coordination on system performance. The other two proposals explicitly cope with the issue of scalability, by introducing the first genuine partial replication techniques that support abort-free read-only transactions while ensuring, respectively, One-Copy Serializability and Extended Update Serializability. The core of these protocols is a distributed multi-version concurrency control algorithm, which relies on a novel logical clock synchronization mechanism to track, in a totally decentralized (and consequently scalable) way, both data and causal dependency relations among transactions. The trade-offs arising across the different presented solutions are also discussed and experimentally evaluated by integrating them into state of the art academic and industrial transactional platforms.},
   comment  = {Supervisors: F. Quaglia, P. Romano},
 }
 
@@ -2539,13 +1781,10 @@ More in detail, four transactional replication protocols are proposed, which tac
   year     = {2014},
   type     = {phdthesis},
   abstract = {Software Transactional Memory (STM) has emerged as a powerful programming paradigm for concurrent applications. It allows encapsulating the access to data shared across concurrent threads within transactions, thus avoiding the need for synchronization mechanisms to be explicitly coded by the programmer. On the other hand, synchronization transparency must not come the expense of performance. Hence, STM-based systems must be enriched with mechanisms providing optimized run-time efficiency. Among the issues to be tackled, a core one is related to determining the optimal level of concurrency (number of threads) to be employed for running the application on top of the STM layer. For too low levels of concurrency, parallelism can be hampered. On the other hand, overdimensioning the concurrency level may give rise to thrashing phenomena caused by excessive data contention and consequent transaction aborts.
-
-In this thesis we propose a set of techniques in order to build “application specific” performance models allowing to dynamically tune the level of concurrency to the best suited value depending of the specific execution phase of the application. We will present three different approaches: a) one based on a pure Machine Learning (ML) model that doesn’t require a detailed knowledge of the application internals to predict the optimal concurrency level, b) one based on a parametric analytical performance model customized for a specific application/platform through regression analysis that, respect to the previous one, requires a lighter training phase and c) one based on a combination of analytical and Machine Learning techniques, that allows to combine the strengths of the previous
-two approaches, that is it has the advantage of reducing the training time of pure machine learning methods avoiding the approximation errors typically affecting pure analytical approaches. Hence it allows very fast construction of highly reliable performance models, which can be promptly and effectively exploited for optimizing actual application runs.
-
-We also present real implementations of concurrency regulation architectures, based on our performance predictions approaches, which have been integrated within the open source TinySTM package, together with experimental data related to runs of application profiles taken from the STAMP benchmark suite demonstrating the effectiveness of our proposals. The experimental data confirm how our self-adjusting concurrency schemes constantly provides optimal performance, thus avoiding performance loss phases caused by non-suited selection of the amount of concurrent threads and associated with the above depicted phenomena.
-
-Moreover we present a mechanism that allows to dynamically shrinks or enlarges the set of input features to be exploited by the performance predictors. This allows for tuning the concurrency level while also minimizing the overhead for input-features sampling, given that the cardinality of the input-feature set is always tuned to the minimum value that still guarantees reliability of workload characterization. We also present a fully fledged implementation of this solution again within the TinySTM open source framework, and we provide the results of an experimental study relying on the STAMP benchmark suite, which show significant reduction of the application execution time with respect to proposals based on static feature selection.},
+		In this thesis we propose a set of techniques in order to build “application specific” performance models allowing to dynamically tune the level of concurrency to the best suited value depending of the specific execution phase of the application. We will present three different approaches: a) one based on a pure Machine Learning (ML) model that doesn’t require a detailed knowledge of the application internals to predict the optimal concurrency level, b) one based on a parametric analytical performance model customized for a specific application/platform through regression analysis that, respect to the previous one, requires a lighter training phase and c) one based on a combination of analytical and Machine Learning techniques, that allows to combine the strengths of the previous
+		two approaches, that is it has the advantage of reducing the training time of pure machine learning methods avoiding the approximation errors typically affecting pure analytical approaches. Hence it allows very fast construction of highly reliable performance models, which can be promptly and effectively exploited for optimizing actual application runs.
+		We also present real implementations of concurrency regulation architectures, based on our performance predictions approaches, which have been integrated within the open source TinySTM package, together with experimental data related to runs of application profiles taken from the STAMP benchmark suite demonstrating the effectiveness of our proposals. The experimental data confirm how our self-adjusting concurrency schemes constantly provides optimal performance, thus avoiding performance loss phases caused by non-suited selection of the amount of concurrent threads and associated with the above depicted phenomena.
+		Moreover we present a mechanism that allows to dynamically shrinks or enlarges the set of input features to be exploited by the performance predictors. This allows for tuning the concurrency level while also minimizing the overhead for input-features sampling, given that the cardinality of the input-feature set is always tuned to the minimum value that still guarantees reliability of workload characterization. We also present a fully fledged implementation of this solution again within the TinySTM open source framework, and we provide the results of an experimental study relying on the STAMP benchmark suite, which show significant reduction of the application execution time with respect to proposals based on static feature selection.},
   comment  = {Supervisor: B. Ciciani},
 }
 
@@ -2565,7 +1804,7 @@ Moreover we present a mechanism that allows to dynamically shrinks or enlarges t
   title    = {Design of Software Support Structures for High Performance Optimistic Simulations with Special Focus on Multi-Core Hosting Environment},
   year     = {2013},
   type     = {phdthesis},
-  abstract = {In this dissertation we cope with performance of PDES  systems, with special focus on deploys of the PDES platform onto multi-core architectures. These architectures represent the current CPU trend and nowadays it is common to have chips with a significant number of cores, sometimes enough for effectively performing parallel computations within a single chip. By design, these architectures share most of the CPU internal components across different cores, and physical memory across the different CPUs. This implies several drawbacks, mainly due to the contention, but at the same time, such a sharing can become a resource, if well exploited through sector specific software design. The base building block for our work is the optimistic PDES synchronization paradigm, which has been shown to be highly promising in terms of potential for fruitful parallelism exploitation},
+  abstract = {In this dissertation we cope with performance of PDES systems, with special focus on deploys of the PDES platform onto multi-core architectures. These architectures represent the current CPU trend and nowadays it is common to have chips with a significant number of cores, sometimes enough for effectively performing parallel computations within a single chip. By design, these architectures share most of the CPU internal components across different cores, and physical memory across the different CPUs. This implies several drawbacks, mainly due to the contention, but at the same time, such a sharing can become a resource, if well exploited through sector specific software design. The base building block for our work is the optimistic PDES synchronization paradigm, which has been shown to be highly promising in terms of potential for fruitful parallelism exploitation},
   comment  = {Supervisor: F. Quaglia},
 }
 
@@ -2588,9 +1827,7 @@ Moreover we present a mechanism that allows to dynamically shrinks or enlarges t
   abstract = {Nowadays, the role of transactions has become twofold:
 - they are used in order to guarantee consistency and atomicity in applications manipulating data;
 - they are used as a means to synchronize the activities of threads working concurrently within any software layer.
-
 Overall, the concept of transaction, historically related to support data manipulation in the context of database systems, has been widened so to encapsulate synchronization aspects in the context of parallel and concurrent applications. The latter aspect found its expression via Software Transactional Memory (STM) technologies, which have been oriented to mask the complexity of synchronization to the application programmers, thus moving along the path of bringing the power of multi/many-core architectures into the hand of ordinary, non-specialized, software developers. Such a widened scope of transactions, together with significant technological innovations possibly impacting the execution profile/cost of traditional database transactions (e.g. the advent of SSD storage systems) and the level of transaction parallelism (e.g. the advent of many-core architectures), raise the need for reconsidering the design of protocols supporting fault tolerance.
-
 In this thesis, I focus on fault tolerant protocols based on the active replication paradigm, which is done by systematically exploiting speculative computation approaches. More in detail, I worked on innovative speculative transactional replication protocols relying on Optimistic Atomic Broadcast group communication primitives, which have been used as a building block for replicas coordination. Some proposed results are mostly oriented to theory, while others have a more strict relation with pragmatic aspects associated with the design/implementation of replicated transactional systems.},
   comment  = {Supervisor: F. Quaglia},
 }
@@ -2643,7 +1880,6 @@ My thesis, which provides a patch for the Linux kernel version 3.2.51, aims at p
   year     = {2010},
   type     = {mathesis},
   abstract = {In questo lavoro viene affrontato il problema del ripristino dello stato nei sistemi di simulazione ottimistica, con la proposta di un’architettura di gestione dei checkpoint, progettata secondo il paradigma del calcolo autonomico. La proposta `e unica, nel senso che affronta contemporaneamente le questioni di trasparenza e performance, offrendo allo stesso tempo le seguenti caratteristiche:
-
 1. le operazioni di salvataggio e ripristino dello stato vengono condotte in maniera del tutto trasparente al programmatore del livello applicativo;
 2. lo stato degli oggetti di simulazione pu`o essere distribuito su frammenti di memoria non contigui;
 3. il salvataggio ed il ripristino dello stato possono essere eseguiti secondo uno schema incrementale o non incrementale;
@@ -2715,11 +1951,8 @@ My thesis, which provides a patch for the Linux kernel version 3.2.51, aims at p
   year     = {2007},
   type     = {phdthesis},
   abstract = {Modern Internet services exhibit the strong trend to be structured according to a three-tier, and in general multi-tier, system organization, which allows reflecting at both the software and hardware level the logical decomposition of applications. Even though the partitioning of the application into multiple tiers provides the potentialities to achieve high modularity and flexibility, the multiplicity and diversity of the employed components, and their interdependencies, make reliability a complex issue to tackle. As an example, in classical client-server environments, database systems represented the reliability backbone of mission critical services, ensuring consistent evolution of the state trajectory of business applications through the notion of atomic transactions. However, the fault-tolerance capabilities provided by transactional components, and, in broader sense, by traditional approaches to reliability, address issues restricted to specific subsystems involved in the end-to-end interaction. Hence, they are unable to tackle the wide spectrum of failure scenarios that can arise along the whole chain of components constituting a multi-tier system.
-
 The design of reliability solutions for Internet services is made even more challenging by the open, heterogeneous and inherently asynchronous nature of the Internet itself, which dramatically reduces the possibility to monitor and control the distributed components involved in a multi-tier application. Further, coupled with global access enabled by the Internet and with widespread diffusion of complex services, the urge for achieving high scalability and minimizing response times has accordingly grown. This has imposed stringent performance requirements on the underlying reliability mechanisms.
-
 This is precisely the focus of this thesis. Specifically, we introduce innovative protocols ensuring the e-Transaction (exactly-once Transaction) guarantees, namely a recent formalization of desirable end-to-end reliability properties for multi-tier systems in presence of crash failures. These protocols advance the state of the art in a twofold direction. From a practical perspective, they achieve unparalleled scalability levels, exhibit very limited overhead, thus revealing particularly attractive in the context of emerging large scale service delivery platforms. From a theoretical standpoint, our solutions can cope with purely asynchronous systems, where no assumption on the accuracy of the failure detection mechanism can be guaranteed.
-
 As we will show, some of the building blocks underlying the previous fault tolerant protocols can also be used to construct distributed protocols allowing the treatment of a more general class of failures, which we can refer to as “performance failures”. These model situations of reduced system responsiveness due to both crashes and overloads/congestions on some component.},
   comment  = {Supervisor: F. Quaglia},
 }
@@ -2778,5 +2011,3 @@ As we will show, some of the building blocks underlying the previous fault toler
   type    = {mathesis},
   comment = {Supervisor: B. Ciciani},
 }
-
-@Comment{jabref-meta: databaseType:bibtex;}
