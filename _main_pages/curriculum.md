@@ -13,6 +13,7 @@ Here you can find a
 
 ## Awards and Honors
 
+* Best Paper Award, DS-RT Conference, 2022.
 * Best Paper Award, IEEE SOSE Conference, 2021.
 * HiPEAC Technology Transfer Award, 2018.
 * Best Paper Award, DS-RT Conference, 2016.
@@ -21,7 +22,8 @@ Here you can find a
 
 ## Editorial Boards
 
-* 2018 - present: Transactions on Modeling and Computer Simualtions (TOMACS), ACM. Member of the Editorial Board, in the Reproducibility Board.
+* 2022 - present: Transactions on Modeling and Computer Simualtions (TOMACS), ACM. Associate Editor.
+* 2018 - 2022: Transactions on Modeling and Computer Simualtions (TOMACS), ACM. Member of the Editorial Board, in the Reproducibility Board.
 * 2019: Guest Editor for the TOMACS special issue on PADS.
 
 ## National/International Projects
