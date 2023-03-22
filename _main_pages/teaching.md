@@ -7,9 +7,7 @@ permalink: /teaching/
 Office Hours
 ------------
 
-Due to the Coronavirus pandemic, we can meet only online. In order to book an appointment, contact me.
-
-Please note that if no student shows up at the beginning of the office hours, I might leave the office to carry out other tasks.
+The best way to get in touch with me is on Teams. If you do need to come to my office, we can arrange an appointment on demand.
 
 
 Courses
