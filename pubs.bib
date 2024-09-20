@@ -52,28 +52,68 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Journal Articles %%%%%
 
+@article{Mar23b,
+  author = {Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
+  title = {A Conflict-Resilient Lock-Free Linearizable Calendar Queue},
+  journal = {ACM Transactions on Parallel Computing},
+  abstract = {In the last two decades, great attention has been devoted to the design of non-blocking and linearizable data structures, which enable exploiting the scaled-up degree of parallelism in off-the-shelf shared-memory multi-core machines. In this context, priority queues are highly challenging. 
+Indeed, concurrent attempts to extract the highest-priority item are prone to create detrimental thread conflicts that lead to abort/retry of the operations.
+In this article, we present the first priority queue that jointly provides:
+i) lock-freedom and linearizability; 
+ii) conflict resiliency against concurrent extractions;
+iii) adaptiveness to different contention profiles; and
+iv) amortized constant-time access for both insertions and extractions. Beyond presenting our solution, we also provide proof of its correctness based on an assertional approach. 
+Also, we present an experimental study on a 64-CPU machine, showing that our proposal provides performance improvements over state-of-the-art non-blocking priority queues. },
+  year = {2023},
+  month = dec,
+  issn = {2329-4949},
+  publisher = {ACM},
+  series = {TOPC},
+  doi    = {10.1145/3635163},
+}
+
+@article{Car23,
+  author = {Carnà, Stefano and Marotta, Romolo and Pellegrini, Alessandro and Quaglia, Francesco},
+  title = {Strategies and Software Support for the Management of Hardware Performance Counters},
+  journal = {Software: Practice and Experience},
+  abstract = {Hardware Performance Counters (HPCs) are facilities offered by most off-the-shelf CPU architectures. They are a vital support to post-mortem performance profiling and are exploited by standard tools such as Linux or Intel V-Tune. Nevertheless, an increasing number of application domains (e.g., simulation, task-based high-performance computing, or cybersecurity) are exploiting them to perform different activities, such as self-tuning, autonomic optimization, and\slash or system inspection. This repurposing of HPCs can be difficult, e.g., because of the overhead for extracting relevant information. This overhead might render any online or self-tuning activity ineffective. This article discusses various practical strategies to exploit HPCs beyond post-mortem profiling, suitable for different application contexts. The presented strategies are accompanied by a general primer on HPCs usage on Linux. We also provide reference x86 (both Intel and AMD) implementations targeting the Linux kernel, upon which we present an experimental assessment of the viability of our proposals.},
+  year = {2023},
+  month = jul,
+  volume = {53},
+  issue = {10},
+  pages = {1928--1957},
+  issn = {1097-024X},
+  doi = {10.1002/spe.3236},
+  publisher = {Wiley},
+  series = {SPE},
+}
+
 @article{DeA23,
   author = {De Angelis, Emanuele and De Angelis, Guglielmo and Pellegrini, Alessandro and Proietti, Maurizio},
-  journal = {Journal of Systems and Software},
   title = {What Makes Test Programs Similar in Microservices Applications?},
+  journal = {Journal of Systems and Software},
   abstract = {The emergence of microservice architecture calls for novel methodologies and technological frameworks that support the design, development, and maintenance of applications structured according to this new architectural style. In this paper, we consider the issue of designing suitable strategies for the governance of testing activities within the microservices paradigm. We focus on the problem of discovering implicit relations between test programs that help to avoid re-running all the available test suites each time one of its constituents evolves. We propose a dynamic analysis technique and its supporting framework that collects information about the invocations of local and remote APIs. Information on test program execution is obtained in two ways: instrumenting the test program code or running a symbolic execution engine. The extracted information is processed by a rule-based automated reasoning engine, which infers implicit similarities among test programs. We show that our analysis can be used to support the reduction of test suites. The proposed approach has been validated against two real-world microservice applications.},
   year = {2023},
   month = jan,
+  volume = {201},
+  pages = {111674},
   issn = {0164-1212},
   publisher = {Elsevier},
   series = {SPE},
   doi = {10.1016/j.jss.2023.111674},
-  note = {To appear.},
 }
 
 @article{Pell22,
   author = {Pellegrini, Alessandro and Di~Sanzo, Pierangelo and Piccione, Andrea and Quaglia, Francesco},
-  journal = {Software: Practice and Experience},
   title = {Design and Implementation of a Fully-Transparent Partial Abort Support for Software Transactional Memory},
+  journal = {Software: Practice and Experience},
   abstract = {Software Transactional Memory (STM) provides synchronization support to ensure atomicity and isolation when threads access shared data in concurrent applications. With STM, shared data accesses are encapsulated within transactions, which are automatically handled by the STM layer. Hence, programmers are not requested to use code-synchronization mechanisms explicitly, like locking.
 In this article, we present our experience in designing and implementing a partial abort scheme for STM. The objective of our work is threefold: 1) enabling STM to undo only part of the transaction execution in the case of conflict, 2) designing a scheme that is fully transparent to programmers, thus also allowing to run existing STM applications without modifications, and 3) providing a scheme that can be easily integrated within existing STM runtime environments without altering their internal structure. The scheme that we designed is based on automated software instrumentation, which injects into the application capabilities to undo the required portions of transaction executions. Further, it can correctly undo also non-transactional operations executed on the stack and the heap during a transaction. This capability provides programmers with the advantage of writing transactional code without concerns about the side effects of aborted transactions on both shared and thread-private data. We integrated and evaluated our partial abort scheme within the TinySTM open-source library. We analyze the experimental results we achieved with common STM benchmark applications, focusing on the advantages and disadvantages of the proposed solutions for implementing our scheme's different components. Hence, we highlight the appropriate choices and possible solutions to improve partial abort schemes further.},
   year = {2022},
   month = jun,
+  volume = {52},
+  issue = {11},
+  pages = {2456--2475},
   issn = {1097-024X},
   publisher = {Wiley},
   series = {SPE},
@@ -82,8 +122,8 @@ In this article, we present our experience in designing and implementing a parti
 
 @Article{Car22,
   author    = {Carnà, Stefano and Ferracci, Serena and Quaglia, Francesco and Pellegrini, Alessandro},
-  journal   = {Digital Threats: Research and Practice},
   title     = {Fight Hardware with Hardware: System-wide Detection and Mitigation of Side-Channel Attacks using Performance Counters},
+  journal   = {Digital Threats: Research and Practice},
   year      = {2022},
   abstract  = {We present a kernel-level infrastructure that allows system-wide detection of malicious applications attempting to exploit cache-based side-channel attacks to break the process confinement enforced by standard operating systems. This infrastructure relies on hardware performance counters to collect information at runtime from all applications running on the machine. High-level detection metrics are derived from these measurements to maximize the likelihood of promptly detecting a malicious application. Our experimental assessment shows that we can catch a large family of side-channel attacks with a significantly reduced overhead in the system. We also discuss countermeasures that can be enacted once a process is suspected of carrying out a side-channel attack to increase the overall tradeoff between the system’s security level and the delivered performance under non-suspected process executions.},
   publisher = {ACM},
@@ -93,8 +133,8 @@ In this article, we present our experience in designing and implementing a parti
 
 @Article{Mar22,
   author    = {Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
-  journal   = {Transactions on Computers},
   title     = {NBBS: A Non-Blocking Buddy System for Multi-core Machines},
+  journal   = {Transactions on Computers},
   year      = {2022},
   mon       = mar,
   abstract  = {Common implementations of core memory allocation components handle concurrent allocation/release requests by synchronizing threads via spin-locks. This approach is not prone to scale, a problem that has been addressed in the literature by introducing layered allocation services or replicating the core allocators—the bottom-most ones within the layered architecture. Both these solutions tend to reduce the pressure of actual concurrent accesses to each individual core allocator. In this article, we explore an alternative approach to scalability of memory allocation/release, which can be still combined with those literature proposals. We present a fully non-blocking buddy system, where threads performing concurrent allocations/releases do not undergo any spin-lock based synchronization. Our solution allows threads to proceed in parallel, and commit their allocations/releases unless a conflict is materialized while handling the allocator metadata—memory fragmentation and coalescing is also carried out in a fully non-blocking manner. Conflict detection relies in our solution on atomic Read-Modify-Write (RMW) machine instructions, guaranteed to execute atomically by the processor firmware. We also provide a proof of the correctness of our non-blocking buddy system and show the results of a comparative study that outlines the advantages of our solution with respect to the Linux-kernel buddy system, which is one of the most diffused and optimized buddy systems in the state of the art.},
@@ -108,8 +148,8 @@ In this article, we present our experience in designing and implementing a parti
 
 @Article{Sil21,
   author    = {Silvestri, Emiliano and Pellegrini, Alessandro and Di~Sanzo, Pierangelo and Quaglia, Francesco},
-  journal   = {Transactions on Computers},
   title     = {Effective Runtime Management of Tasks and Priorities in GNU OpenMP Applications},
+  journal   = {Transactions on Computers},
   year      = {2022},
   month     = oct,
   abstract  = {OpenMP has become a reference standard for the design of parallel applications. This standard is evolving very fast, thus offering ever new opportunities to the application programmers. However, OpenMP runtime environments are often not fully aligned to the actual requirements imposed by the evolution of such standard. Among the main lacks, we find: (a) a limited capability to effectively cope with task priorities, and (b) the inadequacy in guaranteeing core properties while processing tasks such as the so called work-conservativeness---the ability of the OpenMP runtime environment to fully exploit the underlying multi-processor/multi-core machine through the avoidance of thread-blocking phases. In this article we present the design of extensions to the GNU OpenMP (GOMP) implementation, integrated into gcc, which allow the effective management of tasks and their priorities. Our proposal is based on a user-space library---modularly combined with the one already offered by GOMP---and an external kernel-level Linux module---offering the opportunity to exploit raising hardware facilities for the purpose of task/priority management. We also provide experimental results showing the effectiveness of our proposal, achieved by running either OpenMP common benchmarks or a new benchmark application (named Hashtag-Text) that we explicitly devised in order to stress the OpenMP runtime environment in relation to the above-mentioned task/priority management aspects.},
@@ -123,8 +163,8 @@ In this article, we present our experience in designing and implementing a parti
 
 @Article{Gig21,
   author    = {Gigante, Gabriella and Palumbo, Roberto and Pascarella, Domenico and Pellegrini, Alessandro and Duca, Gabriella and Piera, Miquel Àngel and Ramos, Juan José},
-  journal   = {International Journal of Aviation, Aeronautics, and Aerospace},
   title     = {Support to Design for Air Traffic Management: An Approach with Agent-Based Modelling and Evolutionary Search},
+  journal   = {International Journal of Aviation, Aeronautics, and Aerospace},
   year      = {2021},
   volume    = {8},
   number    = {1},
@@ -136,8 +176,8 @@ The proposed work defines an approach to support the design of new ATM solutions
 
 @Article{Con21,
   author    = {Conoci, Stefano and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
-  journal   = {Concurrency and Computation: Practice and Experience},
   title     = {On Power Capping and Performance Optimization of Multi-threaded Applications},
+  journal   = {Concurrency and Computation: Practice and Experience},
   year      = {2021},
   month     = jan,
   volume    = {33},
@@ -151,8 +191,8 @@ In this article, we explore the design of techniques enabling multi-threaded app
 
 @article{DiS21,
   author = {Di Sanzo, Pierangelo and Avresky, Dimiter R. and Pellegrini, Alessandro},
-  journal = {Software: Practice and Experience},
   title = {Autonomic Rejuvenation of Cloud Applications as a Countermeasure to Software Anomalies},
+  journal = {Software: Practice and Experience},
   abstract = {Failures in computer systems can be often tracked down to software anomalies of various kinds. In many scenarios, it could be difficult, unfeasible, or unprofitable to carry out extensive debugging activity to spot the causes of anomalies and remove them. In other cases, taking corrective actions may led to undesirable service downtime. In this article, we propose an alternative approach to cope with the problem of software anomalies in cloud-based applications, and we present the design of a distributed autonomic framework that implements our approach. It exploits the elastic capabilities of cloud infrastructures, and relies on machine learning models, proactive rejuvenation techniques and a new load balancing approach. By putting together all these elements, we show that it is possible to improve both availability and performance of applications deployed over heterogeneous cloud regions and subject to frequent failures. Overall, our study demonstrates the viability of our approach, thus opening the way towards it adoption, and encouraging further studies and practical experiences to evaluate and improve it.},
   year = {2021},
   month = jan,
@@ -167,8 +207,8 @@ In this article, we explore the design of techniques enabling multi-threaded app
 
 @Article{Pell20d,
   author    = {Pellegrini, Alessandro},
-  journal   = {ACM Transactions on Modeling and Computer Simulation},
   title     = {Replication of Computational Results Report for “Green Simulation with Database Monte Carlo”},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
   year      = {2020},
   issn      = {1049-3301},
   month     = {12},
@@ -184,8 +224,8 @@ The article can thus receive the Artifacts Available, the Artifacts Evaluated---
 
 @article{Pell20c,
   author = {Pellegrini, Alessandro and Di Sanzo, Pierangelo and Bevilacqua, Beatrice and Duca, Gabriella and Pascarella, Domenico and Palumbo, Roberto and Ramos, Juan José and Piera, Miquel Àngel and Gigante, Gabriella},
-  journal = {IEEE Access},
   title = {Simulation-based Evolutionary Optimization of Air Traffic Management},
+  journal = {IEEE Access},
   abstract = {In the context of aerospace engineering, the optimization of processes often may require to solve multi-objective optimization problems, including mixed variables, multi-modal and non-differentiable quantities, possibly involving highly-expensive objective function evaluations. In Air Traffic Management (ATM), the optimization of procedures and protocols becomes even more complicated, due to the involvement of human controllers, which act as final decision points in the control chain.
 In this article, we propose the use of computational intelligence techniques, such as Agent-Based Modelling and Simulation (ABMS) and Evolutionary Computing (EC), to design a simulation-based distributed architecture to optimize control plans and procedures in the context of ATM. We rely on Agent-Based fast-time simulations to carry out offline what-if analysis of multiple scenarios, also taking into account human-related decisions, during the strategic or pre-tactical phases. The scenarios are constructed using real-world traffic data traces, while multiple optimization variables governed by an EC algorithm allow to explore the search space to identify the best solutions. Our optimization approach relies on ad-hoc multi-objective performance metrics which allow to assess the goodness of the control of aircraft and air traffic regulations.
 We present experimental results which prove the viability of our approach, comparing them with real-world data traces, and proving their meaningfulness from an Air Traffic Control perspective.},
@@ -201,8 +241,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Mar20,
   author    = {Marotta, Romolo and Tiriticco, Davide and Di Sanzo, Pierangelo and Pellegrini, Alessandro and Ciciani, Bruno and Quaglia, Francesco},
-  journal   = {Concurrency and Computation: Practice and Experience},
   title     = {Mutable Locks: Combining the Best of Spin and Sleep Locks},
+  journal   = {Concurrency and Computation: Practice and Experience},
   year      = {2020},
   volume    = {32},
   number    = {22},
@@ -216,8 +256,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Pri20,
   author    = {Principe, Matteo and Tocci, Tommaso and Di Sanzo, Pierangelo and Quaglia, Francesco and Pellegrini, Alessandro},
-  journal   = {ACM Transactions on Modeling and Computer Simulation},
   title     = {A Distributed Shared-Memory Middleware for Speculative Parallel Discrete Event Simulation},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
   year      = {2020},
   volume    = {30},
   number    = {2},
@@ -232,8 +272,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @article{Qua20,
   author = {Quaglia, Francesco and Theodoropoulos, Georgios and Pellegrini, Alessandro},
-  journal = {Transactions on Modeling and Computer Simulations},
   title = {Editorial to the Special Issue on the Principles of Advanced Discrete Simulation (PADS)},
+  journal = {Transactions on Modeling and Computer Simulations},
   year = {2020},
   month = mar,
   number = {5},
@@ -244,8 +284,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{DiS19,
   author    = {Di Sanzo, Pierangelo and Pellegrini, Alessandro and Sannicandro, Marco and Ciciani, Bruno and Quaglia, Francesco},
-  journal   = {IEEE Transactions on Computers},
   title     = {Adaptive Model-based Scheduling in Software Transactional Memory},
+  journal   = {IEEE Transactions on Computers},
   year      = {2020},
   volume    = {69},
   number    = {5},
@@ -260,8 +300,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Pell19,
   author    = {Pellegrini, Alessandro and Quaglia, Francesco},
-  journal   = {Journal of Parallel and Distributed Computing},
   title     = {Cross-State Events: a New Approach to Parallel Discrete Event Simulation and its Speculative Runtime Support},
+  journal   = {Journal of Parallel and Distributed Computing},
   year      = {2019},
   issn      = {0743-7315},
   month     = {10},
@@ -275,8 +315,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Ian19,
   author    = {Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
-  journal   = {IEEE Transactions on Parallel and Distributed Systems},
   title     = {Anonymous Readers Counting: A Wait-free Multi-word Atomic Register Algorithm for Scalable Data Sharing on Multi-core Machines},
+  journal   = {IEEE Transactions on Parallel and Distributed Systems},
   year      = {2019},
   issn      = {1045-9219},
   month     = {2},
@@ -290,8 +330,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Cin17b,
   author    = {Cingolani, Davide and Pellegrini, Alessandro and Quaglia, Francesco},
-  journal   = {ACM Transactions on Modeling and Computer Simulation},
   title     = {Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
   year      = {2017},
   issn      = {0885-7458},
   month     = may,
@@ -306,8 +346,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Pell17b,
   author    = {Pellegrini, Alessandro and Quaglia, Francesco},
-  journal   = {ACM Transactions on Modeling and Computer Simulation},
   title     = {A Fine-grain Time-sharing Time Warp System},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
   year      = {2017},
   issn      = {0885-7458},
   month     = may,
@@ -321,8 +361,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Pell16b,
   author    = {Pellegrini, Alessandro and Peluso, Sebastiano and Quaglia, Francesco and Vitali, Roberto},
-  journal   = {International Journal of Parallel Programming},
   title     = {Transparent Speculative Parallelization of Discrete Event Simulation Applications Using Global Variables},
+  journal   = {International Journal of Parallel Programming},
   year      = {2016},
   issn      = {0885-7458},
   month     = dec,
@@ -337,8 +377,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{DiS15,
   author    = {Di Sanzo, Pierangelo and Quaglia, Francesco and Ciciani, Bruno and Pellegrini, Alessandro and Didona, Diego and Romano, Paolo and Palmieri, Roberto and Peluso, Sebastiano},
-  journal   = {Simulation Modelling Practice and Theory},
   title     = {A Flexible Framework for Accurate Simulation of Cloud In-Memory Data Stores},
+  journal   = {Simulation Modelling Practice and Theory},
   year      = {2015},
   issn      = {1569-190X},
   month     = jul,
@@ -353,8 +393,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Pell14d,
   author    = {Pellegrini, Alessandro and Vitali, Roberto and Quaglia, Francesco},
-  journal   = {IEEE Transactions on Parallel and Distributed Systems},
   title     = {Autonomic State Management for Optimistic Simulation Platforms},
+  journal   = {IEEE Transactions on Parallel and Distributed Systems},
   year      = {2015},
   issn      = {1045-9219},
   month     = jun,
@@ -369,8 +409,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @Article{Vit12e,
   author     = {Vitali, Roberto and Pellegrini, Alessandro and Quaglia, Francesco},
-  journal    = {SIGMETRICS Performance Evaluation Review},
   title      = {Load sharing for optimistic parallel simulations on multi core machines},
+  journal    = {SIGMETRICS Performance Evaluation Review},
   year       = {2012},
   issn       = {0163-5999},
   month      = aug,
@@ -388,10 +428,161 @@ We present experimental results which prove the viability of our approach, compa
 
 %%%%% Conference Proceedings %%%%%
 
+@InProceedings{Mar24b,
+  author    = {Marotta, Romolo and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 2024 Winter Simulation Conference},
+  title     = {Model-Driven Engineering for High-Performance Parallel Discrete Event Simulations on Heterogeneous Architectures},
+  year      = {2024},
+  month     = dec,
+  publisher = {IEEE},
+  series    = {WSC},
+  abstract  = {Modern high-performance, large-scale simulations require significant computational power, memory, and storage, making heterogeneous architectures an attractive option. Yet, the presence of accelerators in heterogeneous architectures makes model development hard. Domain-specific languages (DSLs) have successfully simplified model development, but designing a DSL to target heterogeneous architectures can be burdensome. Model-driven engineering (MDE) can simplify the development of DSLs targeting heterogeneous architectures. In this paper, we present a model-driven approach targeting Parallel Discrete Event Simulations on heterogeneous architectures. We exercise our MDE-generated models using a state-of-the-art runtime environment for heterogeneous architectures, using a custom DSL as an example.},
+  location  = {Orlando, FL, USA},
+  note      = {To appear},
+}
+
+@InProceedings{And24,
+  author    = {Andelfinger, Philipp and Pellegrini, Alessandro and Marotta, Romolo},
+  title     = {Sampling Policies for Near-Optimal Device Choice in Parallel Simulations on CPU/GPU Platforms},
+  booktitle = {Proceedings of the 28th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  year      = {2024},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {DS-RT},
+  abstract  = {Heterogeneous hardware platforms comprised of CPUs, GPUs, and other accelerators offer the opportunity to choose the best-suited device for executing a given scientific simulation in order to minimize execution time and energy consumption. To this end, the recently proposed “Follow the Leader” approach dynamically selects a suitable device based on runtime performance measurements during speculative discreteevent simulations. A currently active “leader” device is periodically challenged by a “follower” device in order to negotiate the new leader. The optimality of the device choices and the associated overhead depends critically on the challenge frequency and timing. Here, we explore policies to schedule challenges with the goal of attaining Pareto-optimal combinations of execution time and energy consumption. Several heuristics are first evaluated in an abstract fashion using a “meta-simulation” by mimicking the progress and energy consumption of an idealized co-execution. In this setting, we optimize the heuristics’ tuning parameters to assess their relative merits in near-optimal configurations when compared to challenge timings based on perfect knowledge. We find that under challenging stochastic workloads based on a class of mean-reverting random walks, the best heuristics can closely approximate the execution time and energy consumption achievable under an optimal device choice. Empirical support for this observation is given by measurements of a CPU/GPU co-execution of the Time Warp algorithm on physical hardware.},
+  location  = {Urbino, Italy},
+  note      = {To appear},
+}
+
+@InProceedings{Du24,
+  author    = {Du, Xiaorui and Piccione, Andrea and Pimpini, Adriano and Bortoli, Stefano and Pellegrini, Alessandro and Knoll, Alois},
+  title     = {Online Analytics with Local Operator Rebinding for Simulation Data Stream Processing},
+  booktitle = {Proceedings of the 28th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  year      = {2024},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {DS-RT},
+  abstract  = {Leveraging multiple threads to process high volumes of simulation data is a prevalent strategy in modern streaming data processing systems. Statically binding operators to specific threads is the most common design employed due to its simplicity in implementation and initial system configuration. However, this approach often fails to effectively account for the inherently dynamic nature of simulation data, potentially leading to inefficient resource utilisation and processing bottlenecks. To address these limitations, we present a novel mechanism for stream-processing operator rebinding that enables lock-free, dynamic workload rebalancing between worker threads. The rebinding is driven by an autonomic policy that captures workload imbalance in the stream-processing pipeline when multiple queries are computed and reacts to it by moving computation around the different threads. We evaluate our proposal using data generated from large-scale traffic simulations on which multiple queries are executed. The volume and organisation of the data we feed to the stream-processing pipeline significantly change over time, providing excellent grounds to evaluate our rebinding policy. The evaluation confirms that the performance of stream processing pipelines can be greatly improved using local operator rebinding.},
+  location  = {Urbino, Italy},
+  note      = {To appear},
+}
+
+
+@InProceedings{Pic24,
+  author    = {Piccione, Andrea and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 2024 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {Efficient Non-Blocking Event Management for Speculative Parallel~Discrete~Event~Simulation},
+  year      = {2024},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '24},
+  abstract  = {Parallel Discrete Event Simulation (PDES) is a modelling technique that takes advantage of concurrent computing resources. However, its asynchronous nature can present challenges for efficient execution. This paper proposes a new non-blocking management system for handling messages and anti-messages in Time Warp simulations. This approach exploits the benefits of non-blocking algorithms to surpass the limitations of existing blocking mechanisms, resulting in more efficient and scalable simulations. Specifically, the approach relies on efficient atomic fetch-and-add operations provided by modern computer architectures for evaluating and updating the status of the event.},
+  doi       = {10.1145/3615979.3656053},
+  location  = {Atlanta, GA, USA},
+  badges    = {available,functional,reproduced},
+}
+
+@InProceedings{Mar24,
+  author    = {Marotta, Romolo and Pellegrini, Alessandro and Andelfinger, Philipp},
+  booktitle = {Proceedings of the 2024 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {Follow the Leader: Alternating CPU/GPU Computations in PDES},
+  year      = {2024},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '24},
+  abstract  = {Despite the successes of graphics processing units (GPUs) in accelerating simulations in several research fields, their use is largely restricted to domain-specific workloads that consistently offer the large degree of inherent parallelism and computational intensity at which GPUs excel.
+When targeting generic discrete-event simulations, whose dynamics can vary wildly over time, a static choice between a GPU-based and traditional CPU-based execution is likely to be suboptimal.
+Here, we explore a parallel discrete-event (PDES) execution scheme for CPU-GPU platforms that aims to approximate an optimal dynamic device choice.
+Starting from an intermediate model state, a current "leader" device running the simulation is periodically challenged by a brief concurrent run on another device starting from an intermediate model state.
+Based on the gathered performance measurements, a forecasting scheme determines the leader for the next period.
+The execution time and power consumption of this scheme hinge on 1) an efficient mechanism for providing the "follower" device with a consistent model state, and 2) robust performance forecasting to justify the device choices.
+We present these building blocks, their implementation combining the existing CPU and GPU simulators ROOT-Sim and GPUTW, and measurement results demonstrating substantially reduced execution time without increasing energy consumption over a static device choice.},
+  doi       = {10.1145/3615979.3656056},
+  location  = {Atlanta, GA, USA},
+  badges    = {available,functional,reproduced},
+}
+
+@InProceedings{DuX24,
+  author    = {Du, Xiaorui and Piccione, Andrea and Pimpini, Adriano and Bortoli, Stefano and Knoll, Alois and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 24th International Symposium on Cluster, Cloud and Grid Computing},
+  title     = {HUILLY: A Non-Blocking Ingestion Buffer for Timestepped Simulation Analytics},
+  year      = {2024},
+  month     = may,
+  publisher = {IEEE},
+  series    = {CCGrid},
+}
+
+
+@InProceedings{DuX23,
+  author    = {Du, Xiaorui and Pimpini, Adriano and Piccione, Andrea and Meng, Zhuoxiao and Siguenza-Torres, Anibal and Bortoli, Stefano and Knoll, Alois and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 2023 Winter Simulation Conference},
+  title     = {Autonomic Orchestration of In-situ and In-transit Data Analytics for Simulation Studies},
+  year      = {2023},
+  month     = dec,
+  publisher = {IEEE},
+  series    = {WSC},
+  abstract  = {Modern parallel/distributed simulations can produce large amounts of data. The historical approach of performing analyses at the end of the simulation is unlikely to cope with modern, extremely large-scale analytics jobs. Indeed, the I/O subsystem can quickly become the global bottleneck. Similarly, processing on-the-fly the data produced by simulations can significantly impair the performance in terms of computational capacity and network load.
+We present a methodology and reference architecture for constructing an autonomic control system to determine at runtime the best placement for data processing (on simulation nodes or a set of external nodes). This allows for a good tradeoff between the load on the simulation's critical path and the data communication system. Our preliminary experimentation shows that autonomic orchestration is crucial to improve the global performance of a data analysis system, especially when the simulation node's rate of data production varies during simulation.},
+}
+
+@InProceedings{Pic23c,
+  author    = {Piccione, Andrea and Pellegrini, Alessandro},
+  title     = {Practical Tie Breaking for Parallel/Distributed Simulations},
+  booktitle = {Proceedings of the 27th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  year      = {2023},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {DS-RT},
+  abstract  = {In this paper, we discuss a tie-breaking strategy based on a bitwise comparison of event payload that allows parallel and distributed discrete-event simulations to observe a deterministic order in the execution of events, even in the presence of event ties. This approach provides practical usability whenever model-assisted tie-breaking is unavailable, thus ensuring that multiple simulation executions provide deterministic behaviour and repeatable results. Moreover, it ensures that the selected order of events is also consistent with sequential executions. We discuss the theory behind this strategy and experimentally show that the performance drop is imputable to event queue management when relying on tie-breaking strategies like the ones discussed in this work.},
+  location  = {Singapore},
+  note      = {Winner of the Best Paper Award},
+}
+
+@InProceedings{Mar23,
+  author    = {Marotta, Romolo and Montesano, Federica and Pellegrini, Alessandro and Quaglia, Francesco},
+  title     = {Incremental Checkpointing of Large State Simulation Models with Write-Intensive Events via Memory Update Correlation on Buddy Pages},
+  booktitle = {Proceedings of the 27th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
+  year      = {2023},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {DS-RT},
+  abstract  = {Checkpointing techniques for speculative parallel simulation of discrete event models have been widely studied in the literature. However, there has been a very marginal attempt to exploit operating system page-protection services, which have instead been largely exploited in the context of checkpointing for fault tolerance. In this article, we discuss how these services can effectively manage simulation models with large states and write-intensive events on zones in the state layout. In particular, we present a solution where the correlation of write operations on buddy pages in the state layout can be exploited for achieving effective incremental checkpointing support, which allows scaling down the costs of operating system services. Our solution does not require any instrumentation of the simulation application code and is usable on any Posix-compliant operating system. We also discuss its integration within the USE (Ultimate-Share-Everything) open-source speculative simulation package and report some experimental data for its assessment.},
+  location  = {Singapore},
+  note      = {Shortlisted for the Best Paper Award},
+}
+
+@InProceedings{Pic23b,
+  author    = {Piccione, Andrea and Andelfinger, Philipp and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {Hybrid Speculative Synchronisation for Parallel Discrete Event Simulation},
+  year      = {2023},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '23},
+  abstract  = {Parallel discrete-event simulation (PDES) is a well-established family of methods to accelerate discrete-event simulations. However, the available algorithms vary substantially in the performance achievable for different simulation models, largely preventing generic solutions applicable by modellers without expert knowledge. For instance, in Time Warp, the processing elements execute events asynchronously and speculatively with high aggressiveness, leading to frequent and costly rollbacks if misspeculations occur often. In contrast, synchronous approaches such as the new Window Racer algorithm exhibit a more cautious form of speculation. In the present paper, we combine these two fundamentally different algorithms within a single runtime environment, allowing for a choice of the best algorithm for different model segments. We describe the architecture and the algorithmic considerations to support the efficient coexistence and interaction of the algorithms without violating the correctness of the simulation. Our experiments using a synthetic benchmark and an epidemics model show that the hybrid algorithm is less sensitive to its configuration and can deliver substantially higher performance in models with varying degrees of coupling among entities compared to each algorithm on its own.},
+  doi       = {10.1145/3573900.3591124},
+  location  = {Orlando, FL, USA},
+  badges    = {available,reusable,reproduced},
+}
+
+@InProceedings{Pic23,
+  author    = {Piccione, Andrea and Bernardinetti, Giorgio and Pellegrini, Alessandro and Bianchi, Giuseppe},
+  title     = {Is Your Smartphone Really Safe? A Wake-up Call on Android Antivirus Software Effectiveness},
+  booktitle = {Proceedings of the 2023 Italian Conference on Cybersecurity}, 
+  abstract  = {A decade ago, researchers raised severe concerns about Android smartphones' security by extensively assessing and recognising the limitations of Android antivirus software. Considering the significant increase in the economic role of smartphones in recent years, we would expect that security measures are significantly improved by now. To test this assumption, we conducted a relatively extensive study to evaluate the effectiveness of off-the-shelf antivirus software in detecting malicious applications injected into legitimate Android applications.
+We specifically repackaged seven widely used Android applications with 100 obfuscated malware instances. We submitted the 700 samples to the VirusTotal web portal, testing the effectiveness of the over 70 free and commercial antiviruses available in detecting them. 
+For the obfuscation part, we intentionally employed publicly available tools that could be used by ``just” a tech-savvy adversary. We used a combination of well-known and novel (but still simple) obfuscation techniques. Surprisingly (or perhaps unsurprisingly?), our findings indicate that almost 76\% of the samples went utterly undetected. Even when our samples were detected, this occurred for a handful (never more than 4) of Android antivirus software available on VirusTotal. This lack of awareness of the effectiveness of Android antivirus is critical because the false sense of security given by antivirus software could prompt users to install applications from untrusted sources, allowing attackers to install a persistent threat within another application easily.},
+  year      = {2023},
+  month     = may,
+  publisher = {CEUR-WS.org},
+  series    = {ITASEC},
+  location  = {Bari, Italy},
+}
+
 @InProceedings{And22,
   author    = {Andelfinger, Philipp and Piccione, Andrea and Pellegrini, Alessandro and Uhrmacher, Adelinde},
-  booktitle = {Proceedings of the 26th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
   title     = {Comparing Speculative Synchronization Algorithms for Continuous-Time Agent-Based Simulations},
+  booktitle = {Proceedings of the 26th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
   year      = {2022},
   month     = sep,
   publisher = {IEEE},
@@ -403,8 +594,8 @@ We present experimental results which prove the viability of our approach, compa
 
 @InProceedings{Pim22b,
   author    = {Pimpini, Adriano and Piccione, Andrea and Pellegrini, Alessandro},
-  booktitle = {Proceedings of the 26th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
   title     = {On the Accuracy and Performance of Spiking Neural Network Simulations},
+  booktitle = {Proceedings of the 26th IEEE/ACM International Symposium on Distributed Simulation and Real Time Applications},
   year      = {2022},
   month     = sep,
   publisher = {IEEE},
@@ -547,7 +738,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   title     = {Hardware-assisted Incremental Checkpointing in Speculative Parallel Discrete Event Simulation},
   year      = {2019},
   month     = dec,
-  publisher = {ACM},
+  publisher = {IEEE},
   series    = {WSC},
   abstract  = {Nowadays hardware platforms offer a plethora of innovative facities for profiling the execution of programs. Most of them have been exploited as tools for program characterization, thus being used as kind of program-external observers. In this article we take the opposite perspective where hardware profiling facilities are exploited to execute core functional tasks for the correct and efficient execution of speculative Parallel Discrete Event Simulation (PDES) applications. In more detail we exploit them—specifically, the ones offered by Intel x86-64 processors—to build a hardware-supported incremental checkpointing solution that enables the reduction of the event-execution cost in speculative PDES compared to the software-based counterpart. We integrated our solution in the open source ROOT-Sim runtime environment, thus making it available for exploitation.},
   location  = {Washington, DC, USA},
@@ -570,7 +761,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
 
 @InProceedings{Mar19,
   author    = {Marotta, Romolo and Ianni, Mauro and Scarselli, Andrea and Pellegrini, Alessandro and Quaglia, Francesco},
-  booktitle = {Proceedings of the 19th International Symposium in Cluster, Cloud and Grid Computing},
+  booktitle = {Proceedings of the 19th International Symposium on Cluster, Cloud and Grid Computing},
   title     = {NBBS: A Non-blocking Buddy System for Multi-core Machines},
   year      = {2019},
   month     = may,
@@ -1505,7 +1696,68 @@ We present here an innovative approach to load sharing on multi-core/multiproces
 
 %%%%% THESES %%%%%
 
-@PhdThesis{tTibe23,
+
+@MastersThesis{tDell23,
+  author   = {Dell'Orco, Danilo},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Unmasking Android Malware: A Comprehensive Study of Evasion Techniques and Detection Strategies},
+  year     = {2023},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tCicc23,
+  author   = {Ciccaglione, Matteo},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Metamorphic transformations: Safeguarding software IP with Generative Grammars},
+  year     = {2023},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tCicc23,
+  author   = {Ciccaglione, Matteo},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Metamorphic transformations: Safeguarding software IP with Generative Grammars},
+  year     = {2023},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tPepe23,
+  author   = {Pepe, Andrea},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Engine Metamorfico per la Protezione della Proprietà Intellettuale},
+  year     = {2023},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@PhdThesis{tPicc23,
+  author   = {Piccione, Andrea},
+  school   = {Sapienza, University of Rome},
+  title    = {On Techniques to Handle Risk in Speculative Pallel Discrete-Event Simulation},
+  year     = {2023},
+  month    = may,
+  type     = {phdthesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tCali23,
+  author   = {Caliandro, Pierciro},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Protezione della proprietà intellettuale mediante offuscamento basato su virtualizzazione},
+  year     = {2023},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tTibe23,
   author   = {Tiberi, Simone},
   school   = {University of Rome ``Tor Vergata''},
   title    = {Meccanismo d’autorizzazione per accedere ad oggetti critici del kernel basato sul percorso d’esecuzione},
