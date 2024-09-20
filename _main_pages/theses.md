@@ -38,11 +38,11 @@ To get more information on this thesis topic, you can read the following papers:
 
 ### Spiking Neural Networks
 
-Spiking neural networks (SNN) are among the most computationally intensive types of simulation models, with node counts on the order of up to 10^11. This thesis topic tackles the implementation of efficient runtime environments for SNN simulation on parallel and distributed architectures. See this supporting material for an additional framing of the topic: [1](timewarp7.pdf), [2](timewarp8.pdf).
+Spiking neural networks (SNN) are among the most computationally intensive types of simulation models, with node counts on the order of up to $10^{11}$. This thesis topic tackles the implementation of efficient runtime environments for SNN simulation on parallel and distributed architectures. See this supporting material for an additional framing of the topic: [1](timewarp7.pdf), [2](timewarp8.pdf). Also, we are currently exploring the behaviour of these networks, when compared to more traditional timestepped execution models.
 
 ### High-Performance Data Processing
 
-We are building a high-performance software infrastructure to support (distributed) data processing of massively-parallel simulations. Theses in this topic deal with distributed systems, high-performance computing, autonomic optimization. There is the **possibility to develop the thesis abroad**.
+We are building a high-performance software infrastructure to support (distributed) data processing of massively-parallel simulations. Theses in this topic deal with distributed systems, high-performance computing, autonomic optimization, heterogeneous computing. Also, we are interested in programmability of these systems, to identify effective ways to deploy stream processing pipelines to (distributed) heterogeneous systems.
 
 ### Energy Efficiency
 
@@ -54,6 +54,8 @@ To get more information on this thesis topic, you can read the following papers:
 [3](energy2.pdf)
 [4](energy3.pdf).
 
+Additional topics regard the identification of the optimal placement of computation in complex heterogeneous systems, to identify optimal configurations that can improve performance while saving on energy.
+
 ### Non-Blocking Algorithms
 
 Non-blocking algorithms are a family of concurrent algorithms which enforce correctness by relying on fine-grain synchronization hardware instructions, globally termed Read-Modify-Write instructions. Theses in this family address the implementation of data structures which support a massive number of concurrent operations by relying on this form of fine-grain synchronization.
@@ -64,12 +66,12 @@ To get more information on this thesis topic, you can read the following papers:
 
 ### Heterogeneous Architectures
 
-Heterogeneous architectures are computer architectures in which there are several different families of processing units (CPUs, GPUs, Coprocessors, low-energy cores, etc.) which can be exploited simultaneously. In this context, we are studying how to make different hardware classes interact to reach a common (synchronized) processing goal. There is the **possibility to develop the thesis abroad**.
+Heterogeneous architectures are computer architectures in which there are several different families of processing units (CPUs, GPUs, Coprocessors, low-energy cores, etc.) which can be exploited simultaneously. In this context, we are studying how to make different hardware classes interact to reach a common (synchronized) processing goal.
 
 
 ### Cybersecurity
 
-In the context of cybersercurity, we are mostly dealing with defensive security. The main topics are related to Intellectual Property Preservation, File System Security, Kernel-Level Authorization, AV detection, and full-stack infrastructure monitoring.
+In the context of cybersercurity, we are mostly dealing with defensive security. The main topics are related to Intellectual Property Preservation, by means of code obfuscation based on virtualization and self-modifying binaries. The approach we tackle is profoundly based on low-level manipulation of code and data, driven by high level tools proper of Theoretical Computer Science.
 
 
 
