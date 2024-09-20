@@ -2,7 +2,8 @@
 <tbody>
   <tr>
     <td rowspan="3" class="key" style="vertical-align:top;">{{ include.dates }}</td>
-    <td><strong>{{ include.acronym }}</strong>: {{ include.name }}</td>
+    <td>{%- if include.url -%}<a href="{{ include.url }}">{%- endif -%}<strong>{{ include.acronym }}</strong>: {{ include.name }}{%- if include.url -%}</a>{%- endif -%}
+    {%- if include.role -%}<br/><em>{{ include.role }}</em>{%- endif -%}</td>
   </tr>
   <tr>
     <td>{{ include.grant }}. <u>Total funding</u>: {{ include.funding }}</td>
