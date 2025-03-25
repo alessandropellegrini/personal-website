@@ -64,8 +64,10 @@ ii) conflict resiliency against concurrent extractions;
 iii) adaptiveness to different contention profiles; and
 iv) amortized constant-time access for both insertions and extractions. Beyond presenting our solution, we also provide proof of its correctness based on an assertional approach. 
 Also, we present an experimental study on a 64-CPU machine, showing that our proposal provides performance improvements over state-of-the-art non-blocking priority queues. },
-  year = {2023},
-  month = dec,
+  year = {2024},
+  volume = {11},
+  issue = {1},
+  month = mar,
   issn = {2329-4949},
   publisher = {ACM},
   series = {TOPC},
@@ -428,6 +430,43 @@ We present experimental results which prove the viability of our approach, compa
 
 %%%%% Conference Proceedings %%%%%
 
+
+@inproceedings{Bau25,
+  author    = {Bauco, Simone and De Angelis, Guglielmo and Marotta, Romolo and Pellegrini, Alessandro},
+  title     = {A Model-Driven Platform for Software Applications on Heterogeneous Computing Environments},
+  booktitle = {22nd {IEEE} International Conference on Software Architecture, {ICSA} 2025 - Companion},
+  abstract  = {The rise of heterogeneous computing environments has significantly advanced the capabilities of high-performance concurrent applications. However, the design of applications for these environments requires ICT application experts to have a deep understanding of hardware aspects and often their related optimisation strategies. As a consequence, the effort in the development phase is strongly influenced by intricate technical hindrances rather than focusing on domain-specific issues. This work presents Domain, a software platform that supports ICT experts in taming the complexity of modern hardware environments. Specifically, Domain identifies a comprehensive socio-technical environment where classes of stakeholders cooperate in order to support the development of software applications for heterogeneous computing environments. Also, Domain proposes families of software assets that promote the adoption of domain-specific notations, their automatic refinement up to the generation of hardware-specific binaries, and the optimised execution of such binaries on the target hardware resources. The proposed software platform has been applied to a first case study in the domain of speculative stream processing on the Taxi and Limousine Commission Trip data records from the New York City area. },
+  publisher = {IEEE},
+  year      = {2025},
+  month     = mar,
+}
+
+
+@InProceedings{Cal25,
+  author    = {Caliandro, Pierciro and Ciccaglione, Matteo and Pepe, Andrea and Bianchi, Giuseppe and Pellegrini, Alessandro},
+  title     = {VMORPH: A Virtualization/Metamorphic Framework for Binary Obfuscation and Intellectual Property Protection},
+  booktitle = {Proceedings of the 2025 Italian Conference on Cybersecurity}, 
+  abstract  = {In this paper, we analyse the effectiveness of combining obfuscation and metamorphism techniques to evade antivirus detection and protect intellectual property. We do so by introducing a new framework called VMORPH, which utilises jointly emulation and metamorphic techniques to thwart attempts at reconstructing the application's behaviour and accessing internal details or secrets. We assess the performance of VMORPH to determine its suitability for safeguarding the intellectual property of the application. The findings indicate a decrease in performance, which is still acceptable for securing applications. Additionally, we investigate the stealth capabilities of the proposed technique, which enhances its ability to bypass common static analysis techniques. Based on the results, we also suggest detection techniques that can be employed to mitigate the risk that this technique is used to evade antivirus detection.},
+  year      = {2025},
+  month     = feb,
+  publisher = {CEUR-WS.org},
+  series    = {ITASEC},
+  location  = {Bologna, Italy},
+}
+
+
+@InProceedings{Del25,
+  author    = {Dell'Orco, Danilo and Valeriani, Lorenzo and Bianchi, Giuseppe and Pellegrini, Alessandro and Merlo, Alessio},
+  title     = {Challenging Antivirus against Elusive Android Malware over Time},
+  booktitle = {Proceedings of the 2025 Italian Conference on Cybersecurity}, 
+  year      = {2025},
+  month     = feb,
+  publisher = {CEUR-WS.org},
+  series    = {ITASEC},
+  location  = {Bologna, Italy},
+}
+
+
 @InProceedings{Mar24b,
   author    = {Marotta, Romolo and Pellegrini, Alessandro},
   booktitle = {Proceedings of the 2024 Winter Simulation Conference},
@@ -438,7 +477,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {WSC},
   abstract  = {Modern high-performance, large-scale simulations require significant computational power, memory, and storage, making heterogeneous architectures an attractive option. Yet, the presence of accelerators in heterogeneous architectures makes model development hard. Domain-specific languages (DSLs) have successfully simplified model development, but designing a DSL to target heterogeneous architectures can be burdensome. Model-driven engineering (MDE) can simplify the development of DSLs targeting heterogeneous architectures. In this paper, we present a model-driven approach targeting Parallel Discrete Event Simulations on heterogeneous architectures. We exercise our MDE-generated models using a state-of-the-art runtime environment for heterogeneous architectures, using a custom DSL as an example.},
   location  = {Orlando, FL, USA},
-  note      = {To appear},
 }
 
 @InProceedings{And24,
@@ -451,7 +489,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {DS-RT},
   abstract  = {Heterogeneous hardware platforms comprised of CPUs, GPUs, and other accelerators offer the opportunity to choose the best-suited device for executing a given scientific simulation in order to minimize execution time and energy consumption. To this end, the recently proposed “Follow the Leader” approach dynamically selects a suitable device based on runtime performance measurements during speculative discreteevent simulations. A currently active “leader” device is periodically challenged by a “follower” device in order to negotiate the new leader. The optimality of the device choices and the associated overhead depends critically on the challenge frequency and timing. Here, we explore policies to schedule challenges with the goal of attaining Pareto-optimal combinations of execution time and energy consumption. Several heuristics are first evaluated in an abstract fashion using a “meta-simulation” by mimicking the progress and energy consumption of an idealized co-execution. In this setting, we optimize the heuristics’ tuning parameters to assess their relative merits in near-optimal configurations when compared to challenge timings based on perfect knowledge. We find that under challenging stochastic workloads based on a class of mean-reverting random walks, the best heuristics can closely approximate the execution time and energy consumption achievable under an optimal device choice. Empirical support for this observation is given by measurements of a CPU/GPU co-execution of the Time Warp algorithm on physical hardware.},
   location  = {Urbino, Italy},
-  note      = {To appear},
 }
 
 @InProceedings{Du24,
@@ -464,7 +501,6 @@ We present experimental results which prove the viability of our approach, compa
   series    = {DS-RT},
   abstract  = {Leveraging multiple threads to process high volumes of simulation data is a prevalent strategy in modern streaming data processing systems. Statically binding operators to specific threads is the most common design employed due to its simplicity in implementation and initial system configuration. However, this approach often fails to effectively account for the inherently dynamic nature of simulation data, potentially leading to inefficient resource utilisation and processing bottlenecks. To address these limitations, we present a novel mechanism for stream-processing operator rebinding that enables lock-free, dynamic workload rebalancing between worker threads. The rebinding is driven by an autonomic policy that captures workload imbalance in the stream-processing pipeline when multiple queries are computed and reacts to it by moving computation around the different threads. We evaluate our proposal using data generated from large-scale traffic simulations on which multiple queries are executed. The volume and organisation of the data we feed to the stream-processing pipeline significantly change over time, providing excellent grounds to evaluate our rebinding policy. The evaluation confirms that the performance of stream processing pipelines can be greatly improved using local operator rebinding.},
   location  = {Urbino, Italy},
-  note      = {To appear},
 }
 
 
@@ -1696,21 +1732,50 @@ We present here an innovative approach to load sharing on multi-core/multiproces
 
 %%%%% THESES %%%%%
 
-
-@MastersThesis{tDell23,
-  author   = {Dell'Orco, Danilo},
+@MastersThesis{tBauc24,
+  author   = {Bauco, Simone},
   school   = {University of Rome ``Tor Vergata''},
-  title    = {Unmasking Android Malware: A Comprehensive Study of Evasion Techniques and Detection Strategies},
-  year     = {2023},
+  title    = {Una metodologia Model-Driven Engineering per lo sviluppo di Domain-Specific Languages},
+  year     = {2024},
+  month    = oct,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@PhdThesis{tPimp24,
+  author   = {Pimpini, Adriano},
+  school   = {Sapienza, University of Rome},
+  title    = {Techniques for Accurate and Scalable Simulation of Spiking Neural Networks using Speculative Discrete Event Simulation},
+  year     = {2024},
+  month    = sep,
+  type     = {phdthesis},
+  comment  = {Supervisor: A. Pellegrini},
+}
+
+@MastersThesis{tAnto24,
+  author   = {Antonangeli, Mattia},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {4SweepTron: B5G Portable Spectrum Monitoring based on Micro-Service Architecture},
+  year     = {2024},
+  month    = apr,
+  type     = {mathesis},
+  comment  = {Supervisor: A. Pellegrini, Co-Supervisor: Luca Chiaraviglio},
+}
+
+@MastersThesis{tBaba24,
+  author   = {Baba, Adrian Petru},
+  school   = {University of Rome ``Tor Vergata''},
+  title    = {Miglioramento dell'accuratezza e dell'efficienza energetica delle reti neurali ad impulso tramite tempistiche accurate: un caso di studio},
+  year     = {2024},
   month    = apr,
   type     = {mathesis},
   comment  = {Supervisor: A. Pellegrini},
 }
 
-@MastersThesis{tCicc23,
-  author   = {Ciccaglione, Matteo},
+@MastersThesis{tDell23,
+  author   = {Dell'Orco, Danilo},
   school   = {University of Rome ``Tor Vergata''},
-  title    = {Metamorphic transformations: Safeguarding software IP with Generative Grammars},
+  title    = {Unmasking Android Malware: A Comprehensive Study of Evasion Techniques and Detection Strategies},
   year     = {2023},
   month    = apr,
   type     = {mathesis},
