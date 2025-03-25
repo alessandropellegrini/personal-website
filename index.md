@@ -3,7 +3,7 @@ layout: default
 title: General Information
 ---
 
-I'm a Tenure-Track Assistant Professor (RTDb) in the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/).
+I'm an Associate Professor in the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/).
 
 I am also collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)* in the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR). I am also member of the *[High Performance and Dependable Computing Systems](https://hpdcs.github.io/)* research group.
 

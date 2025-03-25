@@ -31,10 +31,11 @@ Here you can find a
 
 | Student              | Graduation      | Thesis topic                                              |
 | -------------------- | --------------- | --------------------------------------------------------- |
+| *Simone Bauco*       | 2027 (expected) | Generative grammars                                       |
 | *Matteo Ciccaglione* | 2026 (expected) | Generative grammars                                       |
 | *Pierciro Caliandro* | 2026 (expected) | Security evasion techniques                               |
-| *Xiaorui Du*         | 2024 (expected) | Distributed data analytics (cotutorship with Alois Knoll) |
-| *Adriano Pimpini*    | 2024 (expected) | Simulation of Spiking Neural Networks                     |
+| *Xiaorui Du*         | 2025 (expected) | Distributed data analytics (cotutorship with Alois Knoll) |
+| *Adriano Pimpini*    | 2024            | Simulation of Spiking Neural Networks                     |
 | *Andrea Piccione*    | 2023            | High-performance distributed simulation                   |
 
 
