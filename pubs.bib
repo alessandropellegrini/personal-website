@@ -52,6 +52,28 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Journal Articles %%%%%
 
+@article{Dell25,
+  author = {Dell'Orco, Danilo and Bernardinetti, Giorgio and Bianchi, Giuseppe and Merlo, Alessio and Pellegrini, Alessandro},
+  title = {Would You Mind Hiding My Malware? Building Malicious Android Apps with Stegopack},
+  journal = {Pervasive and Mobile Computing},
+  year = {2025},
+  doi = {10.1016/j.pmcj.2025.102060},
+  issn = {1574-1192},
+  volume = {111},
+  pages = {102060},
+}
+
+@article{Pell25,
+  author = {Pellegrini, Alessandro},
+  title = {Introduction to the Special Issue on PADS 2024},
+  journal = {Transactions on Modeling and Computer Simulations},
+  year = {2025},
+  month = may,
+  volume = {35},
+  issue = {3},
+  pages = {1--3},
+}
+
 @article{Mar23b,
   author = {Marotta, Romolo and Ianni, Mauro and Pellegrini, Alessandro and Quaglia, Francesco},
   title = {A Conflict-Resilient Lock-Free Linearizable Calendar Queue},
@@ -429,6 +451,61 @@ We present experimental results which prove the viability of our approach, compa
 
 
 %%%%% Conference Proceedings %%%%%
+
+
+@InProceedings{Bau25c,
+  author    = {Bauco, Simone and Montesano, Federica and Pimpini, Adriano and Marotta, Romolo and Pellegrini, Alessandro},
+  title     = {Model-Driven Parallel and Distributed Stochastic Simulation of Chemical Reaction Networks},
+  booktitle = {Proceedings of the 29th International Symposium on Distributed Simulation and Real Time Applications},
+  year      = {2025},
+  month     = sep,
+  publisher = {IEEE},
+  series    = {DS-RT},
+  abstract  = {Biochemical systems are characterized by rich stochastic behaviors and complex interaction patterns, often modeled through rule-based frameworks such as BioNetGen. Despite the expressiveness of such high-level specifications, simulating large-scale models remains computationally prohibitive. In this paper, we present a model-driven framework for the parallel and distributed execution of stochastic chemical reaction networks, enabled by a model-to-model transformation of BioNetGen descriptions. The transformation produces an intermediate representation based on the Actor Model, in which actors encapsulate local state and asynchronous communication, aligning with the concurrency of biochemical processes. From this representation, we generate executable code targeting ROOT-Sim, a speculative parallel discrete-event simulation (PDES) environment based on Time Warp. We propose an exact parallel implementation of the Stochastic Simulation Algorithm (SSA), employing reaction partitioning to minimize inter-process dependencies and leveraging an event-exchange protocol to ensure consistency and atomicity of reactant consumption across logical processes. We introduce refined rollback and reaction rescheduling mechanisms to address potential correctness issues such as reactant overconsumption. Extensive experiments on well-established models, such as FcεRI, demonstrate substantial speedups over sequential methods.},
+  location  = {Prague, Czech Republic},
+  notes     = {To appear},
+}
+
+@InProceedings{Cin25,
+  author    = {Cingolani, Davide and Pellegrini, Alessandro and Quaglia, Francesco},
+  booktitle = {Proceedings of the 39th ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {Test of Time Award: Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES},
+  year      = {2025},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '25},
+  abstract  = {The paper ``Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES'' introduced a seminal hybrid rollback technique that efficiently and transparently combines checkpointing and reverse computation methods through runtime-generated undo instructions. This short abstract, which accompanies the Test of Time Award received at PADS 2025, summarises the fundamental challenges presented in the original paper and reflects on its impact in the decade after its publication.},
+  location  = {Santa Fe, NM, USA},
+}
+
+
+@InProceedings{Bau25b,
+  author    = {Bauco, Simone and Marotta, Romolo and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 39th ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {DESL: A Literate Programming Language Framework for Interoperable Parallel Discrete Event Simulation},
+  year      = {2025},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '25},
+  abstract  = {Simulation is an indispensable methodology for advanced scientific research, enabling accurate explorations of complex phenomena and supporting evidence-based decision-making across interdisciplinary boundaries. Parallel Discrete Event Simulation (PDES) provides substantial advantages in modelling large-scale systems by distributing computational tasks among multiple processors,  enhancing scalability. However, exploiting it is extremely challenging due to obstacles in model efficiency, concurrency control, reproducibility, and maintainability. Furthermore, the large number of available PDES runtime environments makes it difficult to explore their (performance) capabilities for some specific model, hindering the identification of the best-suited technology for a certain simulation study. To address these limitations, we introduce a unified framework grounded in literate programming and model-driven engineering, integrating interwoven documentation and model logic within a single source. This design enhances intrinsic consistency between model logic and explanatory content, while enabling the generation of model implementations tailored to multiple runtime environments, thus allowing simulationists to focus on model development without being locked in to any specific technology or environment. This facilitates model reuse and performance comparisons across diverse execution environments. We show the viability of this approach by providing the first-ever experimental comparison across three different off-the-shelf simulators, starting from the same model implementation.},
+  location  = {Santa Fe, NM, USA},
+}
+
+
+@InProceedings{Pim25,
+  author    = {Pimpini, Adriano and Pellegrini, Alessandro},
+  booktitle = {Proceedings of the 39th ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  title     = {RBlockSim: Parallel and Distributed Simulation for Blockchain Benchmarking},
+  year      = {2025},
+  month     = jun,
+  publisher = {ACM},
+  series    = {SIGSIM-PADS '25},
+  abstract  = {Since the introduction of Bitcoin in 2008, blockchain technology’s popularity has been rapidly on the rise. This has led to and benefitted from the introduction of numerous new implementations addressing specific needs in terms of performance, scalability, privacy, etc.
+Developing new implementations requires making design choices that deeply influence the blockchain's behaviour. Although deploying full-scale networks for evaluation is impractical and costly, simulation offers a safe and convenient environment to test and benchmark different implementations against the requirements.
+Although single-threaded simulation of blockchain networks is available, it can incur long execution times when simulating large-scale scenarios. Additionally, it is constrained by the machine's RAM, limiting the size of networks one may study.
+In this paper, we introduce and benchmark RBlockSim, a simulation approach that leverages optimistic parallel and distributed discrete-event simulation to overcome the above limitations and provides a modular, high-performance test-bed for blockchain evaluation.},
+  location  = {Santa Fe, NM, USA},
+}
 
 
 @inproceedings{Bau25,
@@ -1270,6 +1347,7 @@ approach that is based on the exploitation of the Inter-Processor-Interrupt (IPI
   doi       = {10.1145/2769458.2769482},
   location  = {London, UK},
   name      = {pads15m},
+  note      = {Winner of the 2015 PADS Test of Time Award},
 }
 
 @InProceedings{Pell15c,

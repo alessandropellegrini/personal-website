@@ -19,14 +19,14 @@ Research Interests
 My research is mainly focused on:
 
 * Parallel and Distributed Discrete Event Simulation;
+* High-Performance Computing;
 * Optimistic Synchronization;
-* Autonomic Computing;
-* Code Parallelization Techniques;
-* Post-Mortem Debugging;
-* Code Instrumentation Techniques;
-* Modelling and Performance Evaluation of Simulation Systems;
 * Computer Architectures;
-* Operating Systems.
+* Operating Systems;
+* Model-Driven Engineering;
+* Cyber security;
+* Modelling and Performance Evaluation of Simulation Systems;
+* Autonomic Computing.
 
 Publication Archive
 -------------------

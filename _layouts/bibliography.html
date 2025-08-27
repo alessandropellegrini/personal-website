@@ -67,10 +67,10 @@ best paper awards.
 <span style="color:red">Shortlisted for the Best Paper Award</span>
 {%- endif -%}
 
-{%- if entry.note and entry.note == "Winner of the Best Paper Award" %}
+{%- if entry.note and entry.note contains "Winner of" %}
 <br/>
 <img alt="best-paper" src="{{ site.url }}/images/medal.png" />
-<span style="color:red">Winner of the Best Paper Award</span>
+<span style="color:red">{{ entry.note }}</span>
 {%- endif -%}
 
 {%- if entry.badges %}
