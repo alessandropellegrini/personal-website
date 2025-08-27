@@ -13,6 +13,7 @@ Here you can find a
 
 ## Awards and Honors
 
+* Test of Time Award, SIGSIM PADS Conference, 2015. For the paper “*Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES*”.
 * Best Paper Award, DS-RT Conference, 2023.
 * Best Paper Award, DS-RT Conference, 2022.
 * Best Paper Award, IEEE SOSE Conference, 2021.
@@ -31,9 +32,9 @@ Here you can find a
 
 | Student              | Graduation      | Thesis topic                                              |
 | -------------------- | --------------- | --------------------------------------------------------- |
-| *Simone Bauco*       | 2027 (expected) | Generative grammars                                       |
+| *Simone Bauco*       | 2027 (expected) | Model-Driven Engineering                                  |
 | *Matteo Ciccaglione* | 2026 (expected) | Generative grammars                                       |
-| *Pierciro Caliandro* | 2026 (expected) | Security evasion techniques                               |
+| *Pierciro Caliandro* | 2026 (expected) | Fuzzing                                                   |
 | *Xiaorui Du*         | 2025 (expected) | Distributed data analytics (cotutorship with Alois Knoll) |
 | *Adriano Pimpini*    | 2024            | Simulation of Spiking Neural Networks                     |
 | *Andrea Piccione*    | 2023            | High-performance distributed simulation                   |
@@ -118,6 +119,7 @@ I have been involved in the following list of national/international research pr
 * 2017 - present: [PADS](https://sigsim.acm.org/conf/pads/), ACM SIGSIM Conference on Principles of Advanced Discrete Simulation.
 * 2017 - present: [WSC](http://informs-sim.org/), Winter Simulation Conference.
 * 2019 - present: [SIMUL](https://www.iaria.org/conferences2019/SIMUL19.html), International Conference on Advances in System Simulation.
+* 2025 - present: [AsiaSim](https://asiasimfederation.mysimsc.org/), Asia Simulation Conference
 * 2020 - present: [CLOUD COMPUTING](https://www.iaria.org/conferences2021/ComCLOUDCOMPUTING21.html), International Conference on Cloud Computing, GRIDs, and Virtualization.
 * 2020 - 2023: [ICPE](https://icpe.spec.org/),  in the Reproducibility Techincal Committee.
 * 2014 - 2022: [SIMULTECH](http://www.simultech.org/), International Conference on Simulation and Modeling Methodologies, Technologies and Applications.
