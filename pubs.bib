@@ -1,4 +1,4 @@
-% Encoding: UTF-8
+<% Encoding: UTF-8
 
 %%%%% Books %%%%%
 
@@ -452,6 +452,31 @@ We present experimental results which prove the viability of our approach, compa
 
 %%%%% Conference Proceedings %%%%%
 
+@InProceedings{Cal26,
+  author    = {Caliandro, Pierciro and Ciccaglione, Matteo and Pellegrini, Alessandro},
+  title     = {A Formal Control Plane for Fuzzing Campaigns: Leveraging Attribute Grammars for Dynamic Policy Selection},
+  booktitle = {Proceedings of the 2026 Italian Conference on Cybersecurity}, 
+  abstract  = {Fuzzing is an effective technique for software security testing, although the orchestration of fuzzing campaigns still largely relies on rigid, imperative control logic. Traditionally, this orchestration has been based on decision-making processes (such as when to mutate inputs, migrate seeds, or change scheduling policies) that are embedded directly into the execution engine. These monolithic architectures are difficult to adapt, extend, or formally verify. In this paper, we introduce a framework that decouples the control logic from the fuzzing mechanism by elevating the orchestration problem to a linguistic domain. We propose a formal control plane powered by Attribute Grammars, where the operational state of the fuzzing infrastructure is treated as a sentence in a formal language, and control policies are derived as semantic translations of this state. From this formal declarative specification, we automatically generate the source code of the fuzzer controller. This allows researchers to define complex, adaptive strategies, including backtracking-based recovery and epsilon-greedy exploration, in a more rigorous and maintainable way. We exercise our methodology by showcasing how to effectively orchestrate a distributed fuzzing campaign using a relatively-simple grammar.},
+  year      = {2026},
+  month     = feb,
+  publisher = {CEUR-WS.org},
+  series    = {ITASEC},
+  location  = {Cagliari, Italy},
+  note      = {To appear},
+}
+
+@InProceedings{DeA25,
+  author    = {De~Angelis, Emanuele and De~Angelis, Guglielmo and Marotta, Romolo and Montesano, Federica and Pellegrini, Alessandro and Proietti, Maurizio},
+  title     = {Declarative Adaptive Optimization of Task-Based Applications on Heterogeneous Architectures},
+  booktitle = {Proceedings of the 2025 International Symposium on Computer Architecture and High Performance Computing Workshops},
+  year      = {2025},
+  month     = oct,
+  publisher = {IEEE},
+  series    = {SBAC-PADW},
+  abstract  = {This paper presents a knowledge-based technique for mapping task-based applications onto heterogeneous computing resources using Answer Set Programming (i.e., ASP) for dynamic, multi-objective task allocation. Our method models applications through the Actor Model, considering device constraints, task workloads, and performance factors like computational overload and inter-actor communication costs. By formulating these elements as logical rules, our ASP-based method adapts allocations to changing workloads and system dynamics, nearing the theoretical optimum achievable by an oracle with complete knowledge. Simulation experiments show that our approach significantly outperforms (up to 45\%)  traditional static partitioning techniques by maximizing throughput and preventing unfruitful migrations. These results highlight the effectiveness of declarative optimization for online allocation in heterogeneous architectures, and suggest that a clear syntax for modelling non-functional metrics ease the extrapolation of a broad set of optimization scenarios.},
+  location  = {Bonito, Brazil},
+  note      = {To Appear},
+}
 
 @InProceedings{Bau25c,
   author    = {Bauco, Simone and Montesano, Federica and Pimpini, Adriano and Marotta, Romolo and Pellegrini, Alessandro},
@@ -463,7 +488,7 @@ We present experimental results which prove the viability of our approach, compa
   series    = {DS-RT},
   abstract  = {Biochemical systems are characterized by rich stochastic behaviors and complex interaction patterns, often modeled through rule-based frameworks such as BioNetGen. Despite the expressiveness of such high-level specifications, simulating large-scale models remains computationally prohibitive. In this paper, we present a model-driven framework for the parallel and distributed execution of stochastic chemical reaction networks, enabled by a model-to-model transformation of BioNetGen descriptions. The transformation produces an intermediate representation based on the Actor Model, in which actors encapsulate local state and asynchronous communication, aligning with the concurrency of biochemical processes. From this representation, we generate executable code targeting ROOT-Sim, a speculative parallel discrete-event simulation (PDES) environment based on Time Warp. We propose an exact parallel implementation of the Stochastic Simulation Algorithm (SSA), employing reaction partitioning to minimize inter-process dependencies and leveraging an event-exchange protocol to ensure consistency and atomicity of reactant consumption across logical processes. We introduce refined rollback and reaction rescheduling mechanisms to address potential correctness issues such as reactant overconsumption. Extensive experiments on well-established models, such as FcεRI, demonstrate substantial speedups over sequential methods.},
   location  = {Prague, Czech Republic},
-  notes     = {To appear},
+  note      = {Winner of the Best Paper Award},
 }
 
 @InProceedings{Cin25,
