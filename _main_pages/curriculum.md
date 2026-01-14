@@ -13,6 +13,7 @@ Here you can find a
 
 ## Awards and Honors
 
+* Best Paper Award, DS-RT Conference, 2025.
 * Test of Time Award, SIGSIM PADS Conference, 2015. For the paper “*Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES*”.
 * Best Paper Award, DS-RT Conference, 2023.
 * Best Paper Award, DS-RT Conference, 2022.
