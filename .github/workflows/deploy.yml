@@ -1,0 +1,49 @@
+name: Compile and Deploy Jekyll Website
+
+on:
+  push:
+    branches:
+      - deploy
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby Environment
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Compile Jekyll Artifacts
+        run: |
+          bundle install
+          JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Deploy via Native Rsync and SSH Agent
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          HOST: ${{ secrets.SERVER_HOST }}
+          USERNAME: ${{ secrets.SERVER_USERNAME }}
+          PORT: ${{ secrets.SERVER_PORT }}
+          TARGET: ${{ secrets.SERVER_TARGET_PATH }}
+        run: |
+          umask 077
+          eval $(ssh-agent -s)
+          
+          set +x
+          printf "%s\n" "$SSH_PRIVATE_KEY" | ssh-add -
+          unset SSH_PRIVATE_KEY
+          set -x
+          
+          mkdir -p ~/.ssh
+          ssh-keyscan -p $PORT -H $HOST >> ~/.ssh/known_hosts
+          
+          rsync -avz -e "ssh -p $PORT" --delete _site/ $USERNAME@$HOST:$TARGET
+          
+          ssh-agent -k
