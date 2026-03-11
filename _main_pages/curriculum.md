@@ -11,7 +11,7 @@ Here you can find a
 (last updated on {{ "./pub/curriculum.pdf" | file_date | date_to_string }}).
 
 
-## Awards and Honors
+## Awards and Honours
 
 * Best Paper Award, DS-RT Conference, 2025.
 * Test of Time Award, SIGSIM PADS Conference, 2015. For the paper “*Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES*”.
@@ -49,16 +49,16 @@ Here you can find a
 
 ## National/International Projects
 
-I have been involved in the following list of national/international research projects.
+I have been involved in the following national and international research projects.
 
-{% include project.html dates="2023 &rarr; current"
+{% include project.html dates="2023 &rarr; 2026"
                       acronym="DOMAIN"
                       name="Taming Heterogeneous Computing Complexity with Full-Stack Governance of Domain-Specific Languages"
                       url="https://domainproject.github.io/"
                       grant="PRIN 2022, Grant Agreement #2022TSYYKJ"
                       role="Principal Investigator"
                       funding="190 K€"
-                      description="The DOMAIN Project aims to address the growing complexity in computing hardware architectures. With the transition to heterogeneous systems combining general-purpose and specialized computing units, the project focuses on developing high-level, semantically-rich abstractions that are accessible and efficient for domain experts across various fields. By exploring Domain-Specific Languages (DSLs) and creating new compiling toolchains, software runtime environments, and operating system supports, the project seeks to optimize large-scale heterogeneous platforms. The goal is to allow domain experts to efficiently code applications, leveraging the full potential of these complex architectures with minimal technical involvement."
+                      description="The DOMAIN Project aims to address the growing complexity in computing hardware architectures. With the transition to heterogeneous systems combining general-purpose and specialised computing units, the project focuses on developing high-level, semantically-rich abstractions that are accessible and efficient for domain experts across various fields. By exploring Domain-Specific Languages (DSLs) and creating new compiling toolchains, software runtime environments, and operating system supports, the project seeks to optimise large-scale heterogeneous platforms. The goal is to allow domain experts to efficiently code applications, leveraging the full potential of these complex architectures with minimal technical involvement."
 %}
 {% include project.html dates="2020 &rarr; 2022"
                       acronym="SISMA"
@@ -66,7 +66,7 @@ I have been involved in the following list of national/international research pr
                       url="https://sisma-prin2017.gitlab.io/"
                       grant="PRIN 2017, Grant Agreement #201752ENYB"
                       funding="910 K€"
-                      description="The SISMA project focuses on the improvement of the design of test cases for distributed software systems abiding by the microservices paradigm. Areas of interest of the studyconcern: strategies for the aggregation of test cases,  algorithms to select and prioritise elements in a set of test cases, composition strategies of functional and non-functional aspects for exploring alternative operating conditions. The structured and reusable design of testing bundles would increase the quality of the test suites, and their level of automation as well. Also, a workflow-based planning of test cases would contribute to the incremental development of end-to-end tests, and to the enactment of dynamic strategies for governing regression testing activities."
+                      description="The SISMA project focuses on the improvement of the design of test cases for distributed software systems abiding by the microservices paradigm. Areas of interest in the study include: strategies for aggregating test cases, algorithms for selecting and prioritising elements within a set of test cases, and composition strategies for functional and non-functional aspects to explore alternative operating conditions. The structured, reusable design of testing bundles would improve the quality of test suites and their level of automation. Also, a workflow-based planning of test cases would contribute to the incremental development of end-to-end tests, and to the enactment of dynamic strategies for governing regression testing activities."
 %}
 {% include project.html dates="2019 &rarr; 2022"
                       acronym="SPARTA"
@@ -74,7 +74,7 @@ I have been involved in the following list of national/international research pr
                       url="https://www.sparta.eu/"
                       grant="EU H2020 Project, Grant Agreement #830892"
                       funding="16 M€"
-                      description="The digital era has brought with it many advantages for mankind, but the issue of secure data exchange remains among the most significant concerns. The EU-funded SPARTA project is bringing together a unique set of actors at the crossroads of scientific excellence, technological innovation and social sciences to address the issue of cybersecurity. The project aims to set up unique collaborations, build transformative capabilities and form world-leading expertise centres. Through innovative governance, ambitious demonstration cases and active community engagement, SPARTA intends to re-think the way cybersecurity research is performed in Europe across various domains and fields of expertise."
+                      description="The digital era has brought with it many advantages for mankind, but the issue of secure data exchange remains among the most significant concerns. The EU-funded SPARTA project is bringing together a unique set of actors at the crossroads of scientific excellence, technological innovation, and the social sciences to address cybersecurity. The project aims to establish unique collaborations, build transformative capabilities, and form world-leading expertise centres. Through innovative governance, ambitious demonstration cases and active community engagement, SPARTA intends to rethink the way cybersecurity research is performed in Europe across various domains and fields of expertise."
 %}
 {% include project.html dates="2018 &rarr; 2019"
                       acronym="EvoATM"
@@ -82,7 +82,7 @@ I have been involved in the following list of national/international research pr
                       url="https://cordis.europa.eu/project/id/783189"
                       grant="EU H2020 SJU Project, Grant Agreement #783189"
                       funding="970 K€"
-                      description="The goal of the EvoATM project is to model ATM system in the Free Route scenario, combining an agent based simulation paradigm with Evolutionary Computing optimization techniques to understand the influence of ATM components and parameters on the behaviour at whole system performances level. By using quantitative indicators, EvoATM has opened the way to more efficient change impact assessment, supporting design and strategic thinking in ATM evolution."
+                      description="The goal of the EvoATM project is to model the ATM system in the Free Route scenario, combining an agent-based simulation paradigm with Evolutionary Computing optimisation techniques to understand the influence of ATM components and parameters on the behaviour at the whole system performance level. By using quantitative indicators, EvoATM has opened the way to more efficient change impact assessment, supporting design and strategic thinking in ATM evolution."
 %}
 {% include project.html dates="2014 &rarr; 2016"
                       acronym="PANACEA"
@@ -90,7 +90,7 @@ I have been involved in the following list of national/international research pr
                       url="https://cordis.europa.eu/project/id/610764"
                       grant="EU FP7 Project, Grant Agreement #610764"
                       funding="3 M€"
-                      description="The main objective of the PANACEA project is to provide Proactive Autonomic Management of Cloud Resources, based on Machine Learning, as a remedy to the exponentially growing Cloud complexity. Main targets are: i) proactive autonomic management of Cloud resources, ii) proactive software migration within the Cloud(s), iii) efficient usage of Cloud resources, iv) monitoring, controlling, and proactively managing applications’ execution. The main objective of the PANACEA project is to provide Proactive Autonomic Management of Cloud Resources, based on Machine Learning, as a remedy to the exponentially growing Cloud complexity. Main targets are: i) proactive autonomic management of Cloud resources, ii) proactive software migration within the Cloud(s), iii) efficient usage of Cloud resources, iv) monitoring, controlling, and proactively managing applications’ execution."
+                      description="The main objective of the PANACEA project is to provide Proactive Autonomic Management of Cloud Resources, based on Machine Learning, as a remedy to the exponentially growing Cloud complexity. Main targets are: i) proactive autonomic management of Cloud resources, ii) proactive software migration within the Cloud(s), iii) efficient usage of Cloud resources, iv) monitoring, controlling, and proactively managing applications’ execution. The main objective of the PANACEA project is to provide Proactive Autonomic Management of Cloud Resources based on Machine Learning as a remedy to the exponentially growing complexity of the Cloud. Main targets are: i) proactive autonomic management of Cloud resources, ii) proactive software migration within the Cloud(s), iii) efficient usage of Cloud resources, iv) monitoring, controlling, and proactively managing applications’ execution."
 %}
 {% include project.html dates="2013 &rarr; 2015"
                       acronym="SIGMA"
