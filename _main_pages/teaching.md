@@ -7,7 +7,7 @@ permalink: /teaching/
 Office Hours
 ------------
 
-The best way to get in touch with me is on Teams. If you do need to come to my office, we can arrange an appointment on demand.
+The best way to get in touch with me is on Teams. If you do need to come to my office, we can arrange an appointment on short notice.
 
 
 Courses
