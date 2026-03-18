@@ -52,6 +52,18 @@ We will clearly show, during the development of these supports, what is the effe
 
 %%%%% Journal Articles %%%%%
 
+@article{Dux26,
+  author = {Du, Xiaorui and Piccione, Andrea and Pimpini, Adriano and Bortoli, Stefano and Pellegrini, Alessandro and Knoll, Alois},
+  title = {Operator Rebinding for Stream Processing on NUMA Machines},
+  journal = {Software: Practice and Experience},
+  abstract = {Modern stream processing engines are increasingly deployed on high-core-count servers with Non-Uniform Memory Access (NUMA) architectures, where the cost of inter-socket memory access poses a significant challenge to achieving low latency and high throughput. Existing approaches to operator placement either rely on static assignments that degrade under workload variations or employ dynamic migrations that incur excessive overhead due to blocking synchronization or global barriers. This paper introduces a lock-free, NUMA-aware operator rebinding mechanism that dynamically reallocates operator tasks across threads with minimal disruption. The mechanism uses an autonomic controller to detect imbalance in per-thread queues and enacts rebinding via control messages and atomic updates, ensuring correctness without stalling execution. A two-level policy is proposed, combining NUMA-level partitioning with intra-node thread-level refinements, triggered by latency thresholds. Extensive experiments using a 300-query urban traffic analytics workload demonstrate that the proposed method achieves non-negligible throughput improvement and reduces latency compared to state-of-the-art static and METIS-based approaches. Furthermore, it reduces latency variance by an order of magnitude, illustrating the importance of fine-grained NUMA-aware scheduling in memory-bound stream processing.},
+  year = {2026},
+  issn = {1097-024X},
+  publisher = {Wiley},
+  series = {SPE},
+  note = {To appear},
+}
+
 @article{Dell25,
   author = {Dell'Orco, Danilo and Bernardinetti, Giorgio and Bianchi, Giuseppe and Merlo, Alessio and Pellegrini, Alessandro},
   title = {Would You Mind Hiding My Malware? Building Malicious Android Apps with Stegopack},
@@ -460,6 +472,7 @@ We present experimental results which prove the viability of our approach, compa
   publisher = {IEEE},
   year      = {2026},
   month     = jun,
+  note      = {To appear},
 }
 
 @InProceedings{Cal26,
