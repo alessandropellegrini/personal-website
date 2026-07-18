@@ -13,8 +13,9 @@ Here you can find a
 
 ## Awards and Honours
 
+* Distinguished Workshop Paper Award, MDE4SA Workshop, ICSA Conference, 2026.
 * Best Paper Award, DS-RT Conference, 2025.
-* Test of Time Award, SIGSIM PADS Conference, 2015. For the paper “*Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES*”.
+* Test of Time Award, SIGSIM PADS Conference, 2025. For the paper “*Transparently Mixing Undo Logs and Software Reversibility for State Recovery in Optimistic PDES*”.
 * Best Paper Award, DS-RT Conference, 2023.
 * Best Paper Award, DS-RT Conference, 2022.
 * Best Paper Award, IEEE SOSE Conference, 2021.
