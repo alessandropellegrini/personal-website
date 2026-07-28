@@ -3,7 +3,7 @@ layout: default
 title: General Information
 ---
 
-I'm an Associate Professor in the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/), head of the *[High Performance  Computing and Simulation](https://hpdcs.github.io/)* research group.
+I'm an Associate Professor in the *[Department of Civil Engineering and Computer Science Engineering](http://dicii.uniroma2.it/)* (DICII) at [University of Rome "Tor Vergata"](https://web.uniroma2.it/), head of the *[High Performance  Computing and Simulation](https://hpcs.ing.uniroma2.it/)* research group.
 
 I am also an associate of the [Institute of Systems Analysis and Informatics](http://www.iasi.cnr.it/) (IASI) at the [National Research Council](https://www.cnr.it/) (CNR), collaborating with the *[Software and Knowledge-Based Systems research group](http://saks-wiki.iasi.cnr.it/xwiki/bin/view/Portal/public/)*.
 
